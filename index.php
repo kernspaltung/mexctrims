@@ -1,41 +1,39 @@
 <?php include_once 'header.php'; ?>
 
-   <div class="h_100 text-center rel">
-      <div class="row vcenter">
-         <div class="columns">
-            <div class="image h_100">
-               <img src="http://fakeimg.pl/150x150" alt="" />
+   <div id="background" class="h_100 w_100 absUpL z-1">
+      <div class="w_100 h_100 imgLiquid imgLiquidFill  abs image-fx z-1"><img src="http://fakeimg.pl/600x300" alt=""></div>
+      <div class="curtain w_100 h_100 z-1 p0 abs"></div>
+      <div class="img-overlay w_100 h_100 z-1 p0 abs"></div>
+   </div>
+
+   <div class="h_100 text-center abs z1k">
+      <div class="row p4 h_75">
+         <div class="small-6 large-8 columns">
+            <div class="h_100 imgLiquid imgLiquidFill image-fx">
+               <img src="http://fakeimg.pl/600x300" alt="">
             </div>
          </div>
-         <div class="columns fontS h_100">
+         <div class="small-6 large-4 columns fontM h_30vh h_sm_75">
             <div class="vcenter">
                Comité Mexicano para el Tratamiento e Investigación en Esclerosis Múltiple
             </div>
          </div>
-         <div class="row">
+         <div class="row pt4 pt_sm_1">
             <h4 class="fontM p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quo delectus odio velit dolores vel eaque minima aliquam.</h4>
          </div>
-         <div id="boton_scroll" class="w_100 fontXXL text-center">
-            <a href="#"><i class="fa fa-angle-down"></i></a>
-         </div>
+      </div>
+      <div id="boton_scroll" class="w_100 h_25 fontXXL text-center mt2 mt_sm_0">
+         <a href="#" class="w_100 h_100">
+            <div class="vcenter">
+               <i class="fa fa-angle-down"></i>
+            </div>
+         </a>
       </div>
    </div>
 
    <div class="h_100 text-center rel">
-      <div class="row vcenter">
-         <div class="columns">
-            <div class="image h_100">
-               <img src="http://fakeimg.pl/150x150" alt="" />
-            </div>
-         </div>
-         <div class="columns fontS">
-            <div class="vcenter">
-               Comité Mexicano para el Tratamiento e Investigación en Esclerosis Múltiple
-            </div>
-         </div>
-         <div class="row mt2">
-            <h3 class="fontS p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quo delectus odio velit dolores vel eaque minima aliquam.</h3>
-         </div>
+      <div class="row p2">
+
       </div>
    </div>
 

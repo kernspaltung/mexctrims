@@ -53,3 +53,47 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+
+
+
+
+* {
+   outline: 2px dotted #def;
+}
+
+
+
+
+
+
+
+
+%pattern {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBmcOnXKl3RdAI02Aqx7ujt2AAAAAElFTkSuQmCC) repeat;
+}
+
+.img-overlay {
+  @extend %pattern;
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+
+.curtain {
+   background-color: rgba(255,255,255,0.7);
+}
+
+
+
+
+
+
+
+#background {
+}
+
+.image-fx {
+   filter: brightness(110%) contrast(125%);
+}

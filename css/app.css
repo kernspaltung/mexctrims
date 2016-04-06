@@ -710,7 +710,7 @@
   font-size: 18px; }
 
 .fontXL {
-  font-size: 25px; }
+  font-size: 25px !important; }
 
 .fontXXL {
   font-size: 36px !important; }
@@ -5929,3 +5929,19 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+* {
+  outline: 2px dotted #def; }
+
+.img-overlay {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgIBmcOnXKl3RdAI02Aqx7ujt2AAAAAElFTkSuQmCC) repeat; }
+
+.img-overlay {
+  background-color: rgba(255, 255, 255, 0.6); }
+
+.curtain {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.image-fx {
+  -webkit-filter: brightness(110%) contrast(125%);
+          filter: brightness(110%) contrast(125%); }
