@@ -6,7 +6,7 @@
       <div class="img-overlay w_100 h_100 z-1 p0 abs"></div>
    </div>
 
-   <div class="h_100 text-center abs z1k">
+   <div class="h_100 text-center rel z1k">
       <div class="row p4 h_75">
          <div class="small-6 large-8 columns">
             <div class="h_100 imgLiquid imgLiquidFill image-fx">
@@ -31,10 +31,11 @@
       </div>
    </div>
 
-   <div class="h_100 text-center rel">
-      <div class="row p2">
+   <div class="h_100 row text-center rel">
+         <div class="columns align-middle ha text-center">
+            <h1>Huevos mijou</h1>
+         </div>
 
-      </div>
    </div>
 
 <?php include_once 'footer.php'; ?>
