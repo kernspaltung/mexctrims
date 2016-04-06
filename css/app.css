@@ -716,8 +716,20 @@
   font-size: 36px !important; }
 
 @media (max-width: 768px) {
+  .font_sm_XXL {
+    font-size: 25px !important; }
+  .font_sm_XL {
+    font-size: 25px !important; }
+  .font_sm_L {
+    font-size: 18px !important; }
+  .font_sm_M {
+    font-size: 14px !important; }
+  .font_sm_S {
+    font-size: 12px !important; }
   .font_sm_XS {
-    font-size: 10px !important; } }
+    font-size: 10px !important; }
+  .font_sm_XXS {
+    font-size: 9px !important; } }
 
 .fontXXXL {
   font-size: 50px !important; }

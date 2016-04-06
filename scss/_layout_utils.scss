@@ -978,8 +978,26 @@ $screen-lg-min: 1025px;
 
 
 @media (max-width:768px) {
+	.font_sm_XXL {
+		font-size: $fontXL !important;
+	}
+	.font_sm_XL {
+		font-size: $fontXL !important;
+	}
+	.font_sm_L {
+		font-size: $fontL !important;
+	}
+	.font_sm_M {
+		font-size: $fontM !important;
+	}
+	.font_sm_S {
+		font-size: $fontS !important;
+	}
 	.font_sm_XS {
 		font-size: $fontXS !important;
+	}
+	.font_sm_XXS {
+		font-size: $fontXXS !important;
 	}
 }
 
