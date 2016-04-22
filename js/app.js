@@ -2,7 +2,16 @@ $(document).foundation();
 
 u = new FrontEndUtils();
 
-setup();
+
+$(document).ready(function(){
+
+
+   setup();
+
+
+})
+
+
 
 function setup() {
    u.resize();

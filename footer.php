@@ -3,28 +3,28 @@
 
 
       <footer id="footer" class="columns h_10vh">
-         <div class="vcenter row p2">
-            <div class="columns text-center">
+         <div class="small-12 medium-6 large-4 small-centered columns p2">
+            <div class="small-3 columns text-center">
                <a href="#" target="_blank">
-                  <i class="fa fa-facebook columns fontXL"></i>
+                  <i class="fa fa-facebook columns fontL"></i>
                   <span class="columns fontS p2">Facebook</span>
                </a>
             </div>
-            <div class="columns text-center">
+            <div class="small-3 columns text-center">
                <a href="#" target="_blank">
-                  <i class="fa fa-twitter columns fontXL"></i>
+                  <i class="fa fa-twitter columns fontL"></i>
                   <span class="columns fontS p2">Twitter</span>
                </a>
             </div>
-            <div class="columns text-center">
+            <div class="small-3 columns text-center">
                <a href="#" target="_blank">
-                  <i class="fa fa-instagram columns fontXL"></i>
+                  <i class="fa fa-instagram columns fontL"></i>
                   <span class="columns fontS p2">Instagram</span>
                </a>
             </div>
-            <div class="columns text-center">
+            <div class="small-3 columns text-center">
                <a href="#" target="_blank">
-                  <i class="fa fa-envelope columns fontXL"></i>
+                  <i class="fa fa-envelope columns fontL"></i>
                   <span class="columns fontS p2">E-mail</span>
                </a>
             </div>
@@ -33,15 +33,7 @@
 
 
 
-
-   <script src="bower_components/jquery/dist/jquery.js"></script>
-   <script src="bower_components/what-input/what-input.js"></script>
-   <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-
-   <script src="bower_components/imgLiquid/js/imgLiquid-min.js"></script>
-
-   <script src="js/frontendutils.js"></script>
-   <script src="js/app.js"></script>
+<?php wp_footer(); ?>
 
 </body>
 </html>

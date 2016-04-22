@@ -5,6 +5,9 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
+li {
+  list-style: none; }
+
 /******* FOUNDATION MODS *******/
 .xrow {
   max-width: 100% !important; }
@@ -774,19 +777,19 @@
   opacity: 1; }
 
 .white {
-  color: #fff; }
+  color: #fff !important; }
 
 .black {
-  color: #000; }
+  color: #000 !important; }
 
 .transparent {
   background-color: transparent !important; }
 
 .white_bg {
-  background-color: #fff; }
+  background-color: #fff !important; }
 
 .black_bg {
-  background-color: #000; }
+  background-color: #000 !important; }
 
 .bold {
   font-weight: bold; }
