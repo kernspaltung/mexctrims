@@ -1,4 +1,3 @@
-
 <div class="small-12 columns text-center rel mt2">
 
    <div class="small-10 medium-8 small-centered">
