@@ -75,4 +75,6 @@
       </header>
 
 
-      <main class="columns h_75vh h_sm_65vh text-center scrollH rel">
+      <main class="columns h_75vh h_sm_65vh scroll_sm_h">
+         <!-- .medium-9.large-10.columns.h_100.scrollH.rel.text-center -->
+         <div class="medium-9 large-10 columns h_100 scroll_md_h rel text-center">

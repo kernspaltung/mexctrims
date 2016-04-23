@@ -1,4 +1,7 @@
-
+         </div>
+         <aside id="anuncios_destacados" class="medium-3 large-2 columns h_100">
+            <?php include_once 'secciones/07-avisos-destacados/07-a-avisos-destacados.php'; ?>
+         </aside>
       </main>
 
 

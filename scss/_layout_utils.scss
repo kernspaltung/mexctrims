@@ -936,6 +936,20 @@ $screen-lg-min: 1025px;
 }
 
 
+@media screen and (max-width:768px) {
+	.scroll_sm_h {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.scroll_md_h {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+}
+
 
 
 
