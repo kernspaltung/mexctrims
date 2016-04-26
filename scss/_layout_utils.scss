@@ -55,7 +55,9 @@ $screen-lg-min: 1025px;
 .text-lg-center { text-align: center; }
 .text-lg-justify { text-align: justify; }
 }
-
+.uppercase {
+	text-transform: uppercase !important;
+}
 .ovH {
 	overflow: hidden;
 }
@@ -314,6 +316,11 @@ $screen-lg-min: 1025px;
 	height: 100%;
 }
 //min heights
+.minH_20 {
+	@extend .h;
+	min-height: 20%;
+}
+
 .minH_60 {
 	@extend .h;
 	min-height: 60%;
