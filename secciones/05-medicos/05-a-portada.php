@@ -1,21 +1,21 @@
 <div class="h_100">
   <div class="medium-12 large-12 columns h_20 p0">
     <!-- (.large-5.columns.h_100>(.large-4.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.large-8.columns.h_100>.large-12.columns.fontXL.black.uppercase.vcenter{Sección Medicos})+.large-7.columns.h_100>.large-12.columns.h_50.fontXS+.large-9.columns.h_50.fontXS+button.large-3.columns.button.hollow.cursor-pointer.h_50.fontS.uppercase{Contribución} -->
-    <div class="large-5 columns h_100">
+    <div class="large-5 columns h_100 p0">
       <div class="large-4 columns h_100 p0">
         <div class="h_100 imgLiquid imgLiquidFill"><img src="http://fakeimg.pl/600x300" alt=""></div>
       </div>
-      <div class="large-8 columns h_100">
+      <div class="large-8 columns h_100 p0">
         <div class="large-12 columns fontXL black uppercase vcenter">Sección Medicos</div>
       </div>
     </div>
-    <div class="large-7 columns h_100">
+    <div class="large-7 columns h_100 p0">
       <div class="large-12 columns h_50">
         <div class="large-12 fontS black vcenter text-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis enim in illo excepturi illum optio, quo perspiciatis dolor doloribus, ratione, non libero nobis possimus.
         </div>
       </div>
-      <div class="large-9 columns h_50">
+      <div class="large-9 columns h_50 p0">
         <div class="large-12 fontS black vcenter text-left">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </div>
@@ -23,27 +23,27 @@
       <button class="large-3 columns button hollow cursor-pointer h_50 fontS uppercase">Contribución</button>
     </div>
   </div>
-  <div class="large-12 columns h_60">
+  <div class="large-12 columns h_60 p0">
     <!-- (.large-5.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.large-7.columns.h_100{lorem10} -->
     <div class="large-5 columns h_100 p0">
       <div class="h_100 imgLiquid imgLiquidFill">
         <img src="http://fakeimg.pl/600x300" alt="">
       </div>
     </div>
-    <div class="large-7 columns h_100">
+    <div class="large-7 columns h_100 p0">
       <!-- .large-12.columns.h_50*2 -->
-      <div class="large-12 columns h_50">
+      <div class="large-12 columns h_40 pr0">
         <!-- .large-12.columns.h_40+.large-12.columns.h_60   -->
-        <div class="large-12 columns h_40">
+        <div class="large-12 columns h_40 p0">
           <!-- h1.large-12.fontL.black.text-center.vcenter -->
           <h1 class="large-12 fontXL black text-center vcenter">Titulo de la eeeeentrrrrrraaadaa (laaaaaargo)</h1>
         </div>
-        <div class="large-12 columns h_60">
+        <div class="large-12 columns h_60 p0">
           <!-- (.large-6.columns.h_100.text-center>.large-12.columns.fontM.subheader.vcenter{Subtitulo entrada})+.large-6.columns.h_100>(.large-8.columns.h_100>(.large-12.columns.h_60>.large-12.fontM.black.vcenter)+.large-12.columns.h_40>.large-12.fontXS.subheader.vcenter{YYYY/MM/DD})+.large-4.columns.h_100.p0>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/100x100"] -->
           <div class="large-6 columns h_100 text-center">
             <div class="large-12 columns fontL subheader vcenter">Subtitulo entrada</div>
           </div>
-          <div class="large-6 columns h_100">
+          <div class="large-6 columns h_100 p0">
             <div class="large-8 columns h_100">
               <div class="large-12 columns h_60">
                 <div class="large-12 fontM black vcenter">Dr. Mijau Sancar</div>
@@ -58,28 +58,38 @@
           </div>
         </div>
       </div>
-      <div class="large-12 columns h_50">
+      <div class="large-12 columns h_60 pr0">
         <!-- (.large-12.columns.h_60>.large-12.fontS.black.vcenter{lorem22})+.large-12.columns.h_40>(.large-8.columns.h_100)+.large-4.columns.h_100>.large-6.fontL.black.vcenter{Leer más}+.large-6.columns.fontXL.black.vcenter>i.fa.fa-angle-right -->
-        <div class="large-12 columns h_60">
+        <div class="large-12 columns h_40 p0">
           <div class="large-12 fontS black vcenter text-left">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quod optio maiores, totam velit voluptas? Quo aperiam quidem amet aliquid quae tempore.
           </div>
         </div>
-        <div class="large-12 columns h_40">
-          <div class="large-8 columns h_100">
+        <div class="large-12 columns h_60 p0">
+          <div class="large-10 columns h_100 p0">
             <!-- (.large-12.columns.h_30>.large-12.bold.fontM.black.vcenter{Comentarios (12)})+.large-12.columns.h_70>.large-12.bold.fontM.black.vcenter{lorem13} -->
             <div class="large-12 columns h_30">
               <div class="large-12 bold fontM black vcenter">Comentarios (12)</div>
             </div>
-            <div class="large-12 columns h_70">
-              <div class="large-12 subheader fontS text-left black vcenter">
+            <div class="large-12 columns h_70 pl0">
+              <div class="large-2 columns p0 h_100">
+                <div class="h_100 imgLiquid imgLiquidFill">
+                  <img src="http://fakeimg.pl/60x60" alt="">
+                </div>
+              </div>
+              <div class="large-3 columns p0 h_100">
+                <div class="fontXS black text-left pl1 vcenter">
+                  Dr. Mijau Torres
+                </div>
+              </div>
+              <div class="large-7 columns subheader fontS text-left black vcenter">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, dolorem, autem. At, fuga.
               </div>
             </div>
           </div>
-          <button class="button hollow pointer large-4 columns h_100">
+          <button class="large-2 columns button hollow pointer h_100 p0">
             <div class="large-9 columns fontS black vcenter">Leer más</div>
-            <div class="large-3 columns fontXL black vcenter"><i class="fa fa-angle-right"></i></div>
+            <div class="large-2 columns fontXL black p0 vcenter"><i class="fa fa-angle-right"></i></div>
           </button>
         </div>
       </div>

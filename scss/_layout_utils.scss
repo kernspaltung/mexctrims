@@ -564,6 +564,9 @@ $screen-lg-min: 1025px;
 }
 
 //
+.pr0 {
+	padding-right: 0 !important;
+}
 .pr1 {
 	padding-right: $spacing !important;
 }
@@ -579,6 +582,9 @@ $screen-lg-min: 1025px;
 
 
 
+.pl0 {
+	padding-left: 0 !important;
+}
 .pl1 {
 	padding-left: $spacing !important;
 }
