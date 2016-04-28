@@ -58,5 +58,5 @@
       </div>
     </div>
   </div>
-  <?php include_once 'secciones/05-medicos/05-c-comentarios.php'; ?>
+  <?php #require_once 'secciones/05-medicos/05-c-comentarios.php'; ?>
 </div>
