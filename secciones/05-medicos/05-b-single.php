@@ -1,4 +1,4 @@
-<div class="h_100">
+<div class="minH_100vh">
   <!-- .large-5.columns.h_100+.large-7.columns.h_100 -->
   <div class="medium-12 large-6 columns h_100">
     <div class="large-12 columns h_30vh">
@@ -58,5 +58,5 @@
       </div>
     </div>
   </div>
-  <?php #require_once 'secciones/05-medicos/05-c-comentarios.php'; ?>
 </div>
+<?php require_once '05-c-comentarios.php'; ?>

@@ -334,6 +334,10 @@ $screen-lg-min: 1025px;
 	@extend .h;
 	min-height: 70vh;
 }
+.minH_100vh {
+	@extend .h;
+	min-height: 100vh;
+}
 //max heights
 .maxH_80 {
 	@extend .h;
