@@ -1,4 +1,4 @@
-<div class="minH_100vh">
+<div class="minH_100">
   <!-- .large-5.columns.h_100+.large-7.columns.h_100 -->
   <div class="medium-12 large-6 columns h_100">
     <div class="large-12 columns h_30vh">
