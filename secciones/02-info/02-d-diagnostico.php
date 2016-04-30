@@ -64,9 +64,12 @@
           Lorem ipsum dolor sit amet, opio modi obcaecati libero dolore repellendus blanditiis ut inventore, quidem?
         </div>
 
-        <div class="small-4 columns p3 rel bottom right z1 mb1 mr1">
-          <div class="small-12 fontM text-center bold ">+ Información</div>
+        <div class="large-6 columns p1">
+          <a href="#" class="large-12 fontL bold black p3 rel bottom right z1 mb1 mr1">
+            <div class="large-12 h_100 fontM text-center bold ">+ Información</div>
+          </a>
         </div>
+
       </div>
 
 
