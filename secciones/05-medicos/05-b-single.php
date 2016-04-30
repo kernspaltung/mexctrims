@@ -3,7 +3,7 @@
   <div class="medium-12 large-6 columns h_100">
     <div class="large-12 columns h_30vh">
       <!-- titulo -->
-      <div class="large-12 fontXXL black p0 vcenter">Titulo entrada Completo largo posiblemente</div>
+      <div class="large-12 fontXXL black p0 vcenter">Titulo entrada  </div>
     </div>
     <div class="large-12 columns h_70vh p0">
       <div class="h_100 imgLiquid imgLiquidFill">
@@ -15,7 +15,7 @@
     <div class="large-12 columns h_30vh">
       <div class="large-8 columns h_100">
         <div class="large-12 columns h_30 p0">
-          <div class="large-12 fontXL text-left black p0 vcenter">Dr. Kernspaltung</div>
+          <div class="large-12 fontXL text-left black p0 vcenter">Dr. Nombre del Doctor</div>
         </div>
         <div class="large-12 columns h_50 p0">
           <div class="large-12 fontL text-left black p0 vcenter">

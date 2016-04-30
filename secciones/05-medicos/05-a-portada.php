@@ -51,7 +51,7 @@
           <!-- .large-12.columns.h_40+.large-12.columns.h_60   -->
           <div class="large-12 columns h_40 p0">
             <!-- h1.large-12.fontL.black.text-center.vcenter -->
-            <h1 class="large-12 fontXL black text-center vcenter">Titulo de la eeeeentrrrrrraaadaa (laaaaaargo)</h1>
+            <h1 class="large-12 fontXL black text-center vcenter">Titulo de la Entrada</h1>
           </div>
           <div class="large-12 columns h_60 p0">
             <!-- (.large-6.columns.h_100.text-center>.large-12.columns.fontM.subheader.vcenter{Subtitulo entrada})+.large-6.columns.h_100>(.large-8.columns.h_100>(.large-12.columns.h_60>.large-12.fontM.black.vcenter)+.large-12.columns.h_40>.large-12.fontXS.subheader.vcenter{YYYY/MM/DD})+.large-4.columns.h_100.p0>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/100x100"] -->

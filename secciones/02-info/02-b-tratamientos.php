@@ -1,9 +1,8 @@
 <div class="minH_100">
 
 
-  <div class="large-12 columns h_100 p0">
+  <div class="large-12 columns minH_100 p0">
 
-    <!-- titulo -->
 
     <div id="informacion-tratamientos-titulo" class="large-12 columns h_15vh">
       <!-- titulo -->
@@ -49,8 +48,10 @@
               ?>
             </ul>
           </nav>
-
         </div>
+
+
+
 
         <div id="informacion-tratamientos-mosaico" class="large-9 columns h_100 p0">
 
@@ -83,4 +84,16 @@
 
 
   </div>
-  <!--  -->
+  <!--
+.large-5.columns.h_100+.large-7.columns.h_100
+
+
+
+<div class="h_100 imgLiquid imgLiquidFill">
+  <img src="http://fakeimg.pl/400x600" alt="">
+</div>
+
+
+(.large-12.columns.h_20>.large-12.fontXXL.subtitle.bold.black.text-left{subtitulo})+.large-12.columns.minH_60>.large-12.fontL.black.text-left{lorem32}
+
+ -->
