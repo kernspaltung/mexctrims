@@ -49,6 +49,7 @@
 
       </div>
       <div id="informacion-diagnostico-contenido-texto-izquierdo" class="medium-12 large-6 columns h_60 p4">
+        <h1 class="large-12 fontL text-cemter subheader bold p2">Titulo Diagnostico</h1>
         <div class="large-12 fontM text-left black p0 pt1">
           Lorem ipsum dolor sit amet, opio modi obcaecati libero dolore repellendus blanditiis ut inventore, quidem?
           Lorem ipsum dolor sit amet, opio modi obcaecati libero dolore repellendus blanditiis ut inventore, quidem?
