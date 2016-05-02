@@ -32,15 +32,15 @@
 
 
       <div class="large-3 columns h_100 p0">
-        <nav id="informacion-tratamientos-menu-mosaico" class="w_100">
+        <nav id="informacion-tratamientos-menu-mosaico" class="w_100 h_100 pt1">
           <ul class="large-12 columns minH_50vh">
             <?php
 
             $html;
 
-            for ($i=0; $i < 5 ; $i++) {
+            for ($i=1; $i < 5 ; $i++) {
               $html .= '<a href="#" class="small-12 fontL bold black p3">
-                <li class="h_100 w_100">tratamiento ' . $i . '</li></a>';
+                <li class="small-12">Categoría de tratamientos ' . $i . '</li></a>';
               };
 
               echo $html;
@@ -53,16 +53,21 @@
 
 
 
-        <div id="informacion-tratamientos-mosaico" class="large-9 columns h_100 p0">
+        <div id="informacion-tratamientos-mosaico" class="large-9 columns h_100 p5 pt1">
 
           <?php
 
           $mosaico;
 
-          for ($i=0; $i < 30 ; $i++) {
-            $mosaico .= '<div class="large-4 columns h_20vh p3">
-              <div class="h_100 imgLiquid imgLiquidFill">
-                <img src="http://fakeimg.pl/100x100" alt="">
+          for ($i=1; $i < 30 ; $i++) {
+            $mosaico .= '<div class="large-4 columns h_30vh p4">
+              <div class="large-12 fontM black text-left vcenter">
+
+                <a href="#">
+                  <h5 class="mb1">   Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facere, natus. Laborum?</p>
+                </a>
+
               </div>
             </div>';
           };
@@ -85,15 +90,15 @@
 
   </div>
   <!--
-.large-5.columns.h_100+.large-7.columns.h_100
+  .large-5.columns.h_100+.large-7.columns.h_100
 
 
 
-<div class="h_100 imgLiquid imgLiquidFill">
+  <div class="h_100 imgLiquid imgLiquidFill">
   <img src="http://fakeimg.pl/400x600" alt="">
 </div>
 
 
 (.large-12.columns.h_20>.large-12.fontXXL.subtitle.bold.black.text-left{subtitulo})+.large-12.columns.minH_60>.large-12.fontL.black.text-left{lorem32}
 
- -->
+-->

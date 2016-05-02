@@ -41,7 +41,7 @@
   <div id="informacion-que-es-contenido" class="large-7 columns minH_100 p0">
 
 
-    <div id="informacion-que-es-contenidofoto" class="large-12 columns h_30vh p0">
+    <div id="informacion-que-es-contenido-foto" class="large-12 columns h_30vh p0">
 
       <div class="h_100 imgLiquid imgLiquidFill">
         <img src="http://fakeimg.pl/600x400" alt="">
