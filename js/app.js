@@ -1,10 +1,11 @@
-$(document).foundation();
+//$(document).foundation();
 
 u = new FrontEndUtils();
 
 
 $(document).ready(function(){
 
+$(document).foundation();
 
    setup();
 
