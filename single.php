@@ -104,16 +104,29 @@ get_header();
 
 
 
-<div id="single-contenido-entrada" class="small-12 columns p4">
-  <div class="small-12 medium-6 columns p4 fontM">
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem omnis possimus beatae tempora dolorem ipsa sapiente, vitae impedit sequi nisi, porro doloribus expedita dolore accusamus atque dignissimos quod eum.</div>
-    <div>Dolorem vel fugiat commodi dicta incidunt veritatis distinctio accusamus earum quisquam reiciendis facilis blanditiis quidem magnam similique totam, nostrum maiores soluta voluptas, ratione! Fugit dolor velit, rerum, et officiis ab!</div>
-  </div>
-  <div class="small-12 medium-6 columns p4 fontM">
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nisi sequi delectus quasi necessitatibus vitae asperiores laboriosam voluptatem illo ipsam non, ea ex facilis. Odio sapiente commodi repellendus, ratione architecto!</div>
-    <div>Obcaecati, repudiandae atque eveniet doloremque provident non fugit, recusandae hic perferendis fuga, delectus odit eos id corporis sed minima suscipit cumque consequatur consectetur labore! Accusamus nisi aut voluptatum quia consequuntur?</div>
-  </div>
-</div>
+    <div id="single-contenido-entrada" class="small-12 columns p4 text-left">
+      <div class="small-12 columns p4 fontM">
+
+        <div>Dolorem vel fugiat commodi dicta incidunt veritatis distinctio accusamus earum quisquam reiciendis facilis blanditiis quidem magnam similique totam, nostrum maiores soluta voluptas, ratione! Fugit dolor velit, rerum, et officiis ab!</div>
+        <div>Dolorem vel fugiat commodi dicta incidunt veritatis distinctio accusamus earum quisquam reiciendis facilis blanditiis quidem magnam similique totam, nostrum maiores soluta voluptas, ratione! Fugit dolor velit, rerum, et officiis ab!</div>
+
+        <div id="single-contenido-imagen" class="large-12 columns h_30vh p4">
+          <div class="h_100 imgLiquid imgLiquidFill">
+            <img src="http://fakeimg.pl/500x420" alt="">
+          </div>
+        </div>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem omnis possimus beatae tempora dolorem ipsa sapiente, vitae impedit sequi nisi, porro doloribus expedita dolore accusamus atque dignissimos quod eum.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem omnis possimus beatae tempora dolorem ipsa sapiente, vitae impedit sequi nisi, porro doloribus expedita dolore accusamus atque dignissimos quod eum.</div>
+
+        <div id="single-contenido-imagen" class="large-12 columns h_30vh p4">
+          <div class="h_100 imgLiquid imgLiquidFill">
+            <img src="http://fakeimg.pl/500x420" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
 
   </article>
   <!-- contenido -->
