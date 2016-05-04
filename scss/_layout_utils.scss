@@ -195,6 +195,10 @@ $screen-lg-min: 1025px;
 	@extend .h;
 	height: 30vh;
 }
+.h_33vh {
+	@extend .h;
+	height: 33vh;
+}
 .h_35vh {
 	@extend .h;
 	height: 35vh;

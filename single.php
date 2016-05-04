@@ -5,7 +5,7 @@ get_header();
 ?>
 
 
-<div class="minH_100">
+<div class="columns h_100 p0">
 
 
   <!-- barra de regreso -->
@@ -75,7 +75,6 @@ get_header();
 
         <a href="#" class="accordion-title ha">
           Categorias:
-          <!-- <ul class="menu small-12 columns p0"> -->
           <?php
           for ($i=0; $i < 6; $i++) {
             echo  '<a href="">
@@ -83,7 +82,6 @@ get_header();
             </a>';
           }
           ?>
-          <!-- </ul> -->
         </a>
 
         <!-- contenido acordeon -->
@@ -104,12 +102,14 @@ get_header();
     </ul>
     <!-- Categorias movil -->
 
+
+
 <div id="single-contenido-entrada" class="small-12 columns p4">
-  <div class="small-6 columns p4 fontM">
+  <div class="small-12 medium-6 columns p4 fontM">
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem omnis possimus beatae tempora dolorem ipsa sapiente, vitae impedit sequi nisi, porro doloribus expedita dolore accusamus atque dignissimos quod eum.</div>
     <div>Dolorem vel fugiat commodi dicta incidunt veritatis distinctio accusamus earum quisquam reiciendis facilis blanditiis quidem magnam similique totam, nostrum maiores soluta voluptas, ratione! Fugit dolor velit, rerum, et officiis ab!</div>
   </div>
-  <div class="small-6 columns p4 fontM">
+  <div class="small-12 medium-6 columns p4 fontM">
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nisi sequi delectus quasi necessitatibus vitae asperiores laboriosam voluptatem illo ipsam non, ea ex facilis. Odio sapiente commodi repellendus, ratione architecto!</div>
     <div>Obcaecati, repudiandae atque eveniet doloremque provident non fugit, recusandae hic perferendis fuga, delectus odit eos id corporis sed minima suscipit cumque consequatur consectetur labore! Accusamus nisi aut voluptatum quia consequuntur?</div>
   </div>
