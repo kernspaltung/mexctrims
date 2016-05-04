@@ -75,7 +75,32 @@
     </header>
 
 
-    <main class="columns h_75vh h_sm_65vh scroll_sm_h">
+    <main class="columns h_75vh h_sm_65vh scrollH">
 
+      <?php
+
+      if( is_front_page() ) :
+
+         include_once 'secciones/01-inicio/01-a-portada.php';
+
+      endif;
+      if( is_single() ) :
+         ?>
+
+            <!-- .imagen_destacada.row.expanded.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/1280x800] -->
+            <div class="imagen_destacada row expanded h_70 imgLiquid imgLiquidFill">
+               <img src="http://fakeimg.pl/1280x800" alt="">
+            </div>
+            <div class="small-12 expanded h_30 text-center">
+               <div class="vcenter ha">
+                  <h1>Título de la Entrada</h1>
+               </div>
+            </div>
+
+         <?php
+
+      endif;
+
+      ?>
       <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->
       <div class="medium-9 large-10 columns minH_100 scroll_md_h rel text-center">
