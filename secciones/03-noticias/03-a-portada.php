@@ -175,6 +175,7 @@ get_header();
     <!-- sidebar categoria etiquetas -->
     <?php
     include_once 'secciones/08-elementos/08-a-categorias-etiquetas.php';
+    #get_template_part( 'secciones/08-elementos/08-a-categorias-etiquetas.php');
     ?>
     <!-- sidebar categoria etiquetas -->
 
