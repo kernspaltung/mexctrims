@@ -126,7 +126,7 @@ $screen-lg-min: 1025px;
 	bottom:0;
 }
 
-.tp {
+.top {
 	top: 0;
 }
 .right {
@@ -517,6 +517,12 @@ $screen-lg-min: 1025px;
 	margin-bottom: - $spacing * 5 !important;
 }
 
+
+
+.mb_10vh {
+	margin-bottom: 10vh !important;
+}
+
 .p0 {
   padding: 0 !important;
 }
@@ -567,6 +573,12 @@ $screen-lg-min: 1025px;
 }
 
 
+.pt_15vh {
+	padding-top: 15vh;
+}
+
+
+
 
 
 
@@ -600,6 +612,13 @@ $screen-lg-min: 1025px;
 .pb8 {
 	padding-bottom: $spacing * 8 !important;
 }
+
+
+
+.pb_10vh {
+	padding-bottom: 10vh;
+}
+
 
 //
 .pr0 {
@@ -831,7 +850,7 @@ $screen-lg-min: 1025px;
 	}
 	.mb_sm_6 {
 		margin-bottom: $spacing * 3 !important;
-	}
+	}F
 
 	.mt_sm_0 {
 		margin-top: 0 !important;
@@ -910,6 +929,9 @@ $screen-lg-min: 1025px;
 	}
 
 
+	.pt_sm_25vh {
+		padding-top: 25vh;
+	}
 
 }
 

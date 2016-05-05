@@ -8,43 +8,18 @@ get_header();
 <div class="columns h_100 p0">
 
 
-  <!-- barra de regreso -->
-  <div id="single-boton-regresa" class="columns p2">
-    <a href="#" class="minH_100">
-      <div class="small-2 columns p1 pl0 text-center">
-        <i class="fa fa-angle-left"></i>
-      </div>
-      <div class="small-10 columns p1 pl0 text-left fontM">
-        Regresar a Noticias
-      </div>
-    </a>
-  </div><!-- barra de regreso -->
-
-
-  <!-- Titulo single -->
-  <div id="single-titulo" class="columns p0">
-    <a href="#" class="minH_100">
-      <div class="small-12 columns p3 text-center fontL">
-        Título completo de la entrada
-      </div>
-      <div id="single-subtitulo-small-medium" class="columns p3 text-left fontXS subheader hide-for-large">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      </div>
-    </a>
-  </div><!-- Titulo single -->
-
-
 
   <!-- Categorias large -->
-  <aside id="noticias-aside-large" class="large-4 columns show-for-large ha">
+  <aside id="noticias-aside-large" class="h_100 large-4 columns show-for-large ha" data-sticky-container>
+   <div class="sticky h_75vh" data-sticky data-anchor="plantillas" data-margin-top="5">
 
     <h2 class="columns fontL p3 text-center">Categorias</h2>
 
-    <ul id="noticias-tags-lista" class="menu small-12 columns p0">
+    <ul id="noticias-tags-lista" class="menu small-12 columns p0 h_20vh scrollH">
       <?php
       for ($i=0; $i < 12; $i++) {
         echo  '<a href="">
-          <li class="small-4 columns fontXS p3 text-center">Categoría' . $i . '</li>
+          <li class="small-4 columns fontXXS p3 text-center">Categoría' . $i . '</li>
         </a>';
       }
       ?>
@@ -54,16 +29,17 @@ get_header();
   <!-- Etiquetas large -->
     <h2 class="columns fontL p3 text-center">Etiquetas</h2>
 
-    <ul id="noticias-tags-lista" class="menu small-12 columns p0">
+    <ul id="noticias-tags-lista" class="menu small-12 columns p0 h_20vh scrollH">
       <?php
       for ($i=0; $i < 24; $i++) {
         echo  '<a href="">
-          <li class="small-4 columns fontXS p3 text-center">Etiqueta' . $i . '</li>
+          <li class="small-4 columns fontXXS p3 text-center">Etiqueta' . $i . '</li>
         </a>';
       }
       ?>
     </ul>
 
+   </div>
   </aside>
   <!-- Etiquetas large -->
   <!-- Categorias large -->
@@ -72,14 +48,6 @@ get_header();
 
   <!-- contenido -->
   <article id="single-contenedor-contenido" class="small-12 large-8 columns scrollH">
-
-
-    <!-- Imagen destacada -->
-    <div id="single-imagen" class="large-12 columns h_30vh p0">
-      <div class="h_100 imgLiquid imgLiquidFill">
-        <img src="http://fakeimg.pl/600x420" alt="">
-      </div>
-    </div><!-- Imagen destacada -->
 
 
 
@@ -150,27 +118,54 @@ get_header();
 
 
 
-    <div id="single-contenido-entrada" class="small-12 columns p4 text-left">
-      <div class="small-12 columns p4 fontM">
+    <div id="single-contenido-entrada" class="small-12 columns p6 text-left">
 
-        <div>Dolorem vel fugiat commodi dicta incidunt veritatis distinctio accusamus earum quisquam reiciendis facilis blanditiis quidem magnam similique totam, nostrum maiores soluta voluptas, ratione! Fugit dolor velit, rerum, et officiis ab!</div>
-        <div>Dolorem vel fugiat commodi dicta incidunt veritatis distinctio accusamus earum quisquam reiciendis facilis blanditiis quidem magnam similique totam, nostrum maiores soluta voluptas, ratione! Fugit dolor velit, rerum, et officiis ab!</div>
 
-        <div id="single-contenido-imagen" class="large-12 columns h_30vh p4">
-          <div class="h_100 imgLiquid imgLiquidFill">
-            <img src="http://fakeimg.pl/500x420" alt="">
-          </div>
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae quaerat nulla nobis eum inventore est ex. Delectus ab perspiciatis deserunt dolore?</p>
+        <p>Rerum nobis sed cupiditate tenetur voluptates, delectus cum cumque molestias ducimus maxime omnis, neque quaerat id quod aperiam dolorum commodi voluptatum velit.</p>
 
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem omnis possimus beatae tempora dolorem ipsa sapiente, vitae impedit sequi nisi, porro doloribus expedita dolore accusamus atque dignissimos quod eum.</div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem omnis possimus beatae tempora dolorem ipsa sapiente, vitae impedit sequi nisi, porro doloribus expedita dolore accusamus atque dignissimos quod eum.</div>
 
-        <div id="single-contenido-imagen" class="large-12 columns h_30vh p4">
-          <div class="h_100 imgLiquid imgLiquidFill">
-            <img src="http://fakeimg.pl/500x420" alt="">
-          </div>
-        </div>
-      </div>
+        <img src="http://fakeimg.pl/500x420" alt="">
+
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae quaerat nulla nobis eum inventore est ex. Delectus ab perspiciatis deserunt dolore?</p>
+       <p>Rerum nobis sed cupiditate tenetur voluptates, delectus cum cumque molestias ducimus maxime omnis, neque quaerat id quod aperiam dolorum commodi voluptatum velit.</p>
+
+
+       <img src="http://fakeimg.pl/500x420" alt="">
+
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae quaerat nulla nobis eum inventore est ex. Delectus ab perspiciatis deserunt dolore?</p>
+        <p>Rerum nobis sed cupiditate tenetur voluptates, delectus cum cumque molestias ducimus maxime omnis, neque quaerat id quod aperiam dolorum commodi voluptatum velit.</p>
+
+
+        <img src="http://fakeimg.pl/500x420" alt="">
+
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae quaerat nulla nobis eum inventore est ex. Delectus ab perspiciatis deserunt dolore?</p>
+       <p>Rerum nobis sed cupiditate tenetur voluptates, delectus cum cumque molestias ducimus maxime omnis, neque quaerat id quod aperiam dolorum commodi voluptatum velit.</p>
+
+
+       <img src="http://fakeimg.pl/500x420" alt="">
+
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae quaerat nulla nobis eum inventore est ex. Delectus ab perspiciatis deserunt dolore?</p>
+        <p>Rerum nobis sed cupiditate tenetur voluptates, delectus cum cumque molestias ducimus maxime omnis, neque quaerat id quod aperiam dolorum commodi voluptatum velit.</p>
+
+
+        <img src="http://fakeimg.pl/500x420" alt="">
+
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae quaerat nulla nobis eum inventore est ex. Delectus ab perspiciatis deserunt dolore?</p>
+       <p>Rerum nobis sed cupiditate tenetur voluptates, delectus cum cumque molestias ducimus maxime omnis, neque quaerat id quod aperiam dolorum commodi voluptatum velit.</p>
+
+
+       <img src="http://fakeimg.pl/500x420" alt="">
+
+
+
 
     </div>
 

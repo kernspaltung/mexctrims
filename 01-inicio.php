@@ -5,7 +5,6 @@ get_header();
 ?>
 
 
-<?php include_once 'secciones/01-inicio/01-a-portada.php'; ?>
 
 <?php include_once 'secciones/01-inicio/01-b-avisos.php'; ?>
 

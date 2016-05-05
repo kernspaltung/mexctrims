@@ -2,7 +2,7 @@
 for ($i=0; $i < 3; $i++) {
 ?>
 
-   <div class="columns align-middle h_33vh p4">
+   <div class="small-12 h_33 p4">
       <a href="#">
          <div class="imagen imgLiquid imgLiquidFill h_60">
             <img src="http://fakeimg.pl/300x200" alt="" />
