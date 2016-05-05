@@ -18,8 +18,8 @@ get_header();
 
       <a href="#" class="h_100">
         <!-- Titulo noticia -->
-        <div id="noticias-titulo-destacado" class="columns p3_20 text-center fontL">
-            Título de la entrada
+        <div id="noticias-titulo-destacado" class="columns p3 text-center fontL">
+          Título de la entrada
         </div><!-- Titulo noticia -->
 
 
@@ -40,14 +40,16 @@ get_header();
 
         <!-- extracto destacada -->
         <div id="noticias-extracto" class="small-6 medium-9 columns ha p4 fontS text-left ">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad, minima aperiam perspiciatis.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad, minima aperiam perspiciatis Libero ad, minima aperiam perspiciatis.
         </div><!-- extracto destacada -->
 
 
         <!-- ver mas destacado -->
-        <div id="noticias-vermas" class="small-3 columns ha p2 fontS text-right">
-          Ver mas
-          <i class="fa fa-angle-right"></i>
+        <div id="noticias-vermas" class="small-3 columns h_50 h_sm_20 text-middle p2 fontS text-right">
+          <div class="small-12 vcenter">
+            Ver mas
+            <i class="fa fa-angle-right"></i>
+          </div>
         </div>
         <!-- ver mas destacado -->
 
@@ -62,7 +64,7 @@ get_header();
     <div class="small-12 medium-5 columns ha p0">
 
       <!-- 1 -->
-      <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh pr0">
+      <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh h_sm_33 pr0">
         <a href="#" class="h_100">
 
           <!-- Titulo noticia -->
@@ -72,7 +74,7 @@ get_header();
 
 
           <!-- fecha destacada -->
-          <div id="noticias-fecha" class="small-4 medium-12 columns p2h text-right fontS">
+          <div id="noticias-fecha" class="medium-12 columns p2 text-right fontS">
             Publicado el 1 enero 2000
           </div><!-- fecha destacada -->
 
@@ -86,15 +88,15 @@ get_header();
 
 
           <!-- extracto destacada -->
-          <div id="noticias-extracto" class="small-7 columns ha p2 fontXS text-left">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad.
+          <div id="noticias-extracto" class="small-8 medium-7 columns ha p2 fontXS text-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad. Libero ad, minima aperiam perspiciatis
           </div><!-- extracto destacada -->
 
 
 
 
           <!-- ver mas destacado -->
-          <div id="noticias-vermas" class="small-3 medium-7 columns ha p2 fontS text-right">
+          <div id="noticias-vermas" class="small-4 medium-7 columns ha p2 fontS text-right">
             Ver mas
             <i class="fa fa-angle-right"></i>
           </div>
@@ -104,7 +106,8 @@ get_header();
       </article>
 
 
-      <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh pr0">
+      <!-- 2 -->
+      <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh h_sm_33 pr0">
         <a href="#" class="h_100">
 
           <!-- Titulo noticia -->
@@ -114,7 +117,7 @@ get_header();
 
 
           <!-- fecha destacada -->
-          <div id="noticias-fecha" class="small-4 medium-12 columns p2h text-right fontS">
+          <div id="noticias-fecha" class="medium-12 columns p2 text-right fontS">
             Publicado el 1 enero 2000
           </div><!-- fecha destacada -->
 
@@ -128,15 +131,15 @@ get_header();
 
 
           <!-- extracto destacada -->
-          <div id="noticias-extracto" class="small-7 columns ha p2 fontXS text-left">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad.
+          <div id="noticias-extracto" class="small-8 medium-7 columns ha p4 fontXS text-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad.  Libero ad, minima aperiam perspiciatis
           </div><!-- extracto destacada -->
 
 
 
 
           <!-- ver mas destacado -->
-          <div id="noticias-vermas" class="small-3 medium-7 columns ha p2 fontS text-right">
+          <div id="noticias-vermas" class="small-4 medium-7 columns ha p2 fontS text-right h_100">
             Ver mas
             <i class="fa fa-angle-right"></i>
           </div>
@@ -261,33 +264,55 @@ get_header();
     <!-- Categorias large -->
 
     <!-- lista noticias -->
-    <div class="small-12 ha p2">
+    <div class="small-12 medium-8 columns ha p2">
 
 
       <?php
       for ($i=0; $i < 24 ; $i++) {
-        echo '<article id="noticias-contenedor-contenido" class="small-6 columns p2">
+        echo '<article id="noticias-contenedor-contenido" class="small-6 columns p2 h_50">
 
-          <!-- Titulo noticias -->
-          <div id="noticias-titulo" class="columns p0">
-            <a href="#" class="minH_100">
-              <div class="small-12 columns p3 text-center fontL">
-                Título completo de la entrada
+
+
+          <a href="#" class="h_100">
+
+            <!-- Titulo noticia -->
+            <div id="noticias-titulo-destacado" class="columns p2 ha text-center fontL">
+              Título de la entrada
+            </div><!-- Titulo noticia -->
+
+
+            <!-- fecha destacada -->
+            <div id="noticias-fecha" class="medium-12 columns p2 text-right fontS">
+              Publicado el 1 enero 2000
+            </div><!-- fecha destacada -->
+
+
+            <!-- Imagen destacada -->
+            <div id="noticias-imagen" class="medium-5 columns h_20vh p0 ">
+              <div class="h_100 imgLiquid imgLiquidNoFill">
+                <img src="http://fakeimg.pl/600x420" alt="">
               </div>
-              <div id="noticias-subtitulo-small-medium" class="columns p3 text-left fontXS subheader hide-for-large">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </div>
-            </a>
-          </div><!-- Titulo noticias -->
+            </div><!-- Imagen destacada -->
+
+
+            <!-- extracto destacada -->
+            <div id="noticias-extracto" class="small-8 medium-7 columns ha p2 fontXS text-left">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad.  Libero ad, minima aperiam perspiciatis
+            </div><!-- extracto destacada -->
 
 
 
-          <!-- Imagen destacada -->
-          <div id="noticias-imagen" class="large-12 columns h_30vh p0">
-            <div class="h_100 imgLiquid imgLiquidFill">
-              <img src="http://fakeimg.pl/600x420" alt="">
+
+            <!-- ver mas destacado -->
+            <div id="noticias-vermas" class="small-4 medium-7 columns ha p2 fontS text-right">
+              Ver mas
+              <i class="fa fa-angle-right"></i>
             </div>
-          </div><!-- Imagen destacada -->
+            <!-- ver mas destacado -->
+
+          </a>
+        </article>
+
 
 
         </article>';
