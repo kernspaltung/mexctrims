@@ -10,11 +10,11 @@ while(have_posts()) {
 
 ?>
 
-<article class="small-12 h_100">
+<article class="small-12 h_75vh scrollH">
    <header class="medium-4 columns p5 text-left h_100">
       <h1><?php echo $title; ?></h1>
       <nav>
-         <ul class="h_50vh scrollH">            
+         <ul class="h_50vh scrollH">
          </ul>
       </nav>
    </header>

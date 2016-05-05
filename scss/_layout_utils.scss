@@ -326,10 +326,6 @@ $screen-lg-min: 1025px;
 	height: 100%;
 }
 //min heights
-.minH_10 {
-	@extend .h;
-	min-height: 10%;
-}
 .minH_20 {
 	@extend .h;
 	min-height: 20%;

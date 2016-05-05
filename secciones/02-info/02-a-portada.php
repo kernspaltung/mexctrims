@@ -1,4 +1,4 @@
-<section id="info-intro" class="medium-6 columns h_100">
+<section id="info-intro" class="medium-6 columns h_75vh">
    <!-- .imagen.small-6.columns.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/300x600] -->
    <div class="imagen small-6 columns h_100 imgLiquid imgLiquidFill">
       <img src="http://fakeimg.pl/300x600" alt="">

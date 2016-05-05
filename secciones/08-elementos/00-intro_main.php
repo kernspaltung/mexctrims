@@ -2,7 +2,7 @@
 
 if( is_front_page() ) :
 
-   include_once '01-inicio/01-a-portada.php';
+   include_once get_stylesheet_directory_uri() . '/secciones/01-inicio/01-a-portada.php';
 
 endif;
 
@@ -49,6 +49,19 @@ if( is_single() ) :
 
    </section>
    <?php
+
+endif;
+
+
+
+
+
+if( is_page( 'Noticias' ) ) :
+
+?>
+
+
+<?php
 
 endif;
 
