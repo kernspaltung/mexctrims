@@ -13,30 +13,45 @@ get_header();
 
 
     <!-- contenido destacado-->
-    <article id="noticias-contenido-destacado" class="small-12 large-7 columns">
+    <article id="noticias-contenido-destacado" class="small-12 medium-7 columns p0 h_50vh">
 
 
-      <!-- Titulo noticias -->
-      <div id="noticias-titulo" class="columns p0">
-        <a href="#" class="minH_100">
-          <div class="small-12 columns p3 text-center fontL">
-            Título completo de la entrada
+      <a href="#" class="h_100">
+        <!-- Titulo noticia -->
+        <div id="noticias-titulo-destacado" class="columns p3_20 text-center fontL">
+            Título de la entrada
+        </div><!-- Titulo noticia -->
+
+
+
+        <!-- fecha destacada -->
+        <div id="noticias-fecha" class="small-12 columns h_10 p2 text-right fontS">
+          Publicado el 1 enero 2000
+        </div><!-- fecha destacada -->
+
+
+        <!-- Imagen destacada -->
+        <div id="noticias-imagen" class="small-6 medium-12 columns h_70 p0">
+          <div class="h_100 imgLiquid imgLiquidFill">
+            <img src="http://fakeimg.pl/600x420" alt="">
           </div>
-          <div id="noticias-subtitulo-small-medium" class="columns p3 text-left fontXS subheader hide-for-large">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </div>
-        </a>
-      </div><!-- Titulo noticias -->
+        </div><!-- Imagen destacada -->
 
 
+        <!-- extracto destacada -->
+        <div id="noticias-extracto" class="small-6 medium-9 columns ha p4 fontS text-left ">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad, minima aperiam perspiciatis.
+        </div><!-- extracto destacada -->
 
-      <!-- Imagen destacada -->
-      <div id="noticias-imagen" class="large-12 columns h_30vh p0">
-        <div class="h_100 imgLiquid imgLiquidFill">
-          <img src="http://fakeimg.pl/600x420" alt="">
+
+        <!-- ver mas destacado -->
+        <div id="noticias-vermas" class="small-3 columns ha p2 fontS text-right">
+          Ver mas
+          <i class="fa fa-angle-right"></i>
         </div>
-      </div><!-- Imagen destacada -->
+        <!-- ver mas destacado -->
 
+      </a>
 
     </article>
     <!-- contenido destacado-->
@@ -44,72 +59,96 @@ get_header();
 
 
     <!-- entrada penultima y antepenultima -->
-    <div class="small-5 columns ha p0">
+    <div class="small-12 medium-5 columns ha p0">
 
-      <article id="noticias-contenido-subdestacado" class="small-12 columns">
+      <!-- 1 -->
+      <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh pr0">
+        <a href="#" class="h_100">
 
-        <!-- Titulo noticias -->
-        <div id="noticias-titulo" class="columns p0">
-          <a href="#" class="minH_100">
-            <div class="small-12 columns p3 text-center fontL">
-              Título completo de la entrada
+          <!-- Titulo noticia -->
+          <div id="noticias-titulo-destacado" class="columns p2 ha text-center fontL">
+            Título de la entrada
+          </div><!-- Titulo noticia -->
+
+
+          <!-- fecha destacada -->
+          <div id="noticias-fecha" class="small-4 medium-12 columns p2h text-right fontS">
+            Publicado el 1 enero 2000
+          </div><!-- fecha destacada -->
+
+
+          <!-- Imagen destacada -->
+          <div id="noticias-imagen" class="medium-5 columns h_50 p0 show-for-medium">
+            <div class="h_100 imgLiquid imgLiquidNoFill">
+              <img src="http://fakeimg.pl/600x420" alt="">
             </div>
-            <div id="noticias-subtitulo-small-medium" class="columns p3 text-left fontXS subheader hide-for-large">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div>
-          </a>
-        </div><!-- Titulo noticias -->
+          </div><!-- Imagen destacada -->
+
+
+          <!-- extracto destacada -->
+          <div id="noticias-extracto" class="small-7 columns ha p2 fontXS text-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad.
+          </div><!-- extracto destacada -->
 
 
 
-        <!-- Imagen destacada -->
-        <div id="noticias-imagen" class="large-12 columns h_30vh p0">
-          <div class="h_100 imgLiquid imgLiquidFill">
-            <img src="http://fakeimg.pl/600x420" alt="">
+
+          <!-- ver mas destacado -->
+          <div id="noticias-vermas" class="small-3 medium-7 columns ha p2 fontS text-right">
+            Ver mas
+            <i class="fa fa-angle-right"></i>
           </div>
-        </div><!-- Imagen destacada -->
+          <!-- ver mas destacado -->
 
-
+        </a>
       </article>
 
-      <article id="noticias-contenedor-contenido" class="small-12 columns">
+
+      <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh pr0">
+        <a href="#" class="h_100">
+
+          <!-- Titulo noticia -->
+          <div id="noticias-titulo-destacado" class="columns p2 ha text-center fontL">
+            Título de la entrada
+          </div><!-- Titulo noticia -->
 
 
-        <!-- Titulo noticias -->
-        <div id="noticias-titulo" class="columns p0">
-          <a href="#" class="minH_100">
-            <div class="small-12 columns p3 text-center fontL">
-              Título completo de la entrada
+          <!-- fecha destacada -->
+          <div id="noticias-fecha" class="small-4 medium-12 columns p2h text-right fontS">
+            Publicado el 1 enero 2000
+          </div><!-- fecha destacada -->
+
+
+          <!-- Imagen destacada -->
+          <div id="noticias-imagen" class="medium-5 columns h_50 p0 show-for-medium">
+            <div class="h_100 imgLiquid imgLiquidNoFill">
+              <img src="http://fakeimg.pl/600x420" alt="">
             </div>
-            <div id="noticias-subtitulo-small-medium" class="columns p3 text-left fontXS subheader hide-for-large">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div>
-          </a>
-        </div><!-- Titulo noticias -->
+          </div><!-- Imagen destacada -->
+
+
+          <!-- extracto destacada -->
+          <div id="noticias-extracto" class="small-7 columns ha p2 fontXS text-left">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad.
+          </div><!-- extracto destacada -->
 
 
 
-        <!-- Imagen destacada -->
-        <div id="noticias-imagen" class="large-12 columns h_30vh p0">
-          <div class="h_100 imgLiquid imgLiquidFill">
-            <img src="http://fakeimg.pl/600x420" alt="">
+
+          <!-- ver mas destacado -->
+          <div id="noticias-vermas" class="small-3 medium-7 columns ha p2 fontS text-right">
+            Ver mas
+            <i class="fa fa-angle-right"></i>
           </div>
-        </div><!-- Imagen destacada -->
+          <!-- ver mas destacado -->
 
-
+        </a>
       </article>
+
 
 
     </div>
     <!-- entrada penultima y antepenultima -->
-
-  </section>
-
-
-
-
-<!-- seccion  archivo -->
-  <section id="noticias-archivo" class="small-12 columns p0">
 
 
     <!-- Categorias movil -->
@@ -179,48 +218,95 @@ get_header();
 
 
 
-  <!-- Categorias large -->
-  <aside id="noticias-aside-large" class="large-4 columns show-for-large ha">
-
-    <h2 class="columns fontL p3 text-center">Categorias</h2>
-
-    <ul id="noticias-tags-lista" class="menu small-12 columns p0">
-      <?php
-      for ($i=0; $i < 12; $i++) {
-        echo  '<a href="">
-          <li class="small-4 columns fontXS p3 text-center">Categoría' . $i . '</li>
-        </a>';
-      }
-      ?>
-    </ul>
+  </section>
 
 
+
+
+  <!-- seccion  archivo -->
+  <section id="noticias-archivo" class="small-12 columns p0">
+
+
+    <!-- Categorias large -->
+    <aside id="noticias-aside-large" class="large-4 columns show-for-large ha">
+
+      <h2 class="columns fontL p3 text-center">Categorias</h2>
+
+      <ul id="noticias-tags-lista" class="menu small-12 columns p0">
+        <?php
+        for ($i=0; $i < 12; $i++) {
+          echo  '<a href="">
+            <li class="small-4 columns fontXS p3 text-center">Categoría' . $i . '</li>
+          </a>';
+        }
+        ?>
+      </ul>
+
+
+      <!-- Etiquetas large -->
+      <h2 class="columns fontL p3 text-center">Etiquetas</h2>
+
+      <ul id="noticias-tags-lista" class="menu small-12 columns p0">
+        <?php
+        for ($i=0; $i < 24; $i++) {
+          echo  '<a href="">
+            <li class="small-4 columns fontXS p3 text-center">Etiqueta' . $i . '</li>
+          </a>';
+        }
+        ?>
+      </ul>
+
+    </aside>
     <!-- Etiquetas large -->
-    <h2 class="columns fontL p3 text-center">Etiquetas</h2>
+    <!-- Categorias large -->
 
-    <ul id="noticias-tags-lista" class="menu small-12 columns p0">
+    <!-- lista noticias -->
+    <div class="small-12 ha p2">
+
+
       <?php
-      for ($i=0; $i < 24; $i++) {
-        echo  '<a href="">
-          <li class="small-4 columns fontXS p3 text-center">Etiqueta' . $i . '</li>
-        </a>';
-      }
+      for ($i=0; $i < 24 ; $i++) {
+        echo '<article id="noticias-contenedor-contenido" class="small-6 columns p2">
+
+          <!-- Titulo noticias -->
+          <div id="noticias-titulo" class="columns p0">
+            <a href="#" class="minH_100">
+              <div class="small-12 columns p3 text-center fontL">
+                Título completo de la entrada
+              </div>
+              <div id="noticias-subtitulo-small-medium" class="columns p3 text-left fontXS subheader hide-for-large">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+            </a>
+          </div><!-- Titulo noticias -->
+
+
+
+          <!-- Imagen destacada -->
+          <div id="noticias-imagen" class="large-12 columns h_30vh p0">
+            <div class="h_100 imgLiquid imgLiquidFill">
+              <img src="http://fakeimg.pl/600x420" alt="">
+            </div>
+          </div><!-- Imagen destacada -->
+
+
+        </article>';
+      };
       ?>
-    </ul>
-
-  </aside>
-  <!-- Etiquetas large -->
-  <!-- Categorias large -->
 
 
 
+    </div>
+    <!-- lista noticias -->
 
-</section>
-<!-- seccion  archivo -->
+
+  </section>
+  <!-- seccion  archivo -->
 
 
 
 </div>
+<!-- todo -->
 <?php
 
 get_footer();
