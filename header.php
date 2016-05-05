@@ -11,8 +11,7 @@
 </head>
 <body>
 
-  <header id="header" class="row h_15vh h_sm_25vh p0 ">
-
+  <header id="header" class="small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k">
 
     <div id="logo" class="small-6 medium-3 large-2 columns h_100 h_sm_50 p0">
       <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
@@ -75,32 +74,8 @@
     </header>
 
 
-    <main class="columns h_75vh h_sm_65vh scrollH">
+    <main id="principal" class="columns h_a pt_15vh pt_sm_25vh pb_10vh">
 
-      <?php
-
-      if( is_front_page() ) :
-
-         include_once 'secciones/01-inicio/01-a-portada.php';
-
-      endif;
-      if( is_single() ) :
-         ?>
-
-            <!-- .imagen_destacada.row.expanded.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/1280x800] -->
-            <div class="imagen_destacada row expanded h_70 imgLiquid imgLiquidFill">
-               <img src="http://fakeimg.pl/1280x800" alt="">
-            </div>
-            <div class="small-12 expanded h_30 text-center">
-               <div class="vcenter ha">
-                  <h1>Título de la Entrada</h1>
-               </div>
-            </div>
-
-         <?php
-
-      endif;
-
-      ?>
+      <?php include_once 'secciones/00-intro_main.php'; ?>
       <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->
-      <div class="medium-9 large-10 columns minH_100 scroll_md_h rel text-center">
+      <div id="plantillas" class="medium-9 large-10 columns minH_100 scroll_md_h rel text-center">

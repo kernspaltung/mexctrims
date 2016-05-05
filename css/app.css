@@ -105,7 +105,7 @@ li {
 .bottom {
   bottom: 0; }
 
-.tp {
+.top {
   top: 0; }
 
 .right {
@@ -411,6 +411,9 @@ li {
 .mb-5 {
   margin-bottom: -75px !important; }
 
+.mb_10vh {
+  margin-bottom: 10vh !important; }
+
 .p0 {
   padding: 0 !important; }
 
@@ -450,6 +453,9 @@ li {
 .pt4 {
   padding-top: 60px !important; }
 
+.pt_15vh {
+  padding-top: 15vh; }
+
 .pb0 {
   padding-bottom: 0 !important; }
 
@@ -476,6 +482,9 @@ li {
 
 .pb8 {
   padding-bottom: 120px !important; }
+
+.pb_10vh {
+  padding-bottom: 10vh; }
 
 .pr0 {
   padding-right: 0 !important; }
@@ -639,7 +648,8 @@ li {
     margin-bottom: 37.5px !important; }
   .mb_sm_6 {
     margin-bottom: 45px !important; }
-  .mt_sm_0 {
+  F
+.mt_sm_0 {
     margin-top: 0 !important; }
   .mt_sm_1 {
     margin-top: 7.5px !important; }
@@ -682,7 +692,9 @@ li {
   .pt_sm_3 {
     padding-top: 22.5px !important; }
   .pt_sm_4 {
-    padding-top: 30px !important; } }
+    padding-top: 30px !important; }
+  .pt_sm_25vh {
+    padding-top: 25vh; } }
 
 .cursor-pointer {
   cursor: pointer; }
