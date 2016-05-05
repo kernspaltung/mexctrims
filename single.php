@@ -11,7 +11,7 @@ get_header();
 
   <!-- Categorias large -->
   <aside id="noticias-aside-large" class="h_100 large-4 columns show-for-large ha" data-sticky-container>
-   <div class="sticky h_75vh" data-sticky data-anchor="plantillas" data-margin-top="5">
+   <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="9">
 
     <h2 class="columns fontL p3 text-center">Categorias</h2>
 

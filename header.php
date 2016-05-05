@@ -74,7 +74,7 @@
     </header>
 
 
-    <main id="principal" class="columns h_a pt_15vh pt_sm_25vh pb_10vh">
+    <main id="principal" class="columns h_a pt_15vh pt_sm_25vh mb_10vh">
 
       <?php include_once 'secciones/00-intro_main.php'; ?>
       <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->

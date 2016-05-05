@@ -16,7 +16,7 @@ if( is_single() ) :
 
            <!-- barra de regreso -->
            <div id="single-boton-regresa" class="columns p2 h_10" data-sticky-container>
-            <div class="sticky row small-12" data-sticky data-anchor="plantillas" data-margin-top="5">
+            <div class="sticky row small-12" data-sticky data-anchor="plantillas" data-margin-top="7">
                <a href="#" class="minH_100">
                   <div class="small-2 columns p1 pl0 text-center">
                     <i class="fa fa-angle-left"></i>
@@ -42,7 +42,7 @@ if( is_single() ) :
             <!-- Titulo single -->
             <div id="single-titulo" class="columns h_20 p0">
                 <div class="vcenter ha">
-                  <h1>Título completo de la entrada</h1>
+                  <h3>Título completo de la entrada con más de ocho palabras.</h3>
                 </div>
             </div><!-- Titulo single -->
 
