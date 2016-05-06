@@ -1,9 +1,13 @@
          </div>
-         <aside id="enlaces_destacados" class="medium-3 large-2 columns fontM" data-sticky-container> <!-- antes h_100 -->
-            <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="7">
-               <?php include_once 'secciones/07-avisos-destacados/07-a-avisos-destacados.php'; ?>
-            </div>
-         </aside>
+         <?php if( ! is_page('Información') ) : ?>
+
+            <aside id="enlaces_destacados" class="medium-3 large-2 columns fontM" data-sticky-container> <!-- antes h_100 -->
+               <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="7">
+                  <?php get_template_part( 'secciones/00-elementos/content', '06-enlaces_destacados' ); ?>
+               </div>
+            </aside>
+
+         <?php endif; ?>
       </main>
 
 

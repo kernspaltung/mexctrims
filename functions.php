@@ -1,6 +1,9 @@
 <?php
 
+	add_theme_support( 'post-thumbnails' );
+
 global $themeDir;
+
 $themeDir = get_stylesheet_directory_uri() . "/";
 
 function styles() {
@@ -8,6 +11,7 @@ function styles() {
    global $themeDir;
 
    wp_enqueue_style("font-awesome", $themeDir . "bower_components/font-awesome/css/font-awesome.min.css",array());
+   wp_enqueue_style("google-fonts", 'https://fonts.googleapis.com/css?family=Lato:300');
    wp_enqueue_style("app", $themeDir . "css/app.css",array());
 
 }
@@ -28,4 +32,4 @@ function scripts() {
 
 }
 
-add_action('wp_enqueue_scripts','scripts');add_action('wp_enqueue_scripts','scripts');
+add_action('wp_enqueue_scripts','scripts');

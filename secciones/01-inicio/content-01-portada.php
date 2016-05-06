@@ -16,8 +16,8 @@
             Comité Mexicano para el Tratamiento e Investigación en Esclerosis Múltiple
          </div>
       </div>
-      <div class="row pt4 pt_sm_1">
-         <h4 class="fontM p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quo delectus odio velit dolores vel eaque minima aliquam.</h4>
+      <div class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 columns pt4 pt_sm_1">
+         <h4 class="fontRM p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quo delectus odio velit dolores vel eaque minima aliquam.</h4>
       </div>
    </div>
    <div id="boton_scroll" class="w_100 h_25 fontXXL text-center mt2 mt_sm_0">

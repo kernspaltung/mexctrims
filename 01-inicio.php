@@ -6,11 +6,11 @@ get_header();
 
 
 
-<?php include_once 'secciones/01-inicio/01-b-avisos.php'; ?>
+<?php get_template_part('secciones/01-inicio/content','02-avisos'); ?>
 
-<?php include_once 'secciones/01-inicio/01-c-intro.php'; ?>
+<?php get_template_part('secciones/01-inicio/content','03-intro'); ?>
 
-<?php include_once 'secciones/01-inicio/01-d-suscripcion.php'; ?>
+<?php get_template_part('secciones/01-inicio/content','04-suscripcion'); ?>
 
 
 <?php

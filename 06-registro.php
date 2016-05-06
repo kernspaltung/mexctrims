@@ -3,6 +3,6 @@
 
 get_header(); ?>
 
-<?php include_once 'secciones/06-registro/06-a-portada.php'; ?>
+<?php get_template_part( 'secciones/06-registro/content','01-portada' ); ?>
 
 <?php get_footer(); ?>

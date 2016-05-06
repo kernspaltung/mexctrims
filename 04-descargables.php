@@ -1,10 +1,9 @@
 <?php
 // Template Name: Descargables
 
-get_header(); ?>
+get_header();
+?>
 
-<?php include_once 'secciones/04-descargables/04-a-portada.php'; ?>
-
-
+<?php get_template_part( 'secciones/00-elementos/content','01-listado' ); ?>
 
 <?php get_footer(); ?>

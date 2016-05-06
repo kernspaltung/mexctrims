@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header id="header" class="small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k">
+  <header id="header" class="small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k1">
 
     <div id="logo" class="small-6 medium-3 large-2 columns h_100 h_sm_50 p0">
       <a href="<?php echo site_url(); ?>" class="button white_bg black small-12 h_15vh m0 p0">
@@ -76,6 +76,6 @@
 
     <main id="principal" class="columns h_a pt_15vh pt_sm_25vh mb_10vh">
 
-      <?php include_once 'secciones/08-elementos/00-intro_main.php'; ?>
+      <?php get_template_part('secciones/00-elementos/content','00-portada_variable'); ?>
       <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->
       <div id="plantillas" class="medium-9 large-10 columns minH_100 scroll_md_h rel text-center">

@@ -3,8 +3,8 @@
 
 get_header(); ?>
 
-<?php include_once 'secciones/05-medicos/05-a-portada.php'; ?>
-<?php #include_once 'secciones/05-medicos/05-b-single.php'; ?>
-<?php #include_once 'secciones/05-medicos/05-c-comentarios.php'; ?>
+<?php get_template_part( 'secciones/05-medicos/content','01-entrada_destacada' ); ?>
+<?php get_template_part( 'secciones/05-medicos/content','03-noticias' ); ?>
+
 
 <?php get_footer(); ?>
