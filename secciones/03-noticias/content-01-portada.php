@@ -1,3 +1,5 @@
+<?php get_template_part( 'secciones/00-elementos/content', '07-titulo_pagina' ); ?>
+
 <section id="noticia-destacada" class="small-12 medium-7 columns h_50vh p0">
 
 
@@ -83,8 +85,6 @@ if( $q -> have_posts() ) :
    while( $q -> have_posts() ) :
       $q -> the_post();
 
-      // for temporal
-      for ($i=0; $i < 2 ; $i++) {
       ?>
          <!-- 1 -->
          <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh h_sm_33 pr0">
@@ -130,7 +130,6 @@ if( $q -> have_posts() ) :
 
       <?php
 
-      }
 
 endwhile;
 

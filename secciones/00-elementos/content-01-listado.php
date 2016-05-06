@@ -44,17 +44,20 @@
             $mosaico;
 
             for ($i=1; $i < 30 ; $i++) {
-               $mosaico .= '<div class="large-4 columns h_a p4">
-               <div class="large-12 fontM black text-left vcenter">
+               $mosaico .=
+               '<div class="medium-6 columns h_a p4">
+                  <div class="large-12 fontM black text-left vcenter">
 
                <a href="#">
-               <h5 class="mb1">   Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
-               <div class="h_20vh texto p0">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facere, natus. Laborum?</p>
-               </div>
+                  <h5 class="mb1">   Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+                  <div class="h_15vh texto p0">
+                     <div class="vcenter">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facere, natus. Laborum?</p>
+                     </div>
+                  </div>
                </a>
 
-               </div>
+                  </div>
                </div>';
             };
 

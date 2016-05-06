@@ -4,11 +4,12 @@
 
 ?>
 
-<div class="w_100 h_10vh">
+<div class="w_100 h_15vh">
    <div class="vcenter p3 pt0 pb0">
       <h3>Información sobre la Esclerosis Múltiple</h3>
    </div>
 </div>
+
 <section id="info-intro" class="medium-6 columns h_55vh">
    <!-- .imagen.small-6.columns.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/300x600] -->
    <div class="imagen small-12 columns h_50 imgLiquid imgLiquidFill mb2">

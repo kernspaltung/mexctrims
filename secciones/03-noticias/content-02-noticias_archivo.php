@@ -20,7 +20,6 @@
             $q -> the_post();
 
    // for temporal
-      for ($i=0; $i < 24 ; $i++) {
          ?>
          <article id="noticias-contenedor-contenido" class="small-6 columns p2 h_50">
 
@@ -71,7 +70,6 @@
       </article>
 
       <?php
-    }// cierra for temporal
 
 endwhile;
 endif;

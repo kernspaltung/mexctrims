@@ -1,8 +1,4 @@
-<div id="descargables-titulo" class="large-12 columns h_15vh">
-   <!-- titulo -->
-   <div class="large-12 fontXXL text-center black p0 vcenter">Descargables</div>
-</div>
-
+<?php get_template_part( 'secciones/00-elementos/content', '07-titulo_pagina' ); ?>
 
 <div id="descargables-texto-1" class="large-12 columns h_40vh">
    <!-- informacion y thumb -->
