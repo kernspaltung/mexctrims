@@ -64,7 +64,6 @@
                <div class="small-6 columns p0 fontS h_100">
                   <div class="p1 small-6 columns"><i class="fa fa-comments-o fontXL"></i></div>
                   <div class="p2 small-6 columns">Comentarios</div>
-
                </div>
                <div class="small-6 columns pt0 text-right fontL h_100">
                   <div class="p1">

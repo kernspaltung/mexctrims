@@ -85,7 +85,18 @@
                   <div class="small-10 columns h_100 p0">
                      <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
                      <div class="columns h_30">
-                        <div class="bold fontM black vcenter">Comentarios (12)</div>
+                        <div class="bold fontM black vcenter">
+                              <div class="small-6 columns p0 fontS h_100">
+                                 <div class="p1 small-6 columns"><i class="fa fa-comments-o fontXL"></i></div>
+                                 <div class="p2 small-6 columns">Comentarios</div>
+                              </div>
+                              <div class="small-6 columns pt0 text-right fontL h_100">
+                                 <div class="p1">
+                                    (99)
+                                 </div>
+                              </div>
+                           </div>
+
                      </div>
                      <div class="columns h_70 pl0">
                         <div class="small-2 columns p0 h_100">
