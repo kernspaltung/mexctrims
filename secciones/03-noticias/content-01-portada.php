@@ -31,7 +31,7 @@
 
 
      <!-- Imagen destacada -->
-     <div id="noticias-imagen" class="small-6 medium-12 columns h_70 p0">
+     <div id="noticias-imagen" class="small-12 medium-6 columns h_70 p0">
        <div class="h_100 imgLiquid imgLiquidFill">
          <?php echo get_the_post_thumbnail(); ?>
        </div>
@@ -39,7 +39,7 @@
 
 
      <!-- extracto destacada -->
-     <div id="noticias-extracto" class="small-6 medium-9 columns ha p4 fontS text-left ">
+     <div id="noticias-extracto" class="small-12 medium-6 columns ha p4 fontS text-left ">
        <p>
           <?php echo get_the_excerpt(); ?>
        </p>

@@ -1,4 +1,9 @@
+<div class="small-12 text-left p3 mb1">
+   <h4>Información para Médicos:</h4>
+</div>
 <aside class="medium-3 columns h_100 p0" data-sticky-container>
+
+
    <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="9">
      <nav>
        NAVEGACIOn
@@ -13,18 +18,11 @@
 
 
 
-<section id="medicos-portada-entradas" class="medium-9 columns h_80 p0 mt4">
+<section id="medicos-portada-entradas" class="medium-9 columns h_80 p0 ">
 
-   <article id="medicos-portada-entrada-destacada" class="entrada_medicos small-12 columns p0">
+   <article id="medicos-portada-entrada-destacada" class="entrada_medicos small-12 columns p5 pt0">
       <!-- (.small-5.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.small-7.columns.h_100{lorem10} -->
 
-      <div class="small-5 columns h_100 p0">
-         <a href="linkaentrada">
-            <div class="h_100 imgLiquid imgLiquidFill">
-               <img src="http://fakeimg.pl/600x300" alt="">
-            </div>
-         </a>
-      </div>
 
 
       <div  class="resumen_entrada small-12 columns h_100 p0">
@@ -32,12 +30,21 @@
          <!-- .small-12.columns.h_40+.small-12.columns.h_60   -->
 
          <header class="columns p0 h_40">
-            <div class="columns text-left p4 pt0 pb0 m0">
-               <a href="linkaentrada" class="p0 m0">
-                  <h1 class="fontXL black text-left m0 pt0 pb0">Titulo de la Entrada</h1>
+
+            <div class="small-12 columns h_30vh p0">
+               <a href="linkaentrada">
+                  <div class="h_100 imgLiquid imgLiquidFill">
+                     <img src="http://fakeimg.pl/600x300" alt="">
+                  </div>
                </a>
             </div>
-            <!-- (.small-6.columns.h_100.text-center>.small-12.columns.fontM.subheader.vcenter{Subtitulo entrada})+.small-6.columns.h_100>(.small-8.columns.h_100>(.small-12.columns.h_60>.small-12.fontM.black.vcenter)+.small-12.columns.h_40>.small-12.fontXS.subheader.vcenter{YYYY/MM/DD})+.small-4.columns.h_100.p0>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/100x100"] -->
+
+            <div class="columns text-left p4 pt0 pb0 m0">
+               <a href="linkaentrada" class="p0 m0">
+                  <h5 class=" black text-left m0 p pt2 pb2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+               </a>
+            </div>
+      <!-- (.small-6.columns.h_100.text-center>.small-12.columns.fontM.subheader.vcenter{Subtitulo entrada})+.small-6.columns.h_100>(.small-8.columns.h_100>(.small-12.columns.h_60>.small-12.fontM.black.vcenter)+.small-12.columns.h_40>.small-12.fontXS.subheader.vcenter{YYYY/MM/DD})+.small-4.columns.h_100.p0>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/100x100"] -->
 
             <div class="medium-6 columns h_50 p0">
 

@@ -16,7 +16,8 @@
     <div id="logo" class="small-6 medium-3 large-2 columns h_100 h_sm_50 p0">
       <a href="<?php echo site_url(); ?>" class="button white_bg black small-12 h_15vh m0 p0">
         <div class="vcenter">
-          <img src="http://fakeimg.pl/200x40" alt="">
+            <!-- <img data-interchange="[<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-150w.png, (default)], [<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-150w-2x.png, (retina)]">           -->
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-150w.png">
         </div>
       </a>
     </div>

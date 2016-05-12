@@ -22,7 +22,7 @@ while(have_posts()) {
          </nav>
       </div>
    </header>
-   <section id="content" class="medium-8 columns text-left p5 h_100">
+   <section id="content" class="medium-8 columns text-left p5 h_a">
       <?php echo $content; ?>
    </section>
 

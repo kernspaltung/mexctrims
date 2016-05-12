@@ -55,4 +55,18 @@ function setup() {
       u.resize();
    });
 
+   $('#inicio-noticias-small .accordion-item').each(function(){
+      var titulo = $(this).find('h3');
+      var contenido = $(this).find('.accordion-content').html();
+
+      var noticia_medium = $('<div>');
+
+      noticia_medium.addClass('medium-6 columns');
+
+      noticia_medium.append( titulo )
+      noticia_medium.append( contenido )
+
+      $('#inicio-noticias-medium').append( noticia_medium );
+   })
+
 }

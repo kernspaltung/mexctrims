@@ -1,7 +1,5 @@
-   <section id="medicos-noticias" class="small-12 columns h_100">
-      <div class="small-12 text-left">
-         <h4>Contenidos por y para Médicos:</h4>
-      </div>
+   <section id="medicos-noticias" class="small-12 columns h_100 mt2">
+      
      <!-- .row.small-4.h_20vh>(.small-12.columns.h_30>.small-12.fontM.bold.black.vcenter{Titulo Entrada})+.small-12.columns.h_70>((.small-9.columns.h_100>(.small-12.columns.h_50>.small-12.fontS.bold.vcenter{Autor})+.small-12.columns.h_50>.small-12.fontS.bold.vcenter{YYYY/MM/DD})+.small-3.columns.h_100>.button.hollow.h_100.w_100>i.fa.fa-angle-right) -->
      <?php
      $html = "";
