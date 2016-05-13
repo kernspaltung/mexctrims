@@ -1,9 +1,11 @@
-<div class="small-12 columns text-center rel mt2">
+<section id="inicio-registro" class="small-12 columns text-center rel mt2 h_60vh mb5">
 
-   <div class="small-10 medium-8 small-centered">
+   <div class="small-10 medium-8 small-centered h_100">
+
       <div class="columns text-center">
          <h1>Suscríbete</h1>
       </div>
+
       <div class="columns fontXS text-center">
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius.</p>
          <p>Suscipit voluptatem omnis harum quia aspernatur quas officia asperiores.</p>
@@ -44,4 +46,25 @@
       </div>
    </div>
 
-</div>
+   <div class="small-10 medium-8 small-centered h_100">
+
+      <div class="vcenter">
+
+         <h1>Gracias</h1>
+
+         <h4 class="p5">
+            Tu registro a nuestra Lista de Correos se ha recibido satisfactoriamente.
+         </h4>
+
+         <h6 class="p5">
+            <a href="mailto:cancelar.suscripcion@mexctrims.com">
+            Puedes cancelar tu suscripción enviando un correo con asunto vacío a
+               cancelar.suscripcion@mexctrims.com
+            </a>
+         </h6>
+
+      </div>
+
+   </div>
+
+</section>

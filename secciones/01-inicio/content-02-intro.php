@@ -57,7 +57,7 @@ $bullets = get_pages(array( 'child_of' => $secciones -> ID, 'parent' => $seccion
 
 
 
-<section id="inicio-medicos" class="row h_40vh mt3 mb4">
+<section id="inicio-medicos" class="row h_50vh mt3 mb4">
    <h4 class="small-12 columns mb2 text-left">
       Sección para Médicos
    </h4>
