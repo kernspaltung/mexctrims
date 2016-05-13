@@ -1,14 +1,16 @@
-<section id="inicio-registro" class="small-12 columns text-center rel mt2 h_60vh mb5">
+<?php
 
-   <div class="small-10 medium-8 small-centered h_100">
+$registro = get_page_by_title( 'Registro Inicio' );
+$agradecimiento = get_page_by_title( 'Agradecimiento' );
 
-      <div class="columns text-center">
-         <h1>Suscríbete</h1>
-      </div>
+?>
+
+<section id="inicio-registro" class="small-12 columns text-center rel mt2 mb5">
+
+   <div class="small-10 medium-8 small-centered h_60vh">
 
       <div class="columns fontXS text-center">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius.</p>
-         <p>Suscipit voluptatem omnis harum quia aspernatur quas officia asperiores.</p>
+         <?php echo apply_filters( 'the_content', $registro -> post_content ); ?>
       </div>
       <div class="columns">
          <form action="#" class="w_100">
@@ -46,23 +48,12 @@
       </div>
    </div>
 
-   <div class="small-10 medium-8 small-centered h_100">
+   <div class="small-10 medium-8 small-centered h_60vh">
 
       <div class="vcenter">
-
-         <h1>Gracias</h1>
-
-         <h4 class="p5">
-            Tu registro a nuestra Lista de Correos se ha recibido satisfactoriamente.
-         </h4>
-
-         <h6 class="p5">
-            <a href="mailto:cancelar.suscripcion@mexctrims.com">
-            Puedes cancelar tu suscripción enviando un correo con asunto vacío a
-               cancelar.suscripcion@mexctrims.com
-            </a>
-         </h6>
-
+         <h1>
+            <?php echo apply_filters( 'the_content', $agradecimiento -> post_content ); ?>
+         </h1>
       </div>
 
    </div>

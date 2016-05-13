@@ -2,16 +2,15 @@
 // Template Name: Inicio
 
 get_header();
-?>
 
+get_template_part('secciones/01-inicio/content','02-intro');
 
-<?php get_template_part('secciones/01-inicio/content','02-intro'); ?>
+get_template_part('secciones/01-inicio/content','03-medicos');
 
-<?php get_template_part('secciones/01-inicio/content','03-avisos'); ?>
+get_template_part('secciones/01-inicio/content','04-noticias');
 
-<?php get_template_part('secciones/01-inicio/content','04-suscripcion'); ?>
+get_template_part('secciones/01-inicio/content','05-suscripcion');
 
-
-<?php
 get_footer();
+
 ?>

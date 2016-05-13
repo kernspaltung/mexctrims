@@ -8,29 +8,43 @@
 
       <ul class="accordion w_100" data-accordion>
 
-         <?php for ($i=0; $i < 4; $i++) { ?>
+         <?php
+
+         $q = new WP_Query( array( 'post_type'=>'post', 'posts_per_page'=>12 ) );
+         if( $q -> have_posts() ) :
+            while( $q -> have_posts() ) :
+               $q -> the_post();
+
+         ?>
 
          <li class="accordion-item p0 <?php echo $i==0 ? 'is-active' : ''; ?>" data-accordion-item>
             <a href="#" class="accordion-title p0">
-               <h3 class="p2 m0 fontL font_sm_M text-left">Título de Aviso Destacado Con Más de Ocho Palabras.</h3>
+               <h3 class="p2 m0 fontL font_sm_M text-left">
+                  <?php echo apply_filters( 'the_title', get_the_title() ); ?>
+               </h3>
             </a>
             <div class="accordion-content" data-tab-content>
                <a href="http://google.com">
                   <div class="extracto small-12 columns p4 text-left fontS">
-                     <div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore, vero nemo officia adipisci accusamus quo...</div>
+                     <?php echo apply_filters( 'the_excerpt', get_the_excerpt() ); ?>
                   </div>
                   <div class="small-12 columns imagen h_20vh imgLiquid imgLiquidNoFill">
-                     <img src="http://fakeimg.pl/<?php echo rand(100,800); ?>x300" alt="">
+                     <?php echo get_the_post_thumbnail( get_the_ID() ); ?>
                   </div>
-                  <div class="w_100 text-right">
-                     <div class="fa fa-plus"></div>
-                     <div class="fontS">Ver Más</div>
+                  <div class="w_100 text-right mt2">
+                     <div class="button fontS">
+                        Ver Más
+                        <div class="fa fa-plus"></div>
+                     </div>
                   </div>
                </a>
             </div>
          </li>
 
-         <?php } ?>
+         <?php
+            endwhile;
+         endif;
+         ?>
 
       </ul>
 

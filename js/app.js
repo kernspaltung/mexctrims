@@ -61,7 +61,7 @@ function setup() {
 
       var noticia_medium = $('<div>');
 
-      noticia_medium.addClass('medium-6 columns');
+      noticia_medium.addClass('medium-6 columns h_60vh');
 
       noticia_medium.append( titulo )
       noticia_medium.append( contenido )

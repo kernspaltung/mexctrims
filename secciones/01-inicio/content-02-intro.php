@@ -2,7 +2,6 @@
 
 $introduccion = get_page_by_title('Introducción');
 $secciones = get_page_by_title('Secciones');
-$medicos = get_page_by_title('Médicos');
 $bullets = get_pages(array( 'child_of' => $secciones -> ID, 'parent' => $secciones -> ID ));
 
 ?>
@@ -52,30 +51,5 @@ $bullets = get_pages(array( 'child_of' => $secciones -> ID, 'parent' => $seccion
 
 
 
-
-</section>
-
-
-
-<section id="inicio-medicos" class="row h_50vh mt3 mb4">
-   <h4 class="small-12 columns mb2 text-left">
-      Sección para Médicos
-   </h4>
-
-   <div class="imagen small-6 columns h_100 imgLiquid imgLiquidFill">
-      <img src="http://fakeimg.pl/400x300" alt="">
-   </div>
-
-   <div class="texto small-6 columns h_100">
-      <div class="vcenter">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur, porro voluptatibus.</p>
-         <div class="button hollow">
-            Registro
-         </div>
-         <div class="button hollow">
-            Ingreso
-         </div>
-      </div>
-   </div>
 
 </section>
