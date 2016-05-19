@@ -6034,3 +6034,9 @@ iframe {
 .image-fx {
   -webkit-filter: brightness(110%) contrast(125%);
           filter: brightness(110%) contrast(125%); }
+
+/* interfaz taxonomias */
+.taxonomias li {
+  color: #000; }
+  .taxonomias li.active {
+    background-color: #eee !important; }

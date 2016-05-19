@@ -107,3 +107,17 @@ iframe {
 .image-fx {
    filter: brightness(110%) contrast(125%);
 }
+
+
+
+
+/* interfaz taxonomias */
+
+.taxonomias  {
+   li {
+      color: #000;
+      &.active {
+         background-color: #eee !important;
+      }
+   }
+}

@@ -1,5 +1,5 @@
 <!-- Categorias large -->
-<aside id="noticias-aside-large" class="h_100 large-4 columns show-for-large ha" data-sticky-container>
+<aside id="noticias-aside-large" class="taxonomias h_100 large-4 columns show-for-large ha" data-sticky-container>
    <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="9">
 
       <h2 class="columns fontL p3 text-center">Categorias</h2>
@@ -12,12 +12,19 @@
          $noticia_principal = get_term_by('name','Noticia Principal', 'category' );
          $noticias = get_term_by('name','Noticias', 'category' );
          $categorias_excluidas  = array( 1, $medicos_destacada -> term_id, $medicos->term_id, $noticia_principal->term_id, $noticias->term_id, );
-         if( get_the_category() )
-         foreach( get_the_category() as $categoria ) :
+
+         $todas_categorias = get_categories();
+         foreach( get_the_category() as $la_categoria ) :
+            $las_categorias[] = $la_categoria->term_id;
+         endforeach;
+
+         if( $todas_categorias )
+         foreach( $todas_categorias as $categoria ) :
             if( ! in_array( $categoria->term_id, $categorias_excluidas ) ):
                ?>
                <a href="<?php echo get_category_link( $categoria -> term_id ); ?>">
-                  <li class="small-4 columns fontXXS p3 text-center">
+                  <?php $active = in_array( $categoria->term_id, $las_categorias ) ? 'active' : ''; ?>
+                  <li class="small-4 columns fontXXS p3 text-center <?php echo $active; ?>">
                      <?php echo $categoria->name; ?>
                   </li>
                </a>
@@ -33,12 +40,18 @@
 
       <ul id="noticias-tags-lista" class="menu small-12 columns p0 h_20vh scrollH">
          <?php
-         if( get_the_tags() )
-         foreach( get_the_tags() as $etiqueta ) :
+         $todas_etiquetas = get_tags();
+         foreach( get_the_tags() as $la_etiqueta ) :
+            $las_etiquetas[] = $la_etiqueta->term_id;
+         endforeach;
+
+         if( $todas_etiquetas )
+         foreach( $todas_etiquetas as $etiqueta ) :
             ?>
 
             <a href="<?php echo get_tag_link( $etiqueta->term_id); ?>">
-               <li class="small-4 columns fontXXS p3 text-center">
+               <?php $active = in_array( $etiqueta->term_id, $las_etiquetas ) ? 'active' : ''; ?>
+               <li class="small-4 columns fontXXS p3 text-center <?php echo $active; ?>">
                   <?php echo $etiqueta->name; ?>
                </li>
             </a>

@@ -24,6 +24,8 @@ while (have_posts()) :
 
     <section id="single-contenido-entrada" class="small-12 columns p6 text-left">
 
+      <h3 class="mb2"><?php echo get_the_title(); ?></h3>
+
       <?php echo apply_filters( 'the_content', get_the_content()); ?>
 
     </section>
