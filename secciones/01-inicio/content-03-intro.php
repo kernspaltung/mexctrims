@@ -6,7 +6,7 @@ $bullets = get_pages(array( 'child_of' => $secciones -> ID, 'parent' => $seccion
 
 ?>
 
-<section class="row text-center rel mt2">
+<section class="small-12 medium-10 medium-offset-1 end text-center rel mt2">
 
    <div class="small-12 columns row h_60vh text-left fontM p5 p_sm_1">
       <div class="small-12 medium-7 columns p5 p_sm_1 h_100">

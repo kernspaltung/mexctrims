@@ -4,17 +4,20 @@
       Noticias
    </h1>
    <?php
+
    $destacada_inicio = get_term_by( 'name', 'Noticia Principal', 'category' );
+
    $q = new WP_Query( array( 'post_type'=>'post', 'posts_per_page'=>2, 'cat' => $destacada_inicio->term_id) );
+
    if( $q -> have_posts() ) :
       while( $q -> have_posts() ) :
          $q -> the_post();
       ?>
 
-      <section id="noticia_destacada" class="small-12 h_50vh mt1 mb4 p5">
+      <section id="noticia_destacada" class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 end h_40vh mt1 mb4 p5">
          <a href="http://google.com">
 
-            <h3 class="p2 mb2 fontL font_sm_M text-left">
+            <h3 class="p2 mb1 fontXL font_sm_M text-center">
                <?php echo apply_filters( 'the_title', get_the_title() ); ?>
             </h3>
 
@@ -66,11 +69,11 @@
             </a>
             <div class="accordion-content" data-tab-content>
                <a href="http://google.com">
-                  <div class="small-12 columns imagen h_30vh imgLiquid imgLiquidFill">
+                  <div class="small-12 columns imagen h_20vh imgLiquid imgLiquidFill">
                      <?php echo get_the_post_thumbnail( get_the_ID() ); ?>
                   </div>
-                  <div class="extracto small-12 columns p4 text-left fontS h_30">
-                     <?php echo apply_filters( 'the_excerpt', get_the_excerpt() ); ?>
+                  <div class="extracto small-12 columns p4 text-left h_25">
+                     <?php echo apply_filters( 'the_excerpt', wp_trim_words( get_the_excerpt(), 22 ) ); ?>
                   </div>
                   <div class="w_100 text-right p5">
                      <div class="button fontS mt2">
@@ -92,7 +95,7 @@
 
    </div>
 
-   <div id="inicio-noticias-medium" class="p5 row text-center rel hide-for-small-only">
+   <div id="inicio-noticias-medium" class="medium-10 large-8 medium-offset-1 large-offset-2 p5 mt2 text-center rel hide-for-small-only">
 
    </div>
 

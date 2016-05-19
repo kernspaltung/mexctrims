@@ -23,24 +23,36 @@
     </div>
 
 
-    <div id="header_quicklinks" class="small-6 medium-3 large-2 columns h_sm_50 medium-push-6 large-push-8 text-right p0">
+    <div id="header_quicklinks" class="small-6 medium-3 columns h_sm_50 medium-push-6 large-push-7 text-right p0">
 
-      <div id="area_medicos" class="small-6 medium-12 columns small-text-center medium-text-right h_100">
+      <div id="area_medicos" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
 
         <?php $page = get_page_by_title('Médicos'); ?>
 
         <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
           <div class="vcenter">
-            <i class="fa fa-circle-o fontL"></i>
-            <h6 class="fontXS"><?php echo get_the_title( $page->ID ); ?></h6>
+            <i class="fa fa-user-md fontXL p2"></i>
+            <h6 class="fontS"><?php echo get_the_title( $page->ID ); ?></h6>
           </div>
         </a>
       </div>
-      <div id="icono_menu" class="show-for-small-only small-6 columns text-right h_100">
-        <a href="#" class="h_100 w_100">
+      <div id="contacto" class="hide-for-small-only medium-4 columns small-text-center medium-text-right h_100">
+        <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
           <div class="vcenter">
-            <i class="fa fa-bars fontXL"></i>
-            <h6>Menú</h6>
+            <i class="fa fa-envelope fontXL p2"></i>
+            <h6 class="fontS">
+               Contáctanos
+            </h6>
+          </div>
+        </a>
+      </div>
+      <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
+        <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
+          <div class="vcenter">
+            <i class="fa fa-search fontXL p2"></i>
+            <h6 class="fontS">
+               Buscar
+            </h6>
           </div>
         </a>
       </div>
@@ -48,19 +60,21 @@
     </div>
 
 
-    <div id="menu" class="small-12 medium-6 large-8 columns h_100 h_sm_50 medium-pull-3 large-pull-2 p0 m0">
+    <div id="menu" class="small-12 medium-6 columns h_100 h_sm_50 medium-pull-3 p0 m0">
       <ul class="w_100 h_100 m0 p0 ">
 
         <?php
-        $paginas = array('Información','Noticias','Descargables', 'Médicos', 'Registro');
-        for ($i=0; $i < 3; $i++) {
+        $paginas = array( 'Información', 'Noticias', 'Descargables', 'Regístrate' );
+        $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
+        for ($i=0; $i < 4; $i++) {
           $page = get_page_by_title($paginas[$i]);
+          $icono = $iconos[$i];
           ?>
 
-          <li class="small-4 columns w_100 text-center h_100">
+          <li class="small-3 columns w_100 text-center h_100">
             <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
               <div class="vcenter">
-                <i class="fa fa-circle-o"></i>
+                <i class="fa fa-<?php echo $icono; ?> fontXL p2"></i>
                 <div><?php echo get_the_title( $page->ID ); ?></div>
               </div>
             </a>
