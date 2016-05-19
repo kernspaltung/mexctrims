@@ -4,6 +4,10 @@
 
    $medicos_destacada = get_term_by('name','Destacada Médicos', 'category' );
    $medicos = get_term_by('name','Médicos', 'category' );
+   $noticia_principal = get_term_by('name','Noticia Principal', 'category' );
+   $noticias = get_term_by('name','Noticias', 'category' );
+   $categorias_excluidas  = array( 1, $medicos_destacada -> term_id, $medicos->term_id, $noticia_principal->term_id, $noticias->term_id, );
+
    $q = new WP_Query( array( 'cat' => $medicos->term_id, 'category__not_in'=>array($medicos_destacada->term_id), 'posts_per_page' => 12 ) );
    if ($q -> have_posts() ) :
       while ($q -> have_posts() ) :
@@ -52,12 +56,24 @@
                </div>
 
                <footer class="small-12 columns">
-                  <div class="small-8 columns h_100 p2 text-left">
-                     <h6>Categorías:</h6>
-                     <div class="categorias-entrada small-12 columns fontS p0">
-                        Categoría 1,
-                        Categoría 2,
-                        Categoría 3
+                  <div class="categorias_noticia small-8 columns h_100 p2 text-left">
+                     <h5>Categorías:</h6>
+                     <div class="categorias-entrada small-12 columns fontM p0">
+                        <?php
+                        foreach( get_the_category() as $categoria ):
+                           $categorias_excluidas  = array( 1, $medicos_destacada -> term_id, $medicos->term_id, $noticia_principal->term_id, $noticias->term_id, );
+                           if( ! in_array( $categoria->term_id, $categorias_excluidas ) ) :
+                        ?>
+
+                              <li class="small-3 columns end">
+                                 <a href="<?php echo get_category_link( $categoria->term_id ); ?>">
+                                    <?php echo $categoria->name; ?>
+                                 </a>
+                              </li>
+
+                        <?php
+                           endif;
+                        endforeach; ?>
                      </div>
                   </div>
                   <button class="small-4 button pointer h_100 p2">

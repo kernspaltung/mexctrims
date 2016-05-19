@@ -15,6 +15,11 @@
 
    <?php
    $medicos_destacada = get_term_by('name','Destacada Médicos', 'category' );
+   $medicos = get_term_by('name','Médicos', 'category' );
+   $noticia_principal = get_term_by('name','Noticia Principal', 'category' );
+   $noticias = get_term_by('name','Noticias', 'category' );
+   $categorias_excluidas  = array( 1, $medicos_destacada -> term_id, $medicos->term_id, $noticia_principal->term_id, $noticias->term_id, );
+
    $q = new WP_Query( array( 'cat' => $medicos_destacada->term_id, 'posts_per_page' => 1 ) );
    if ($q -> have_posts() ) :
       while ($q -> have_posts() ) :
@@ -74,8 +79,8 @@
                   </div>
 
                   <div class="small-4 columns h_100 p0">
-                     <div class="h_100 imgLiquid imgLiquidNoFill">
-                        <img src="http://fakeimg.pl/100x100" alt="">
+                     <div class="h_10vh vcenter imgLiquid imgLiquidNoFill">
+                        <?php echo get_avatar( get_the_author_ID() ); ?>
                      </div>
                   </div>
 
@@ -93,6 +98,27 @@
                <!-- (.small-12.columns.h_60>.small-12.fontS.black.vcenter{lorem22})+.small-12.columns.h_40>(.small-8.columns.h_100)+.small-4.columns.h_100>.small-6.fontL.black.vcenter{Leer más}+.small-6.columns.fontXL.black.vcenter>i.fa.fa-angle-right -->
                <div class="extracto columns p4 text-left fontL h_60">
                   <?php echo apply_filters('the_excerpt', get_the_excerpt() ); ?>
+               </div>
+
+               <div class="categorias_noticia small-8 columns h_100 p2 text-left">
+                  <h5>Categorías:</h6>
+                  <div class="categorias-entrada small-12 columns fontM p0">
+                     <?php
+                     foreach( get_the_category() as $categoria ):
+
+                        if( ! in_array( $categoria->term_id, $categorias_excluidas ) ) :
+                     ?>
+
+                           <li class="small-3 columns end">
+                              <a href="<?php echo get_category_link( $categoria->term_id ); ?>">
+                                 <?php echo $categoria->name; ?>
+                              </a>
+                           </li>
+
+                     <?php
+                        endif;
+                     endforeach; ?>
+                  </div>
                </div>
 
                <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_40 p0">
