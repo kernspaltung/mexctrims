@@ -6012,8 +6012,12 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+/* estilos para elementos: */
 *, h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif; }
+
+iframe {
+  min-width: 100%; }
 
 .thin {
   font-weight: 100; }

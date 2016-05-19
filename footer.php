@@ -31,10 +31,10 @@
                   <span class="columns fontS p2">Instagram</span>
                </a>
             </div>
-            <div class="small-3 columns text-center">
+            <div class="boton-contacto small-3 columns text-center">
                <a href="#" target="_blank">
                   <i class="fa fa-envelope columns fontL"></i>
-                  <span class="columns fontS p2">E-mail</span>
+                  <span class="columns fontS p2">Contáctanos</span>
                </a>
             </div>
          </div>

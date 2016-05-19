@@ -5,9 +5,9 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
 
 ?>
 
-<section id="inicio-registro" class="small-12 columns text-center rel mt2 mb5">
+<section id="inicio-registro" class="small-12 columns text-center rel mt4 mb5">
 
-   <div class="small-10 medium-8 small-centered h_60vh">
+   <div id="inicio-registro-formulario" class="small-10 medium-8 small-centered h_60vh">
 
       <div class="columns fontXS text-center">
          <?php echo apply_filters( 'the_content', $registro -> post_content ); ?>
@@ -48,7 +48,7 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
       </div>
    </div>
 
-   <div class="small-10 medium-8 small-centered h_60vh">
+   <div id="inicio-registro-agradecimiento" class="small-10 medium-8 small-centered h_60vh hidden">
 
       <div class="vcenter">
          <h1>

@@ -58,12 +58,18 @@
 
 
 
-
+/* estilos para elementos: */
 
 *,h1,h2,h3,h4,h5,h6 {
    font-family: 'Lato', sans-serif;
    // outline: 2px dotted #def;
 }
+
+iframe {
+   min-width: 100%;
+}
+
+
 
 
 .thin {

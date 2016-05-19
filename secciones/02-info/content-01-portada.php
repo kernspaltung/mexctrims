@@ -26,7 +26,7 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
 
 <!-- (h1>lorem9^+p>lorem10^+h2>lorem9^+(p>lorem18)*3)*4 -->
 
-<section id="info-menu" class="medium-6 columns h_75vh">
+<section id="info-menu" class="medium-6 columns h_55vh">
 
    <?php foreach( $paginas as $pagina ) :  ?>
 
