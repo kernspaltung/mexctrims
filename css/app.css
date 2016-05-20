@@ -6022,15 +6022,22 @@ iframe {
 a, a:hover {
   color: #232222; }
 
-button, .button {
+button:hover, .button:hover {
+  background-color: #b9cf46;
+  color: #df00c4; }
+
+button, button.primary, .button, .button.primary {
   background-color: #c8fb00;
   color: #df00c4; }
-  button:hover, .button:hover {
-    background-color: #b9cf46;
-    color: #df00c4; }
+
+button, button a, .button, .button a {
+  color: #232222 !important; }
 
 .hollow {
-  border: 1px solid #c8fb00; }
+  border-color: #c8fb00 !important; }
+  .hollow:hover {
+    background-color: #c8fb00 !important;
+    color: #df00c4 !important; }
 
 .thin {
   font-weight: 100; }

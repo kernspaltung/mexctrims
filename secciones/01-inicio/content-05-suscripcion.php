@@ -22,17 +22,17 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
             </div>
 
             <div class="row mt1">
-               <div class="small-4 columns button btn-secondary text-center p4">
+               <div class="small-4 columns button hollow btn-secondary text-center p4">
                   <i class="fa fa-user fontXL row"></i>
                   <div class="fontS text-center">Particular</div>
                   <input class="hidden" type="radio">
                </div>
-               <div class="small-4 columns button btn-secondary text-center p4">
+               <div class="small-4 columns button hollow btn-secondary text-center p4">
                   <i class="fa fa-user fontXL row"></i>
                   <div class="fontS text-center">Paciente</div>
                   <input class="hidden" type="radio">
                </div>
-               <div class="small-4 columns button btn-secondary text-center p4">
+               <div class="small-4 columns button hollow btn-secondary text-center p4">
                   <i class="fa fa-user-md fontXL row"></i>
                   <div class="fontS text-center">Médico</div>
                   <input class="hidden" type="radio">

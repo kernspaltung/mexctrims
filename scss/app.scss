@@ -90,13 +90,23 @@ button, .button {
       background-color: $primario;
       color: $complementario;
    }
+   &,&.primary {
 
-   background-color: $primario_acento;
-   color: $complementario;
+      background-color: $primario_acento;
+      color: $complementario;
+   }
+
+   &, a {
+      color: $color_texto !important;
+   }
 }
 
 .hollow {
-   border: 1px solid $primario_acento;
+   border-color: $primario_acento !important;
+   &:hover {
+      background-color: $primario_acento !important;
+      color: $complementario  !important;
+   }
 }
 
 
