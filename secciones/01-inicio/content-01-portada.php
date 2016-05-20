@@ -17,7 +17,7 @@ $bienvenida = get_page_by_title('Bienvenida');
 
 <div class="h_100 text-center rel z1k">
    <div class="row p4 h_75">
-      <div class="small-6 large-8 columns">
+      <div class="small-6 large-8 columns h_100">
          <div class="h_100 imgLiquid imgLiquidFill image-fx">
 
             <?php echo get_the_post_thumbnail( $bienvenida -> ID ); ?>
