@@ -139,6 +139,14 @@ button, .button {
 
 
 
+
+header#header {
+   border-bottom: 2px solid $neutral;
+   .button {
+      background-color: transparent !important;
+   }
+}
+
 #background {
 }
 
@@ -165,62 +173,89 @@ button, .button {
 
 
 .primario {
-   * {
+   &, * {
       color: $primario !important;
    }
 }
 .primario_acento {
-   * {
+   &, * {
       color: $primario_acento !important;
    }
 }
 .neutral {
-   * {
+   &, * {
       color: $neutral !important;
    }
 }
 .secundario1 {
-   * {
+   &, * {
       color: $secundario1 !important;
    }
 }
 .secundario2 {
-   * {
+   &, * {
       color: $secundario2 !important;
    }
 }
 .secundario3 {
-   * {
+   &, * {
       color: $secundario3 !important;
    }
 }
 .complementario {
-   * {
+   &, * {
       color: $complementario !important;
    }
 }
 
 
-.primario_bg {
-   background-color: $primario !important;
+.primario_bd {
+   border-color: $primario !important;
 }
-.primario_acento_bg {
-   background-color: $primario_acento !important;
+.primario_acento_bd {
+   border-color: $primario_acento !important;
 }
-.neutral_bg {
-   background-color: $neutral !important;
+.neutral_bd {
+   border-color: $neutral !important;
 }
-.secundario1_bg {
-   background-color: $secundario1 !important;
+.secundario1_bd {
+   border-color: $secundario1 !important;
 }
-.secundario2_bg {
-   background-color: $secundario2 !important;
+.secundario2_bd {
+   border-color: $secundario2 !important;
 }
-.secundario3_bg {
-   background-color: $secundario3 !important;
+.secundario3_bd {
+   border-color: $secundario3 !important;
 }
 .complementario_bg {
-   background-color: $complementario !important;
+   border-color: $complementario !important;
+}
+
+
+
+.primario_bd {
+   border-color: $primario !important;
+}
+.primario_acento_bd {
+   border-color: $primario_acento !important;
+}
+.neutral_bd {
+   border-color: $neutral !important;
+}
+.secundario1_bd {
+   border-color: $secundario1 !important;
+}
+.secundario2_bd {
+   border-color: $secundario2 !important;
+}
+.secundario3_bd {
+   border-color: $secundario3 !important;
+}
+.complementario_bd {
+   border-color: $complementario !important;
+}
+.transparente_bd {
+   border-color: transparent !important;
 }
 
 

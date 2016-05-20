@@ -6051,6 +6051,11 @@ button, button a, .button, .button a {
 .curtain {
   background-color: rgba(255, 255, 255, 0.7); }
 
+header#header {
+  border-bottom: 2px solid #97908d; }
+  header#header .button {
+    background-color: transparent !important; }
+
 .image-fx {
   -webkit-filter: brightness(110%) contrast(125%);
           filter: brightness(110%) contrast(125%); }
@@ -6061,47 +6066,71 @@ button, button a, .button, .button a {
   .taxonomias li.active {
     background-color: #eee !important; }
 
-.primario * {
+.primario, .primario * {
   color: #b9cf46 !important; }
 
-.primario_acento * {
+.primario_acento, .primario_acento * {
   color: #c8fb00 !important; }
 
-.neutral * {
+.neutral, .neutral * {
   color: #97908d !important; }
 
-.secundario1 * {
+.secundario1, .secundario1 * {
   color: #00df7f !important; }
 
-.secundario2 * {
+.secundario2, .secundario2 * {
   color: #039ed9 !important; }
 
-.secundario3 * {
+.secundario3, .secundario3 * {
   color: #ff8100 !important; }
 
-.complementario * {
+.complementario, .complementario * {
   color: #df00c4 !important; }
 
-.primario_bg {
-  background-color: #b9cf46 !important; }
+.primario_bd {
+  border-color: #b9cf46 !important; }
 
-.primario_acento_bg {
-  background-color: #c8fb00 !important; }
+.primario_acento_bd {
+  border-color: #c8fb00 !important; }
 
-.neutral_bg {
-  background-color: #97908d !important; }
+.neutral_bd {
+  border-color: #97908d !important; }
 
-.secundario1_bg {
-  background-color: #00df7f !important; }
+.secundario1_bd {
+  border-color: #00df7f !important; }
 
-.secundario2_bg {
-  background-color: #039ed9 !important; }
+.secundario2_bd {
+  border-color: #039ed9 !important; }
 
-.secundario3_bg {
-  background-color: #ff8100 !important; }
+.secundario3_bd {
+  border-color: #ff8100 !important; }
 
 .complementario_bg {
-  background-color: #df00c4 !important; }
+  border-color: #df00c4 !important; }
+
+.primario_bd {
+  border-color: #b9cf46 !important; }
+
+.primario_acento_bd {
+  border-color: #c8fb00 !important; }
+
+.neutral_bd {
+  border-color: #97908d !important; }
+
+.secundario1_bd {
+  border-color: #00df7f !important; }
+
+.secundario2_bd {
+  border-color: #039ed9 !important; }
+
+.secundario3_bd {
+  border-color: #ff8100 !important; }
+
+.complementario_bd {
+  border-color: #df00c4 !important; }
+
+.transparente_bd {
+  border-color: transparent !important; }
 
 .white * {
   color: white !important; }
