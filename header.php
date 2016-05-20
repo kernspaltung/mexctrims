@@ -25,7 +25,7 @@
 
       <div id="header_quicklinks" class="small-6 medium-3 columns h_sm_50 medium-push-6 large-push-7 text-right p0">
 
-         <div id="area_medicos" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
+         <div id="area_medicos" class="small-6 medium-4 columns small-text-center medium-text-right h_100 secundario1 txsh1">
 
             <?php $page = get_page_by_title('Médicos'); ?>
 
@@ -36,7 +36,7 @@
                </div>
             </a>
          </div>
-         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100">
+         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100 neutral">
             <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
                <div class="vcenter">
                   <i class="fa fa-envelope fontXL p2"></i>
@@ -46,7 +46,7 @@
                </div>
             </a>
          </div>
-         <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
+         <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100 neutral">
             <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
                <div class="vcenter">
                   <i class="fa fa-search fontXL p2"></i>
@@ -64,15 +64,17 @@
          <ul class="w_100 h_100 m0 p0 ">
 
             <?php
+
             $paginas = array( 'Información', 'Noticias', 'Descargables', 'Regístrate' );
             $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
+            $colores = array( 'secundario1', 'secundario2', 'secundario3','primario_acento txsh1');
 
             for ($i=0; $i < 4; $i++) {
                $page = get_page_by_title($paginas[$i]);
                $icono = $iconos[$i];
                ?>
 
-               <li class="small-3 columns w_100 text-center h_100">
+               <li class="small-3 columns w_100 text-center h_100 <?php echo $colores[$i]; ?>">
                   <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
                      <div class="vcenter">
                         <i class="fa fa-<?php echo $icono; ?> fontXL p2"></i>

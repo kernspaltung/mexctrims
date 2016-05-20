@@ -58,6 +58,16 @@
 
 
 
+$color_texto: #232222;
+$primario: #b9cf46;
+$primario_acento: #c8fb00;
+$neutral: #97908d;
+$secundario1: #00df7f;
+$secundario2: #039ed9;
+$secundario3: #ff8100;
+$complementario: #df00c4;
+
+
 /* estilos para elementos: */
 
 *,h1,h2,h3,h4,h5,h6 {
@@ -69,7 +79,25 @@ iframe {
    min-width: 100%;
 }
 
+a {
+   &,&:hover {
+      color: $color_texto;
+   }
+}
 
+button, .button {
+   &:hover {
+      background-color: $primario;
+      color: $complementario;
+   }
+
+   background-color: $primario_acento;
+   color: $complementario;
+}
+
+.hollow {
+   border: 1px solid $primario_acento;
+}
 
 
 .thin {
@@ -120,4 +148,79 @@ iframe {
          background-color: #eee !important;
       }
    }
+}
+
+
+
+
+
+.primario {
+   * {
+      color: $primario !important;
+   }
+}
+.primario_acento {
+   * {
+      color: $primario_acento !important;
+   }
+}
+.neutral {
+   * {
+      color: $neutral !important;
+   }
+}
+.secundario1 {
+   * {
+      color: $secundario1 !important;
+   }
+}
+.secundario2 {
+   * {
+      color: $secundario2 !important;
+   }
+}
+.secundario3 {
+   * {
+      color: $secundario3 !important;
+   }
+}
+.complementario {
+   * {
+      color: $complementario !important;
+   }
+}
+
+
+.primario_bg {
+   background-color: $primario !important;
+}
+.primario_acento_bg {
+   background-color: $primario_acento !important;
+}
+.neutral_bg {
+   background-color: $neutral !important;
+}
+.secundario1_bg {
+   background-color: $secundario1 !important;
+}
+.secundario2_bg {
+   background-color: $secundario2 !important;
+}
+.secundario3_bg {
+   background-color: $secundario3 !important;
+}
+.complementario_bg {
+   background-color: $complementario !important;
+}
+
+
+.white {
+   * {
+      color: white !important;
+   }
+}
+
+
+.txsh1 {
+	text-shadow: 1px 1px 0 $neutral;
 }

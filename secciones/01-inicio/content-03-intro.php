@@ -23,24 +23,35 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
    </div>
 </section>
 
-<section id="inicio_bullets" class="row h_100 text-center rel mt4 mb4">
+<section id="inicio_bullets" class="expanded row h_100 text-center rel mt4 mb4">
 
 
    <?php
    $i=0;
-   foreach ($bullets as $bullet ) : ?>
+   foreach ($bullets as $bullet ) :
 
-   <div class="medium-4 columns h_100 text-center m0 p0 mt_sm_2 h_30vh">
+      $color='';
+
+      if($bullet -> post_title == "Información" )
+         $color = "secundario1_bg";
+      if($bullet -> post_title == "Noticias" )
+         $color = "secundario2_bg";
+      if($bullet -> post_title == "Descargables" )
+         $color = "secundario3_bg";
+   ?>
+
+
+   <div class="medium-4 columns h_100 text-center m0 p0 mt_sm_2 h_40vh <?php echo $color; ?> black">
       <a href="<?php echo get_the_permalink($bullet->ID); ?>" class="w_100 h_100">
 
-         <div class="titulo h_40 p3">
-            <i class="fa fa-<?php echo $iconos[$i]; ?> fontXL"></i>
+         <div class="titulo h_40 mt2">
+            <i class="fa fa-<?php echo $iconos[$i]; ?> fontXXL white"></i>
             <h5>
                <?php echo get_the_title( $bullet->ID ); ?>
             </h5>
          </div>
          <div class="extracto p0 fontM h_60">
-            <div class="vcenter p5 pt0 pb0">
+            <div class="vcenter p5 pt0 ">
                <?php echo apply_filters( 'the_content', $bullet->post_content ); ?>
             </div>
          </div>

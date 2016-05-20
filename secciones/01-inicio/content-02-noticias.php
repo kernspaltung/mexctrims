@@ -3,6 +3,7 @@
    <h1 class="small-12 text-left p0 mb2">
       Noticias
    </h1>
+
    <?php
 
    $destacada_inicio = get_term_by( 'name', 'Noticia Principal', 'category' );
@@ -15,7 +16,7 @@
       ?>
 
       <section id="noticia_destacada" class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 end h_40vh mt1 mb4 p5">
-         <a href="http://google.com">
+         <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
 
             <h3 class="p2 mb1 fontXL font_sm_M text-center">
                <?php echo apply_filters( 'the_title', get_the_title() ); ?>
@@ -68,7 +69,7 @@
                </h3>
             </a>
             <div class="accordion-content" data-tab-content>
-               <a href="http://google.com">
+               <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
                   <div class="small-12 columns imagen h_20vh imgLiquid imgLiquidFill">
                      <?php echo get_the_post_thumbnail( get_the_ID() ); ?>
                   </div>

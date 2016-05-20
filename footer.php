@@ -11,7 +11,7 @@
       </main>
 
 
-      <footer id="footer" class="columns h_10vh fixed bottom white_bg z1k">
+      <footer id="footer" class="columns h_10vh fixed bottom white_bg z1k neutral">
          <div class="small-12 medium-6 large-4 small-centered columns p2">
             <div class="small-3 columns text-center">
                <a href="#" target="_blank">
