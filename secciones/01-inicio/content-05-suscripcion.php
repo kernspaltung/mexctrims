@@ -9,7 +9,7 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
 
    <div id="inicio-registro-formulario" class="small-12 medium-8 small-centered h_100vh h_a p4 p_sm_1 primario_acento_bg">
 
-      <div class="columns fontS text-center h_40 h_sm_50">
+      <div class="columns fontS text-center h_40 h_sm_40">
          <?php echo apply_filters( 'the_content', $registro -> post_content ); ?>
       </div>
       <div class="columns h_sm_60vh">
