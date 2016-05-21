@@ -7,16 +7,16 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
 
 ?>
 
-<section id="inicio-introduccion" class="small-12 medium-10 medium-offset-1 end text-center rel mt2">
+<section id="inicio-introduccion" class="small-12 medium-10 medium-offset-1 end text-center rel mt2 mt_sm_0 h_60vh h_sm_90vh">
 
    <div class="small-12 columns row h_60vh text-left fontM p5 p_sm_1">
-      <div class="small-12 medium-7 columns p5 p_sm_1 h_100">
-         <div class="vcenter">
+      <div class="small-12 small-push-12 medium-7 columns p5 p_sm_1 h_100">
+         <div class="vcenter font_sm_S">
             <?php echo apply_filters('the_content', $introduccion->post_content ); ?>
          </div>
       </div>
-      <div class="hide-for-small-only medium-5 columns h_100">
-         <div class="h_100 row imgLiquid imgLiquidFill">
+      <div class="medium-5 columns h_100 h_sm_50">
+         <div class="h_100 small-12 imgLiquid imgLiquidFill">
             <?php echo get_the_post_thumbnail($introduccion->ID); ?>
          </div>
       </div>
