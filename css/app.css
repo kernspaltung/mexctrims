@@ -538,6 +538,12 @@ li {
   .h_sm_25 {
     display: block;
     height: 25% !important; }
+  .h_sm_30 {
+    display: block;
+    height: 30% !important; }
+  .h_sm_35 {
+    display: block;
+    height: 35% !important; }
   .h_sm_40 {
     display: block;
     height: 40% !important; }
@@ -654,8 +660,7 @@ li {
     margin-bottom: 37.5px !important; }
   .mb_sm_6 {
     margin-bottom: 45px !important; }
-  F
-.mt_sm_0 {
+  .mt_sm_0 {
     margin-top: 0 !important; }
   .mt_sm_1 {
     margin-top: 7.5px !important; }
@@ -6066,6 +6071,9 @@ header#header {
   .taxonomias li.active {
     background-color: #eee !important; }
 
+#enlaces_destacados .enlace_destacado .texto_enlace {
+  margin-top: 3px; }
+
 .primario, .primario * {
   color: #b9cf46 !important; }
 
@@ -6087,26 +6095,26 @@ header#header {
 .complementario, .complementario * {
   color: #df00c4 !important; }
 
-.primario_bd {
-  border-color: #b9cf46 !important; }
+.primario_bg {
+  background-color: #b9cf46 !important; }
 
-.primario_acento_bd {
-  border-color: #c8fb00 !important; }
+.primario_acento_bg {
+  background-color: #c8fb00 !important; }
 
-.neutral_bd {
-  border-color: #97908d !important; }
+.neutral_bg {
+  background-color: #97908d !important; }
 
-.secundario1_bd {
-  border-color: #00df7f !important; }
+.secundario1_bg {
+  background-color: #00df7f !important; }
 
-.secundario2_bd {
-  border-color: #039ed9 !important; }
+.secundario2_bg {
+  background-color: #039ed9 !important; }
 
-.secundario3_bd {
-  border-color: #ff8100 !important; }
+.secundario3_bg {
+  background-color: #ff8100 !important; }
 
 .complementario_bg {
-  border-color: #df00c4 !important; }
+  background-color: #df00c4 !important; }
 
 .primario_bd {
   border-color: #b9cf46 !important; }

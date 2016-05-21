@@ -5,12 +5,12 @@ if( $q -> have_posts() ) :
       $q -> the_post();
 ?>
 
-      <div class="small-12 h_33 p4">
+      <div class="enlace_destacado small-12 h_30 p4">
          <a href="<?php echo get_post_meta( get_the_ID(), 'link-externo', true); ?>" target="_blank">
-            <div class="imagen imgLiquid imgLiquidFill h_60">
+            <div class="imagen imgLiquid imgLiquidFill h_70">
                <?php echo get_the_post_thumbnail(); ?>
             </div>
-            <h6 class="fontS p2">
+            <h6 class="texto_enlace fontXS p1 secundario2_bg white text-center">
                <?php echo get_the_content(); ?>
             </h6>
          </a>

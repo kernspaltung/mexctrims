@@ -94,7 +94,7 @@
                   <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
                      <div class="vcenter">
                         <i class="fa fa-<?php echo $icono; ?> fontXL p2 <?php echo $colores[$i]; ?>"></i>
-                        <div class="neutral"><?php echo get_the_title( $page->ID ); ?></div>
+                        <div class="neutral font_sm_S"><?php echo get_the_title( $page->ID ); ?></div>
                      </div>
                   </a>
                </li>

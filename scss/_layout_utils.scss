@@ -681,6 +681,14 @@ $screen-lg-min: 1025px;
 		display: block;
 		height: 25% !important;
 	}
+	.h_sm_30 {
+		display: block;
+		height: 30% !important;
+	}
+	.h_sm_35 {
+		display: block;
+		height: 35% !important;
+	}
 	.h_sm_40 {
 		display: block;
 		height: 40% !important;
@@ -852,7 +860,7 @@ $screen-lg-min: 1025px;
 	}
 	.mb_sm_6 {
 		margin-bottom: $spacing * 3 !important;
-	}F
+	}
 
 	.mt_sm_0 {
 		margin-top: 0 !important;

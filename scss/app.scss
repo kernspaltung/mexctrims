@@ -169,6 +169,14 @@ header#header {
 }
 
 
+#enlaces_destacados {
+   .enlace_destacado {
+      .texto_enlace {
+         margin-top: 3px;
+      }
+   }
+}
+
 
 
 
@@ -209,26 +217,26 @@ header#header {
 }
 
 
-.primario_bd {
-   border-color: $primario !important;
+.primario_bg {
+   background-color: $primario !important;
 }
-.primario_acento_bd {
-   border-color: $primario_acento !important;
+.primario_acento_bg {
+   background-color: $primario_acento !important;
 }
-.neutral_bd {
-   border-color: $neutral !important;
+.neutral_bg {
+   background-color: $neutral !important;
 }
-.secundario1_bd {
-   border-color: $secundario1 !important;
+.secundario1_bg {
+   background-color: $secundario1 !important;
 }
-.secundario2_bd {
-   border-color: $secundario2 !important;
+.secundario2_bg {
+   background-color: $secundario2 !important;
 }
-.secundario3_bd {
-   border-color: $secundario3 !important;
+.secundario3_bg {
+   background-color: $secundario3 !important;
 }
 .complementario_bg {
-   border-color: $complementario !important;
+   background-color: $complementario !important;
 }
 
 

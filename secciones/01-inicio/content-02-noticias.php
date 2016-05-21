@@ -1,6 +1,6 @@
-<section id="noticias" class="row mt4 mb4 p5">
+<section id="noticias" class="row mt4 mt_sm_0 mb4 p5">
 
-   <h1 class="small-12 text-left p0 mb2">
+   <h1 class="small-12 small-text-center medium-text-left p0 mb1 secundario2_bg p4 white">
       Noticias
    </h1>
 
@@ -15,26 +15,31 @@
          $q -> the_post();
       ?>
 
-      <section id="noticia_destacada" class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 end h_40vh mt1 mb4 p5">
+      <section id="noticia_destacada" class="small-12 medium-7 large-8 h_40vh h_sm_60vh mt1 mb4 p5 pt0 p_sm_0">
          <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
 
-            <h3 class="p2 mb1 fontXL font_sm_M text-center">
+            <h3 class="p2 mb1  fontXL font_sm_L small-text-center medium-text-left">
                <?php echo apply_filters( 'the_title', get_the_title() ); ?>
             </h3>
 
-            <div class="extracto small-12 medium-6 columns p0 text-left fontL h_80">
-               <div class="vcenter p4 pt0 pb0">
-                  <?php echo apply_filters( 'the_excerpt', get_the_excerpt() ); ?>
-               </div>
-            </div>
-
-            <div class="small-12 medium-6 columns imagen h_80 imgLiquid imgLiquidNoFill">
+            <div class="small-12 medium-6 columns imagen h_100 h_sm_40 imgLiquid imgLiquidNoFill">
                <?php echo get_the_post_thumbnail( get_the_ID() ); ?>
             </div>
 
-            <div class="w_100 h_20 text-right p5">
 
-               <div class="button fontS mt2">
+            <div class="extracto_fecha small-12 medium-6 columns p0 text-left h_80 h_sm_35">
+               <div class="fecha small-12 columns text-right p2 p_sm_3 pt_sm_1 pb_sm_1 fontS">
+                  Publicada el <?php echo get_the_date('d \d\e F\, Y',get_the_ID()); ?>
+               </div>
+               <div class="p4 p_sm_3 pt0 pb0 fontM font_sm_S ">
+                  <?php echo apply_filters( 'the_excerpt', wp_trim_words( get_the_excerpt(), 12 ) ); ?>
+               </div>
+            </div>
+
+
+            <div class="small-12 columns h_20 text-right p5 p_sm_2">
+
+               <div class="button fontS mt2 mt_sm_0">
                   Ver Más
                   <i class="fa fa-plus"></i>
                </div>
@@ -49,7 +54,7 @@
          endif;
        ?>
 
-   <div id="inicio-noticias-small" class="p5 row text-center rel show-for-small-only">
+   <div id="inicio-noticias-small" class="p5 small-12 text-center rel show-for-small-only">
 
       <ul class="accordion w_100" data-accordion>
 
@@ -64,24 +69,27 @@
 
          <li class="accordion-item p0 <?php echo $i==0 ? 'is-active' : ''; ?>" data-accordion-item>
             <a href="#" class="accordion-title p0">
-               <h3 class="p2 m0 fontL font_sm_M text-left">
+               <h3 class="p2 m0 fontM font_sm_S text-left">
                   <?php echo apply_filters( 'the_title', get_the_title() ); ?>
                </h3>
             </a>
             <div class="accordion-content" data-tab-content>
                <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
-                  <div class="small-12 columns imagen h_20vh imgLiquid imgLiquidFill">
+                  <div class="small-12 columns imagen h_10vh imgLiquid imgLiquidFill">
                      <?php echo get_the_post_thumbnail( get_the_ID() ); ?>
                   </div>
-                  <div class="extracto small-12 columns p4 text-left h_25">
-                     <?php echo apply_filters( 'the_excerpt', wp_trim_words( get_the_excerpt(), 22 ) ); ?>
+                  <div class="fecha small-12 columns text-right p2 p_sm_3 pt_sm_1 pb_sm_1 fontS">
+                     Publicada el <?php echo get_the_date('d \d\e F\, Y',get_the_ID()); ?>
                   </div>
-                  <div class="w_100 text-right p5">
-                     <div class="button fontS mt2">
+                  <!-- <div class="extracto small-12 columns p4 text-left h_25">
+                     <?php echo apply_filters( 'the_excerpt', wp_trim_words( get_the_excerpt(), 22 ) ); ?>
+                  </div> -->
+                  <!-- <div class="w_100 text-right p5 pt0">
+                     <div class="button fontS m0">
                         Ver Más
                         <div class="fa fa-plus"></div>
                      </div>
-                  </div>
+                  </div> -->
                </a>
             </div>
          </li>
@@ -96,7 +104,7 @@
 
    </div>
 
-   <div id="inicio-noticias-medium" class="medium-10 large-8 medium-offset-1 large-offset-2 p5 mt2 text-center rel hide-for-small-only">
+   <div id="inicio-noticias-medium" class="medium-5 large-4 columns p5 pt0 m0 text-center rel hide-for-small-only">
 
    </div>
 
