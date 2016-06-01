@@ -4,7 +4,7 @@ if(have_posts()) {
 while(have_posts()) {
    the_post();
    $title = get_the_title();
-   $content = get_the_content();
+   $content = apply_filters('the_content', get_the_content());
 }
 }
 

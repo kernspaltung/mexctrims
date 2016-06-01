@@ -1,0 +1,13 @@
+.mexctrims_form label { display: block; float: left; width: 130px; }
+.mexctrims_form input[type="text"], .mexctrims_form input[type="password"],
+.mexctrims_form input[type="email"] {
+	padding: 4px 8px;
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+}
+.mexctrims_form input[type="text"]:focus, .mexctrims_form input[type="password"]:focus,
+.mexctrims_form input[type="email"]:focus {
+	border-color: #aaa;
+}
+
+.mexctrims_errors { padding: 8px; border: 1px solid #f50; margin: 0 0 15px; }
