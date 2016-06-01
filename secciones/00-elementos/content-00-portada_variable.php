@@ -55,9 +55,12 @@ if( is_page('Médicos') ):
          <div class="small-12 medium-7 large-8 columns p5 pl0 ">
             <?php
             $ingreso = get_page_by_title( "Ingreso Médicos" );
+            $registro = get_page_by_title( "Registro Médicos" );
             echo apply_filters('the_content', $ingreso->post_content );
-
             ?>
+            <div class="text-center mt3">
+               <a href="<?php echo get_the_permalink($registro->ID); ?>" class="button">Registra una nueva cuenta</a>
+            </div>
          </div>
          <div class="small-10 medium-5 large-4 columns p5 primario_acento_bg">
             <?php echo mexctrims_login_form(); ?>
