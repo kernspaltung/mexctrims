@@ -101,8 +101,6 @@ add_shortcode('login_form', 'mexctrims_login_form');
 function mexctrims_registration_form_fields() {
 
 	ob_start(); ?>
-		<h3 class="mexctrims_header">Registrar cuenta nueva</h3>
-
 		<?php
 		// show any error messages after form submission
 		mexctrims_show_error_messages(); ?>
@@ -155,25 +153,24 @@ function mexctrims_registration_form_fields() {
 function mexctrims_login_form_fields() {
 
 	ob_start(); ?>
-		<h3 class="mexctrim_header"><?php _e('Login'); ?></h3>
 
 		<?php
 		// show any error messages after form submission
-		mexctrim_show_error_messages(); ?>
+		mexctrims_show_error_messages(); ?>
 
-		<form id="mexctrim_login_form"  class="mexctrim_form"action="" method="post">
+		<form id="mexctrims_login_form"  class="mexctrims_form" action="" method="post">
 			<fieldset>
 				<p>
-					<label for="mexctrim_usuario_login">Username</label>
-					<input name="mexctrim_usuario_login" id="mexctrim_usuario_login" class="required" type="text"/>
+					<label for="mexctrims_usuario_nombre_usuario">Nombre de usuario</label>
+					<input name="mexctrims_usuario_nombre_usuario" id="mexctrims_usuario_nombre_usuario" class="required" type="text"/>
 				</p>
 				<p>
-					<label for="mexctrim_usuario_pass">Password</label>
-					<input name="mexctrim_usuario_pass" id="mexctrim_usuario_pass" class="required" type="password"/>
+					<label for="mexctrims_usuario_contrasenna">Contraseña</label>
+					<input name="mexctrims_usuario_contrasenna" id="mexctrims_usuario_contrasenna" class="required" type="password"/>
 				</p>
 				<p>
-					<input type="hidden" name="mexctrim_login_nonce" value="<?php echo wp_create_nonce('mexctrim-login-nonce'); ?>"/>
-					<input id="mexctrim_login_submit" type="submit" value="Login"/>
+					<input type="hidden" name="mexctrims_login_nonce" value="<?php echo wp_create_nonce('mexctrims-login-nonce'); ?>"/>
+					<input id="mexctrims_login_submit" type="submit" value="Login"/>
 				</p>
 			</fieldset>
 		</form>
@@ -214,7 +211,7 @@ function mexctrims_login_member() {
 			wp_set_current_user($user->ID, $_POST['mexctrims_usuario_nombre_usuario']);
 			do_action('wp_login', $_POST['mexctrims_usuario_nombre_usuario']);
 
-			wp_redirect(home_url()); exit;
+			wp_redirect( get_the_permalink(get_page_by_title("Médicos")->ID) ); exit;
 		}
 	}
 }
@@ -376,3 +373,20 @@ function mostrar_clave_medico( $user ) { ?>
 
 	<span><?php echo get_user_meta( $user->ID, "clave_medico", true ); ?></span>
 <?php }
+
+
+function revisar_roles() {
+	global $current_user;
+   $roles_permitidos = array( "medico", "colaborator", "author", "editor", "administrator" );
+
+   $rol_permitido = true;
+
+   foreach( $current_user->roles as $rol ) {
+      if( ! in_array( $rol, $roles_permitidos ) ) {
+         $rol_permitido = false;
+         break;
+      }
+   }
+
+	return $rol_permitido;
+}

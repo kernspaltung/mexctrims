@@ -1,5 +1,7 @@
          </div>
-         <?php if( ! is_page('Información') ) : ?>
+         <?php
+         global $block_ads;
+         if( ! is_page('Información') && ! $block_ads ) : ?>
 
             <aside id="enlaces_destacados" class="medium-3 large-2 columns fontM" data-sticky-container> <!-- antes h_100 -->
                <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="7">

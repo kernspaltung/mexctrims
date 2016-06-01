@@ -3,6 +3,6 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'secciones/06-registro/content','01-portada' ); ?>
+<?php get_template_part( 'secciones/01-inicio/content','05-suscripcion' ); ?>
 
 <?php get_footer(); ?>

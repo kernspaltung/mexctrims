@@ -1,5 +1,4 @@
 <?php
-
 $registro = get_page_by_title( 'Registro Inicio' );
 $agradecimiento = get_page_by_title( 'Agradecimiento' );
 
@@ -13,7 +12,9 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
          <?php echo apply_filters( 'the_content', $registro -> post_content ); ?>
       </div>
       <div class="columns h_sm_60vh p5 pt0 pb0">
-         <form action="#" class="w_100">
+
+         <?php echo  do_shortcode( '[contact-form-7 id="161" title="Suscripción"]' ); ?>
+         <!-- <form action="#" class="w_100">
             <div class="row">
                <label for="">Nombre</label><input type="text">
             </div>
@@ -44,7 +45,7 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
                   <a class="button primary white_bg">Enviar</a>
                </div>
             </div>
-         </form>
+         </form> -->
       </div>
    </div>
 <!--

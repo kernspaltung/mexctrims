@@ -43,12 +43,14 @@ while(have_posts()) {
       newli.attr('data-index',i);
 
       newli.click(function(){
+
+
          var scrollTo = $('#content [data-index='+$(this).data('index')+']').offset().top;
 
-         scrollTo += parseInt($('body').scrollTop())
+         // scrollTo += parseInt($('body').scrollTop())
          scrollTo -= parseInt($('#content').offset().top)
 
-         $('html').animate({ scrollTop: scrollTo })
+         $('body').animate({ scrollTop: scrollTo })
 
       })
 

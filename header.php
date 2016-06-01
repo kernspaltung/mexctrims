@@ -53,7 +53,7 @@
             </a>
          </div>
          <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100 neutral">
-            <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
+            <a href="<?php echo get_the_permalink( get_page_by_title("Contáctanos")->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
                <div class="vcenter">
                   <i class="fa fa-envelope fontXL p2"></i>
                   <h6 class="fontS">

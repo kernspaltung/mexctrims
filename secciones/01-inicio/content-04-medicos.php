@@ -19,14 +19,10 @@ $medicos = get_page_by_title('Médicos');
          <?php echo apply_filters( 'the_excerpt', $medicos_intro -> post_content ); ?>
 
          <?php
-            $medicos_registro = get_page_by_title("Registro Médicos");
-            $medicos_ingreso = get_page_by_title("Ingreso Médicos");
+            $medicos = get_page_by_title("Médicos");
          ?>
-         <a href="<?php echo get_the_permalink( $medicos_registro -> ID ); ?>" class="button hollow">
-            Regístrate
-         </a>
-         <a href="<?php echo get_the_permalink( $medicos_ingreso -> ID ); ?>" class="button hollow">
-            Ingresa
+         <a href="<?php echo get_the_permalink( $medicos -> ID ); ?>" class="button hollow">
+            Ir a la Sección de Médicos
          </a>
 
       </div>

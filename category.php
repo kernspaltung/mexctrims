@@ -1,17 +1,21 @@
-<section id="medicos-noticias" class="small-12 columns h_100 mt2">
+<?php
+get_header();
 
-   <?php
+?>
 
-   $medicos_destacada = get_term_by('name','Destacada Médicos', 'category' );
-   $medicos = get_term_by('name','Médicos', 'category' );
-   $noticia_principal = get_term_by('name','Noticia Principal', 'category' );
-   $noticias = get_term_by('name','Noticias', 'category' );
-   $categorias_excluidas  = array( 1, $medicos_destacada -> term_id, $medicos->term_id, $noticia_principal->term_id, $noticias->term_id, );
+<section id="categoria" class="row p5">
 
-   $q = new WP_Query( array( 'cat' => $medicos->term_id, 'category__not_in'=>array($medicos_destacada->term_id), 'posts_per_page' => 12 ) );
-   if ($q -> have_posts() ) :
-      while ($q -> have_posts() ) :
-         $q->the_post();
+
+   <h1><?php echo single_cat_title(); ?></h1>
+
+
+<?php
+   // $q = new WP_Query( array( 'cat' => $medicos->term_id, 'category__not_in'=>array($medicos_destacada->term_id), 'posts_per_page' => 12 ) );
+   if ( have_posts() ) :
+      while ( have_posts() ) :
+
+         the_post();
+
          $comments = get_comments( array( 'post_id' => get_the_ID() ) );
 
          ?>
@@ -108,9 +112,12 @@
       endwhile;
    endif;
    echo $html;
+
+
+?>
+
+</section>
+
+<?php
+get_footer();
    ?>
-
-</section>
-
-
-</section>
