@@ -5,14 +5,14 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
 
 ?>
 
-<section id="inicio-registro" class="small-12 columns text-center rel mt4 mb5">
+<section id="inicio-registro" class="small-12 columns text-center rel mt4 mb5 ">
 
-   <div id="inicio-registro-formulario" class="small-12 medium-8 small-centered h_100vh h_a p4 p_sm_1 primario_acento_bg">
+   <div id="inicio-registro-formulario" class="small-12 medium-8 small-centered row h_a p5 p_sm_1 rel primario_acento_bg">
 
-      <div class="columns fontS text-center h_40 h_sm_40">
+      <div class="columns fontS text-left mb2 p5 pt0 pb0">
          <?php echo apply_filters( 'the_content', $registro -> post_content ); ?>
       </div>
-      <div class="columns h_sm_60vh">
+      <div class="columns h_sm_60vh p5 pt0 pb0">
          <form action="#" class="w_100">
             <div class="row">
                <label for="">Nombre</label><input type="text">
@@ -47,7 +47,7 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
          </form>
       </div>
    </div>
-
+<!--
    <div id="inicio-registro-agradecimiento" class="small-10 medium-8 small-centered h_60vh hidden">
 
       <div class="vcenter">
@@ -57,5 +57,6 @@ $agradecimiento = get_page_by_title( 'Agradecimiento' );
       </div>
 
    </div>
+ -->
 
 </section>

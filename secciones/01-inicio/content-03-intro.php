@@ -41,22 +41,24 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
    ?>
 
 
-   <div class="medium-4 columns h_100 text-center m0 p0 mt_sm_2 h_40vh <?php echo $color; ?> black">
-      <a href="<?php echo get_the_permalink($bullet->ID); ?>" class="w_100 h_100">
+   <div class="medium-4 columns text-center m0  h_35vh <?php echo $color; ?> black">
 
-         <div class="titulo h_40 mt2">
-            <i class="fa fa-<?php echo $iconos[$i]; ?> fontXXL white"></i>
-            <h5>
-               <?php echo get_the_title( $bullet->ID ); ?>
-            </h5>
-         </div>
-         <div class="extracto p0 fontM h_60">
-            <div class="vcenter p5 pt0 ">
-               <?php echo apply_filters( 'the_content', $bullet->post_content ); ?>
+         <div class="vcenter">
+            <a href="<?php echo get_the_permalink($bullet->ID); ?>" class="w_100 h_100 m0">
+            <div class="titulo mt2 mb2">
+               <i class="fa fa-<?php echo $iconos[$i]; ?> fontXXL white"></i>
+               <h5>
+                  <?php echo get_the_title( $bullet->ID ); ?>
+               </h5>
             </div>
+            <div class="extracto p0 fontM">
+               <div class="vcenter p5 pt0 ">
+                  <?php echo apply_filters( 'the_content', $bullet->post_content ); ?>
+               </div>
+            </div>
+            </a>
          </div>
 
-      </a>
    </div>
 
    <?php $i++; endforeach; ?>

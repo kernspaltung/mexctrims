@@ -1,0 +1,20 @@
+contenidos
+
+
+Textos Portada
+
+	- 1 párrafo introductorio
+	- Texto introducción (título y 2-3 párrafos breves)
+	- Párrafos introductorios a Información, Noticias y Descargables
+	- Enunciado introductorio sección médicos
+	- Texto invitando a suscribirse
+
+
+Noticias
+	Redactar al menos 3 noticias
+
+
+Enlaces destacados
+	Enlaces a 3 lugares importantes en la web (pueden ser internos a la plataforma)
+
+Enlaces Redes Sociales
