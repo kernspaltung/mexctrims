@@ -47,27 +47,27 @@
             <?php $page = get_page_by_title('Médicos'); ?>
 
             <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
-               <div class="vcenter">
+               <div class="vcenter icono">
                   <i class="fa fa-user-md fontXL p2 primario"></i>
-                  <h6 class="fontS neutral"><?php echo get_the_title( $page->ID ); ?></h6>
+                  <h6 class="fontS  neutral_oscuro"><?php echo get_the_title( $page->ID ); ?></h6>
                </div>
             </a>
          </div>
-         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100 ">
+         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100">
             <a href="<?php echo get_the_permalink( get_page_by_title("Contáctanos")->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
-               <div class="vcenter">
+               <div class="vcenter icono">
                   <i class="fa fa-envelope fontXL p2 primario_acento"></i>
-                  <h6 class="fontS">
+                  <h6 class="fontS neutral_oscuro">
                      Contáctanos
                   </h6>
                </div>
             </a>
          </div>
-         <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100 neutral">
+         <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
             <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
-               <div class="vcenter">
-                  <i class="fa fa-search fontXL p2"></i>
-                  <h6 class="fontS">
+               <div class="vcenter icono">
+                  <i class="fa fa-search fontXL p2 complementario"></i>
+                  <h6 class="fontS neutral_oscuro">
                      Buscar
                   </h6>
                </div>
@@ -91,9 +91,9 @@
                $icono = $iconos[$i];
                ?>
 
-               <li class="small-4 columns w_100 text-center h_100">
+               <li class="small-4 columns w_100 text-center h_100 neutral_oscuro">
                   <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
-                     <div class="vcenter">
+                     <div class="vcenter icono">
                         <i class="fa fa-<?php echo $icono; ?> fontXL p2 <?php echo $colores[$i]; ?>"></i>
                         <div class="neutral font_sm_S"><?php echo get_the_title( $page->ID ); ?></div>
                      </div>

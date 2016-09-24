@@ -118,7 +118,7 @@
             <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_40 p0">
                <div class="small-10 columns h_100 p0">
                   <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
-                  <div class="columns w_a h_30 primario_acento_bg">
+                  <div class="columns w_a h_30 primario_acento_bd">
                      <div class="h_5vh fontM black">
                         <div class="columns w_a vcenter"><i class="fa fa-comments-o fontXL"></i></div>
                            <div class="columns w_a vcenter p0 fontS ">

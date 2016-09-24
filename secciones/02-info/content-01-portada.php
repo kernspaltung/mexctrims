@@ -11,14 +11,14 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
    </div>
 </div>
 
-<section id="info-intro" class="small-12 medium-6 columns h_55vh">
+<section id="info-intro" class="small-12 medium-6 columns h_45vh">
    <!-- .imagen.small-6.columns.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/300x600] -->
-   <div class="imagen small-12 columns h_50 imgLiquid imgLiquidFill mb2">
+   <div class="imagen small-12 columns h_100 imgLiquid imgLiquidFill mb2">
       <?php echo get_the_post_thumbnail( $informacion->ID, 'large'); ?>
    </div>
    <div class="texto small-12 large-10 large-offset-1 h_a p5 pb0">
       <div class="p5">
-         <?php echo apply_filters('the_content', $informacion->post_content ); ?>
+         <?php # echo apply_filters('the_content', $informacion->post_content ); ?>
       </div>
    </div>
 
@@ -26,16 +26,16 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
 
 <!-- (h1>lorem9^+p>lorem10^+h2>lorem9^+(p>lorem18)*3)*4 -->
 
-<section id="info-menu" class="small-12 medium-6 columns h_55vh mt_sm_2 ">
+<section id="info-menu" class="small-12 medium-6 columns h_45vh mt_sm_2 ">
 
    <?php foreach( $paginas as $pagina ) :  ?>
 
-   <div class="small-12 medium-6 columns h_25 h_sm_50 text-center mb1">
+   <div class="small-12 medium-6 columns h_50 h_sm_50 text-center">
       <a href="<?php echo get_the_permalink( $pagina -> ID ); ?>" class="h_100 w_100">
-         <div class="vcenter">
-            <div class="w_100 fontXL mb1"><i class="fa fa-circle"></i></div>
-            <h3 class="w_100 fontL"><?php echo get_the_title( $pagina->ID ); ?></h3>
-            <p><?php echo get_the_excerpt( $pagina->ID ); ?></p>
+         <div class="vcenter neutral_oscuro icono">
+            <!-- <div class="w_100 fontXL mb1"><i class="fa fa-circle"></i></div> -->
+            <h4 class="w_100 "><?php echo get_the_title( $pagina->ID ); ?></h4>
+            <p><?php # echo get_the_excerpt( $pagina->ID ); ?></p>
          </div>
       </a>
    </div>

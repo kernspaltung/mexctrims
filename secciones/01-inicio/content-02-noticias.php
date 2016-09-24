@@ -16,7 +16,7 @@
       ?>
 
       <section id="noticia_destacada" class="small-12 medium-7 large-8 h_60vh h_sm_70vh mt1 mb1 mb_sm_0  p3">
-         <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="h_100 tarjeta p3 ">
+         <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="h_100 tarjeta  white_bg p3 ">
 
             <h3 class="p2 mb1  fontXL font_sm_M small-text-center medium-text-left">
                <?php echo apply_filters( 'the_title', get_the_title() ); ?>
@@ -72,7 +72,7 @@
 
          <article class="noticia_destacada_secundaria_inicio small-12 columns h_30vh mb1 p3">
 
-            <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="h_100 tarjeta">
+            <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="h_100 tarjeta white_bg">
                <h3 class="p2 m0 fontM font_sm_S text-left">
                   <?php echo apply_filters( 'the_title', get_the_title() ); ?>
                </h3>

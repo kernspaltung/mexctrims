@@ -64,7 +64,7 @@ $primario_acento: #c8fb00;
 $primario_acento_blanco: #f0fff8;
 $secundario_blanco: #f8fff0;
 $neutral: #97908d;
-$neutral_oscuro: #67600d;
+$neutral_oscuro: #77706d;
 $secundario1: #00df7f;
 $secundario2: #039ed9;
 $secundario3: #ff8100;
@@ -225,6 +225,138 @@ header#header {
 }
 
 
+.primario_hover {
+   &:hover, &:hover * {
+      color: $primario !important;
+   }
+}
+.primario_acento_hover {
+   &:hover, &:hover * {
+      color: $primario_acento !important;
+   }
+}
+.neutral_hover {
+   &:hover, &:hover * {
+      color: $neutral !important;
+   }
+}
+.neutral_oscuro_hover {
+   &:hover, &:hover * {
+      color: $neutral_oscuro !important;
+   }
+}
+.secundario1_hover {
+   &:hover, &:hover * {
+      color: $secundario1 !important;
+   }
+}
+.secundario2_hover {
+   &:hover, &:hover * {
+      color: $secundario2 !important;
+   }
+}
+.secundario3_hover {
+   &:hover, &:hover * {
+      color: $secundario3 !important;
+   }
+}
+.complementario_hover {
+   &:hover, &:hover * {
+      color: $complementario !important;
+   }
+}
+
+
+
+
+
+.primario_bg_hover {
+   &:hover, &:hover * {
+      background-color: $primario !important;
+   }
+}
+.primario_acento_bg_hover {
+   &:hover, &:hover * {
+      background-color: $primario_acento !important;
+   }
+}
+.neutral_bg_hover {
+   &:hover, &:hover * {
+      background-color: $neutral !important;
+   }
+}
+.neutral_oscuro_bg_hover {
+   &:hover, &:hover * {
+      background-color: $neutral_oscuro !important;
+   }
+}
+.secundario1_bg_hover {
+   &:hover, &:hover * {
+      background-color: $secundario1 !important;
+   }
+}
+.secundario2_bg_hover {
+   &:hover, &:hover * {
+      background-color: $secundario2 !important;
+   }
+}
+.secundario3_bg_hover {
+   &:hover, &:hover * {
+      background-color: $secundario3 !important;
+   }
+}
+.complementario_bg_hover {
+   &:hover, &:hover * {
+      background-color: $complementario !important;
+   }
+}
+
+
+.primario_bd_hover {
+   &:hover {
+      @extend .border; border-color: $primario !important;
+   }
+}
+.primario_acento_bd_hover {
+   &:hover {
+      @extend .border; border-color: $primario_acento !important;
+   }
+}
+.neutral_bd_hover {
+   &:hover {
+      @extend .border; border-color: $neutral !important;
+   }
+}
+.neutral_oscuro_bd_hover {
+   &:hover {
+      @extend .border; border-color: $neutral_oscuro !important;
+   }
+}
+.secundario1_bd_hover {
+   &:hover {
+      @extend .border; border-color: $secundario1 !important;
+   }
+}
+.secundario2_bd_hover {
+   &:hover {
+      @extend .border; border-color: $secundario2 !important;
+   }
+}
+.secundario3_bd_hover {
+   &:hover {
+      @extend .border; border-color: $secundario3 !important;
+   }
+}
+.complementario_bd_hover {
+   &:hover {
+      @extend .border; border-color: $complementario !important;
+   }
+}
+
+
+
+
+
 .primario_bg {
    background-color: $primario !important;
 }
@@ -315,10 +447,8 @@ textarea {
 }
 
 
+.icono, .tarjeta {
 
-.tarjeta {
-   padding: $spacing * 1.5;
-   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
    transition: transform 0.2s;
    -webkit-transition: transform 0.2s;
    -moz-transition: transform 0.2s;
@@ -327,8 +457,16 @@ textarea {
       -webkit-transform: scale(1.02);
       -moz-transform: scale(1.02);
    }
+
+}
+.tarjeta {
+   padding: $spacing * 1.5;
+   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
+.icono {
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
 
 
 

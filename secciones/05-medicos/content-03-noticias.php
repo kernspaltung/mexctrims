@@ -114,7 +114,7 @@
                         <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_50 p0">
                            <div class="small-10 columns h_100 p0">
                               <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
-                              <div class="columns w_a h_30 primario_acento_bg">
+                              <div class="columns w_a h_30 primario_acento_bd">
                                  <div class="h_5vh fontM black">
                                     <div class="columns w_a vcenter"><i class="fa fa-comments-o fontXL"></i></div>
                                        <div class="columns w_a vcenter p0 fontS ">
@@ -135,14 +135,14 @@
                                        </div>
                                        </a>
                                     </div>
-                                    <div class="columns w_a p0 h_a vcenter">
-                                       <div class="fontXS black text-left">
+                                    <div class="small-3 columns p2 pt0 h_a vcenter">
+                                       <div class="fontXXS black text-left">
                                           <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
                                              <?php echo get_comment_author( $comments[0]->comment_ID ); ?>
                                           </a>
                                        </div>
                                     </div>
-                                    <div class="small-6 columns h_100 p0 subheader fontS text-left black vcenter">
+                                    <div class="small-7 columns h_100 p0 subheader fontS text-left black vcenter">
                                        <i class=" h_a p0 neutral_oscuro fontXXS">
                                           <?php echo wp_trim_words( get_comment_text( $comments[0]->comment_ID ), 9 ); ?>
                                        </i>
