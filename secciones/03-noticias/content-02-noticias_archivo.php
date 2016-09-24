@@ -1,13 +1,13 @@
 
   <!-- seccion  archivo -->
-  <section id="noticias-archivo" class="sticky-here small-12 columns p0 secundario_blanco_bg pt0">
+  <section id="noticias-archivo" class="sticky-here small-12 columns p0 pt0">
 
     <?php get_template_part( 'secciones/00-elementos/content', '02-taxonomias' ); ?>
 
 
 
     <!-- lista noticias -->
-    <div class="small-12 large-8 columns ha p2 pt0">
+    <div class="small-12 large-8 columns ha p2 pt0 primario_acento_blanco_bg">
 
 
       <?php
@@ -19,7 +19,7 @@
 
    // for temporal
          ?>
-         <article id="noticias-contenedor-contenido" class="small-6 columns p3 h_50vh primario_acento_blanco_bg">
+         <article id="noticias-contenedor-contenido" class="small-6 columns p3 h_50vh ">
 
 
 

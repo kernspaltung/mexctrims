@@ -1,6 +1,6 @@
 <?php get_template_part( 'secciones/00-elementos/content', '07-titulo_pagina' ); ?>
 
-<section id="noticia-destacada" class="small-12 medium-7 columns h_50vh p0">
+<section id="noticia-destacada" class="small-12 medium-7 columns h_80vh p0 secundario_blanco_bg">
 
 
    <?php
@@ -13,10 +13,10 @@
    ?>
 
  <!-- contenido destacado-->
- <article id="noticias-contenido-destacado" class="small-12 columns h_70vh p5 mt3">
+ <article id="noticias-contenido-destacado" class="small-12 columns h_70vh p5">
 
 
-   <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="tarjeta h_100 p5 rel">
+   <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="tarjeta primario_acento_bd h_100 p5 rel">
      <!-- Titulo noticia -->
      <div id="noticias-titulo-destacado" class="columns p3 text-center fontL">
        <?php echo get_the_title(); ?>
@@ -74,7 +74,7 @@ endif;
 
 
  <!-- entrada penultima y antepenultima -->
- <section class="small-12 medium-5 columns ha p0">
+ <section class="small-12 medium-5 columns  h_80vh p0 secundario_2_blanco_bg p0">
 
 
 <?php
@@ -86,17 +86,17 @@ if( $q -> have_posts() ) :
 
       ?>
          <!-- 1 -->
-         <article id="noticias-contenido-subdestacado" class="small-12 columns h_40vh h_sm_33 p3">
-           <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="tarjeta h_100 rel">
+         <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh h_sm_33 p3 ">
+           <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="tarjeta h_100 rel primario_acento_bd">
 
              <!-- Titulo noticia -->
-             <div id="noticias-titulo-destacado" class="columns p2 ha text-left fontM">
+             <div id="noticias-titulo-destacado" class="columns p1 ha text-left fontM">
                <?php echo get_the_title(); ?>
              </div><!-- Titulo noticia -->
 
 
              <!-- fecha destacada -->
-             <div id="noticias-fecha" class="medium-12 columns p2 text-right fontXS">
+             <div id="noticias-fecha" class="medium-12 columns p1 text-right fontXS">
                <?php echo get_the_date(); ?>
              </div><!-- fecha destacada -->
 

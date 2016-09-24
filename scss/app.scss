@@ -62,7 +62,7 @@ $color_texto: #232222;
 $primario: #b9cf46;
 $primario_acento: #c8fb00;
 $primario_acento_blanco: #f0fff8;
-$secundario_blanco: #f6ffe7;
+$secundario_blanco: #f8fff0;
 $neutral: #97908d;
 $secundario1: #00df7f;
 $secundario2: #039ed9;
@@ -225,10 +225,6 @@ header#header {
 
 .primario_acento_blanco_bg {
    background-color: $primario_acento_blanco !important;
-}
-
-.secundario_blanco_bg {
-   background-color: $secundario_blanco !important;
 }
 .primario_acento_bg {
    background-color: $primario_acento !important;
