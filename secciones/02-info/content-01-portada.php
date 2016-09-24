@@ -28,18 +28,27 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
 
 <section id="info-menu" class="small-12 medium-6 columns h_45vh mt_sm_2 ">
 
-   <?php foreach( $paginas as $pagina ) :  ?>
+   <?php
+   $iconos = array( 'neurona2', 'nodo', 'cerebro', 'red2' );
+   $i = 0;
+   foreach( $paginas as $pagina ) :
+      $icono = $iconos[$i];
+      ?>
 
-   <div class="small-12 medium-6 columns h_50 h_sm_50 text-center">
-      <a href="<?php echo get_the_permalink( $pagina -> ID ); ?>" class="h_100 w_100">
-         <div class="vcenter neutral_oscuro icono">
-            <!-- <div class="w_100 fontXL mb1"><i class="fa fa-circle"></i></div> -->
-            <h4 class="w_100 "><?php echo get_the_title( $pagina->ID ); ?></h4>
-            <p><?php # echo get_the_excerpt( $pagina->ID ); ?></p>
-         </div>
-      </a>
-   </div>
+      <div class="small-12 medium-6 columns h_50 h_sm_50 text-center p3">
+         <a href="<?php echo get_the_permalink( $pagina -> ID ); ?>" class="h_100 w_100 tarjeta white_bg">
+            <div class="vcenter neutral_oscuro icono">
+               <div class="w_100 h_5vh imgLiquid imgLiquidNoFill mb1">
+                  <img src="<?php echo get_stylesheet_directory_uri() . '/img/iconos/' . $icono . '.png'; ?>"></i>
+               </div>
+               <h4 class="w_100 "><?php echo get_the_title( $pagina->ID ); ?></h4>
+               <p><?php # echo get_the_excerpt( $pagina->ID ); ?></p>
+            </div>
+         </a>
+      </div>
 
-   <?php endforeach; ?>
+      <?php
+      $i++;
+   endforeach; ?>
 
 </section>
