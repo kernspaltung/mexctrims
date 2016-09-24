@@ -13,10 +13,10 @@
    ?>
 
  <!-- contenido destacado-->
- <article id="noticias-contenido-destacado" class="small-12 columns h_100">
+ <article id="noticias-contenido-destacado" class="small-12 columns h_70vh p5 mt3">
 
 
-   <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="h_100">
+   <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="tarjeta h_100 p5 rel">
      <!-- Titulo noticia -->
      <div id="noticias-titulo-destacado" class="columns p3 text-center fontL">
        <?php echo get_the_title(); ?>
@@ -39,7 +39,7 @@
 
 
      <!-- extracto destacada -->
-     <div id="noticias-extracto" class="small-12 medium-6 columns ha p4 fontS text-left ">
+     <div id="noticias-extracto" class="small-12 medium-6 columns ha p4 fontM text-left ">
        <p>
           <?php echo get_the_excerpt(); ?>
        </p>
@@ -47,11 +47,10 @@
 
 
      <!-- ver mas destacado -->
-     <div id="noticias-vermas" class="small-3 columns h_50 h_sm_20 text-middle p2 fontS text-right">
-       <div class="small-12 vcenter">
-         Ver más
+     <div id="noticias-vermas" class="small-3 columns h_a text-middle p2 fontS text-center absDownR p3 primario_acento_bd">
+          Ver más
          <i class="fa fa-angle-right"></i>
-       </div>
+
      </div>
      <!-- ver mas destacado -->
 
@@ -87,17 +86,17 @@ if( $q -> have_posts() ) :
 
       ?>
          <!-- 1 -->
-         <article id="noticias-contenido-subdestacado" class="small-12 columns h_35vh h_sm_33 pr0">
-           <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="h_100">
+         <article id="noticias-contenido-subdestacado" class="small-12 columns h_40vh h_sm_33 p3">
+           <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="tarjeta h_100 rel">
 
              <!-- Titulo noticia -->
-             <div id="noticias-titulo-destacado" class="columns p2 ha text-center fontL">
+             <div id="noticias-titulo-destacado" class="columns p2 ha text-left fontM">
                <?php echo get_the_title(); ?>
              </div><!-- Titulo noticia -->
 
 
              <!-- fecha destacada -->
-             <div id="noticias-fecha" class="medium-12 columns p2 text-right fontS">
+             <div id="noticias-fecha" class="medium-12 columns p2 text-right fontXS">
                <?php echo get_the_date(); ?>
              </div><!-- fecha destacada -->
 
@@ -111,15 +110,15 @@ if( $q -> have_posts() ) :
 
 
              <!-- extracto destacada -->
-             <div id="noticias-extracto" class="small-8 medium-7 columns ha p2 fontXS text-left">
-               <?php echo get_the_excerpt(); ?>
+             <div id="noticias-extracto" class="small-8 medium-7 columns ha p2 pl1 fontS text-left">
+               <?php echo apply_filters('the_excerpt', wp_trim_words(get_the_excerpt(),18)); ?>
              </div><!-- extracto destacada -->
 
 
 
 
              <!-- ver mas destacado -->
-             <div id="noticias-vermas" class="small-4 medium-7 columns ha p2 fontS text-right">
+             <div id="noticias-vermas" class="small-4 medium-3 large-2 columns ha p2 absDownR primario_acento_bd fontS text-center">
                Ver más
                <i class="fa fa-angle-right"></i>
              </div>

@@ -4,6 +4,7 @@
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    <title>Mexctrims</title>
 
    <?php wp_head(); ?>
@@ -23,7 +24,7 @@
       $color_orilla = 'secundario3_bd';
    if( is_page('Médicos') )
       $color_orilla = 'primario_bd';
-   if( is_page('Regístrate') )
+   if( is_page('Contáctanos') )
       $color_orilla = 'primario_acento_bd';
    ?>
 
@@ -52,10 +53,10 @@
                </div>
             </a>
          </div>
-         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100 neutral">
+         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100 ">
             <a href="<?php echo get_the_permalink( get_page_by_title("Contáctanos")->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
                <div class="vcenter">
-                  <i class="fa fa-envelope fontXL p2"></i>
+                  <i class="fa fa-envelope fontXL p2 primario_acento"></i>
                   <h6 class="fontS">
                      Contáctanos
                   </h6>
@@ -81,16 +82,16 @@
 
             <?php
 
-            $paginas = array( 'Información', 'Noticias', 'Descargables', 'Regístrate' );
+            $paginas = array( 'Información', 'Noticias', 'Descargables' );
             $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
             $colores = array( 'secundario1', 'secundario2', 'secundario3','primario_acento txsh1');
 
-            for ($i=0; $i < 4; $i++) {
+            for ($i=0; $i < 3; $i++) {
                $page = get_page_by_title($paginas[$i]);
                $icono = $iconos[$i];
                ?>
 
-               <li class="small-3 columns w_100 text-center h_100">
+               <li class="small-4 columns w_100 text-center h_100">
                   <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
                      <div class="vcenter">
                         <i class="fa fa-<?php echo $icono; ?> fontXL p2 <?php echo $colores[$i]; ?>"></i>

@@ -1,55 +1,38 @@
 <?php
-$registro = get_page_by_title( 'Registro Inicio' );
-$agradecimiento = get_page_by_title( 'Agradecimiento' );
+
+$contacto = get_page_by_title( 'Contáctanos' );
+$lista_correo = get_page_by_title( 'Lista de correo' );
 
 ?>
 
-<section id="inicio-registro" class="small-12 columns text-center rel mt4 mb5 ">
+<section id="inicio-registro" class="small-12 columns text-center rel pt0 mt3 ">
 
-   <div id="inicio-registro-formulario" class="small-12 medium-8 small-centered row h_a p5 p_sm_1 rel primario_acento_bg">
-
-      <div class="columns fontS text-left mb2 p5 pt0 pb0">
-         <?php echo apply_filters( 'the_content', $registro -> post_content ); ?>
+   <div id="inicio-contacto-formulario" class="small-12 row h_a p5 p_sm_1 pt1 rel primario_acento_bd">
+      <div class="medium-6 columns p5 pt0 pb0">
+         <div class="columns fontS text-left p3">
+            <h4 class="mt2">
+               <?php echo apply_filters( 'the_title', $lista_correo -> post_title ); ?>
+            </h4>
+            <?php echo apply_filters( 'the_content', $lista_correo -> post_content ); ?>
+         </div>
+         <div class="columns p0">
+            <?php echo  do_shortcode( '[contact-form-7 id="161" title="Suscripción"]' ); ?>
+         </div>
       </div>
-      <div class="columns h_sm_60vh p5 pt0 pb0">
-
-         <?php echo  do_shortcode( '[contact-form-7 id="161" title="Suscripción"]' ); ?>
-         <!-- <form action="#" class="w_100">
-            <div class="row">
-               <label for="">Nombre</label><input type="text">
+      <div class="medium-6 columns p5 pt0">
+         <div class="columns fontS text-left p3">
+            <h4 class="mt2">
+               Escríbenos
+            </h4>
+            <div class="columns p0">
+               <?php echo  do_shortcode( '[contact-form-7 id="144" title="Contacto"]' ); ?>
             </div>
-            <div class="row">
-               <label for="">E-mail</label><input type="text">
-            </div>
-
-            <div class="row mt1">
-               <div class="small-4 columns button secundario1_bg text-center p4">
-                  <i class="fa fa-user fontXL row"></i>
-                  <div class="fontS text-center">Particular</div>
-                  <input class="hidden" type="radio">
-               </div>
-               <div class="small-4 columns button secundario2_bg text-center p4">
-                  <i class="fa fa-user fontXL row"></i>
-                  <div class="fontS text-center">Paciente</div>
-                  <input class="hidden" type="radio">
-               </div>
-               <div class="small-4 columns button secundario3_bg text-center p4">
-                  <i class="fa fa-user-md fontXL row"></i>
-                  <div class="fontS text-center">Médico</div>
-                  <input class="hidden" type="radio">
-               </div>
-            </div>
-
-            <div class="row align-right">
-               <div class="columns text-right">
-                  <a class="button primary white_bg">Enviar</a>
-               </div>
-            </div>
-         </form> -->
+         </div>
       </div>
    </div>
 <!--
    <div id="inicio-registro-agradecimiento" class="small-10 medium-8 small-centered h_60vh hidden">
+
 
       <div class="vcenter">
          <h1>

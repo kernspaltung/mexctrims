@@ -11,7 +11,7 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
    </div>
 </div>
 
-<section id="info-intro" class="medium-6 columns h_55vh">
+<section id="info-intro" class="small-12 medium-6 columns h_55vh">
    <!-- .imagen.small-6.columns.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/300x600] -->
    <div class="imagen small-12 columns h_50 imgLiquid imgLiquidFill mb2">
       <?php echo get_the_post_thumbnail( $informacion->ID, 'large'); ?>
@@ -26,11 +26,11 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
 
 <!-- (h1>lorem9^+p>lorem10^+h2>lorem9^+(p>lorem18)*3)*4 -->
 
-<section id="info-menu" class="medium-6 columns h_55vh">
+<section id="info-menu" class="small-12 medium-6 columns h_55vh mt_sm_2 ">
 
    <?php foreach( $paginas as $pagina ) :  ?>
 
-   <div class="small-6 columns h_25 text-center mb1">
+   <div class="small-12 medium-6 columns h_25 h_sm_50 text-center mb1">
       <a href="<?php echo get_the_permalink( $pagina -> ID ); ?>" class="h_100 w_100">
          <div class="vcenter">
             <div class="w_100 fontXL mb1"><i class="fa fa-circle"></i></div>

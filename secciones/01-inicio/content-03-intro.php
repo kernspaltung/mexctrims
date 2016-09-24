@@ -41,7 +41,7 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
    ?>
 
 
-   <div class="medium-4 columns text-center m0  h_35vh <?php echo $color; ?> black">
+   <div class="small-12 medium-4 columns text-center m0  h_35vh h_sm_50vh <?php echo $color; ?> black">
 
          <div class="vcenter">
             <a href="<?php echo get_the_permalink($bullet->ID); ?>" class="w_100 h_100 m0">

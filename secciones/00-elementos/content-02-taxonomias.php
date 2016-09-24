@@ -1,6 +1,6 @@
 <!-- Categorias large -->
-<aside id="noticias-aside-large" class="taxonomias h_100 large-4 columns show-for-large ha" data-sticky-container>
-   <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="9">
+<aside id="noticias-aside-large" class="taxonomias h_100 large-4 columns show-for-large ha " data-sticky-container>
+   <div class="sticky h_75vh fontM p4" data-sticky data-anchor="plantillas" data-margin-top="9">
 
       <h2 class="columns fontL p3 text-center">Categorias</h2>
 
@@ -23,7 +23,7 @@
             if( ! in_array( $categoria->term_id, $categorias_excluidas ) ):
                ?>
                <a href="<?php echo get_category_link( $categoria -> term_id ); ?>">
-                  <?php $active = in_array( $categoria->term_id, $las_categorias ) ? 'active' : ''; ?>
+                  <?php $active = in_array( $categoria->term_id, $las_categorias ) ? 'active primario_acento_bg tarjeta' : ''; ?>
                   <li class="small-4 columns fontXXS p3 text-center <?php echo $active; ?>">
                      <?php echo $categoria->name; ?>
                   </li>
@@ -50,8 +50,8 @@
             ?>
 
             <a href="<?php echo get_tag_link( $etiqueta->term_id); ?>">
-               <?php $active = in_array( $etiqueta->term_id, $las_etiquetas ) ? 'active' : ''; ?>
-               <li class="small-4 columns fontXXS p3 text-center <?php echo $active; ?>">
+               <?php $active = in_array( $etiqueta->term_id, $las_etiquetas ) ? 'active active primario_acento_bg tarjeta' : ''; ?>
+               <li class="small-3 columns fontXXS p2 text-center <?php echo $active; ?>">
                   <?php echo $etiqueta->name; ?>
                </li>
             </a>

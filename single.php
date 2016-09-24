@@ -1,7 +1,9 @@
 <?php
 
 get_header();
-$comentarios = get_comments( array( 'post_id' => get_the_ID() ) );
+if( is_singular() && ! is_page() ) :
+   $comentarios = get_comments( array( 'post_id' => get_the_ID() ) );
+endif;
 
 if (have_posts()) :
    while (have_posts()) :

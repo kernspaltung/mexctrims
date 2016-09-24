@@ -17,24 +17,25 @@ $bienvenida = get_page_by_title('Bienvenida');
 
 <div class="h_100 text-center rel z1k">
    <div class="row p4 h_75">
-      <div class="small-12 medium-6 large-8 columns h_30vh h_sm_20vh">
+      <div class="small-12 medium-6 large-7 columns h_30vh h_sm_20vh">
          <div class="h_100 imgLiquid imgLiquidFill image-fx">
 
             <?php echo get_the_post_thumbnail( $bienvenida -> ID ); ?>
 
          </div>
       </div>
-      <div class="small-12 medium-6 large-4 columns fontM h_30vh h_sm_55">
+      <div class="small-12 medium-6 large-5 columns fontL h_30vh h_sm_55">
          <div class="vcenter text-center">
 
-            <div class="mt_sm_2">
-               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-150w.png">
+            <div class="mt_sm_2 imgLiquid imgLiquidNoFill h_15vh">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-150w-2x.png">
             </div>
 
-            <h6 class="mt1 mt_sm_0">
+            <h6 class="mt1 mt_sm_0 fontL text-center p5 pt0 pb0">
                Comité Mexicano para el
                <br/>Tratamiento e Investigación
                <br/>en Esclerosis Múltiple
+
             </h6>
          </div>
       </div>

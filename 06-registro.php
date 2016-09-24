@@ -1,5 +1,5 @@
 <?php
-// Template Name: Registro
+// Template Name: Contacto
 
 get_header(); ?>
 

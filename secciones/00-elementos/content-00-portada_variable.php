@@ -62,7 +62,7 @@ if( is_page('Médicos') ):
                <a href="<?php echo get_the_permalink($registro->ID); ?>" class="button">Registra una nueva cuenta</a>
             </div>
          </div>
-         <div class="small-10 medium-5 large-4 columns p5 primario_acento_bg">
+         <div class="small-10 medium-5 large-4 columns p5 primario_acento_bd">
             <?php echo mexctrims_login_form(); ?>
          </div>
       </div>

@@ -61,6 +61,8 @@
 $color_texto: #232222;
 $primario: #b9cf46;
 $primario_acento: #c8fb00;
+$primario_acento_blanco: #f0fff8;
+$secundario_blanco: #f6ffe7;
 $neutral: #97908d;
 $secundario1: #00df7f;
 $secundario2: #039ed9;
@@ -163,7 +165,7 @@ header#header {
    li {
       color: #000;
       &.active {
-         background-color: #eee !important;
+         // background-color: #eee !important;
       }
    }
 }
@@ -220,6 +222,14 @@ header#header {
 .primario_bg {
    background-color: $primario !important;
 }
+
+.primario_acento_blanco_bg {
+   background-color: $primario_acento_blanco !important;
+}
+
+.secundario_blanco_bg {
+   background-color: $secundario_blanco !important;
+}
 .primario_acento_bg {
    background-color: $primario_acento !important;
 }
@@ -239,30 +249,40 @@ header#header {
    background-color: $complementario !important;
 }
 
-
+.border {
+   border: 1px solid white;
+}
 
 .primario_bd {
+   @extend .border;
    border-color: $primario !important;
 }
 .primario_acento_bd {
+   @extend .border;
    border-color: $primario_acento !important;
 }
 .neutral_bd {
+   @extend .border;
    border-color: $neutral !important;
 }
 .secundario1_bd {
+   @extend .border;
    border-color: $secundario1 !important;
 }
 .secundario2_bd {
+   @extend .border;
    border-color: $secundario2 !important;
 }
 .secundario3_bd {
+   @extend .border;
    border-color: $secundario3 !important;
 }
 .complementario_bd {
+   @extend .border;
    border-color: $complementario !important;
 }
 .transparente_bd {
+   @extend .border;
    border-color: transparent !important;
 }
 
@@ -276,4 +296,33 @@ header#header {
 
 .txsh1 {
 	text-shadow: 1px 1px 0 $neutral;
+}
+
+
+
+
+input[type="submit"] { @extend .button }
+input {
+   height: $spacing * 2 !important;
+   padding: $spacing / 2 !important;
+}
+
+textarea {
+   height: 10vh !important;
+   // max-height: 15vh !important;
+}
+
+
+
+.tarjeta {
+   padding: $spacing * 1.5;
+   box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+   transition: transform 0.2s;
+   -webkit-transition: transform 0.2s;
+   -moz-transition: transform 0.2s;
+   &:hover {
+      transform: scale(1.01);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+   }
 }

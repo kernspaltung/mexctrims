@@ -1,11 +1,11 @@
 <?php
-$q = new WP_Query(array('post_type'=>'enlace','posts_per_page'=>3 ) );
+$q = new WP_Query(array('post_type'=>'enlace','posts_per_page'=>4 ) );
 if( $q -> have_posts() ) :
    while( $q -> have_posts() ) :
       $q -> the_post();
 ?>
 
-      <div class="enlace_destacado small-12 h_30 p4">
+      <div class="enlace_destacado small-12 h_25 p4">
          <a href="<?php echo get_post_meta( get_the_ID(), 'link-externo', true); ?>" target="_blank">
             <div class="imagen imgLiquid imgLiquidFill h_70">
                <?php echo get_the_post_thumbnail(); ?>
