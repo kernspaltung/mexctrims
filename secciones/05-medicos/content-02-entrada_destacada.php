@@ -33,7 +33,7 @@
 
 
 
-      <div  class="resumen_entrada small-12 columns h_100 p0">
+      <div  class="resumen_entrada small-12 columns h_100 p0 tarjeta">
          <!-- .small-12.columns.h_50*2 -->
          <!-- .small-12.columns.h_40+.small-12.columns.h_60   -->
 

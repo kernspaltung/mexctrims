@@ -1,7 +1,0 @@
-- Refinar diseño sección médicos
-- Integrar sección médicos
-
-- Sección registro
-- Sección contacto
-
-- Hacer funcionar newsletter
