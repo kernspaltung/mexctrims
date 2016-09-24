@@ -34,7 +34,7 @@ $medicos = get_page_by_title( 'Médicos' );
             <div class=" button hollow cursor-pointer fontS uppercase vcenter p0">
               <a href="<?php echo get_the_permalink( get_page_by_title('Contribuye')->ID); ?>">
                  <div class="p3">
-                   Contribuye
+                   Contribuye a esta sección
                  </div>
               </a>
             </div>

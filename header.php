@@ -24,7 +24,7 @@
       $color_orilla = 'secundario3_bd';
    if( is_page('Médicos') )
       $color_orilla = 'primario_bd';
-   if( is_page('Contáctanos') )
+   if( is_page('Contáctanos') || is_page('Contribuye') )
       $color_orilla = 'primario_acento_bd';
    ?>
 

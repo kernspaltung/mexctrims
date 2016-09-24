@@ -6081,6 +6081,9 @@ header#header {
 .neutral, .neutral * {
   color: #97908d !important; }
 
+.neutral_oscuro, .neutral_oscuro * {
+  color: #67600d !important; }
+
 .secundario1, .secundario1 * {
   color: #00df7f !important; }
 
@@ -6170,3 +6173,12 @@ textarea {
         transform: scale(1.01);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02); }
+
+body {
+  background-color: whitesmoke; }
+
+.w_a {
+  width: auto !important; }
+
+.f_l {
+  float: left !important; }

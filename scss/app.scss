@@ -64,6 +64,7 @@ $primario_acento: #c8fb00;
 $primario_acento_blanco: #f0fff8;
 $secundario_blanco: #f8fff0;
 $neutral: #97908d;
+$neutral_oscuro: #67600d;
 $secundario1: #00df7f;
 $secundario2: #039ed9;
 $secundario3: #ff8100;
@@ -197,6 +198,11 @@ header#header {
       color: $neutral !important;
    }
 }
+.neutral_oscuro {
+   &, * {
+      color: $neutral_oscuro !important;
+   }
+}
 .secundario1 {
    &, * {
       color: $secundario1 !important;
@@ -321,4 +327,20 @@ textarea {
       -webkit-transform: scale(1.02);
       -moz-transform: scale(1.02);
    }
+}
+
+
+
+
+body {
+   background-color: whitesmoke;
+}
+
+
+.w_a {
+   width: auto !important;
+}
+
+.f_l {
+   float: left !important;
 }

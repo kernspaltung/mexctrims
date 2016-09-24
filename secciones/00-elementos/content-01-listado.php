@@ -1,4 +1,4 @@
-<div class="minH_100">
+   <div class="minH_100">
 
 
    <div class="large-12 columns minH_100 p0">
@@ -7,28 +7,38 @@
 
 
 
-      <div id="descargables-lista-mosaico" class="large-12 columns minH_50vh">
+      <div id="descargables-lista-mosaico" class="large-12 columns h_80vh">
          <!-- Nav / mosaicos -->
 
 
          <aside class="large-3 columns h_100 p0" data-sticky-container>
-            <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="9">
+            <div class="sticky h_75vh fontM" data-sticky data-anchor="descargables-mosaico">
 
-               <nav id="descargables-menu-mosaico" class="w_100 h_100 pt1">
-                  <ul class="large-12 columns minH_50vh">
-                     <?php
+               <nav id="descargables-menu-mosaico" class="columns h_70vh m0">
+                  <div class="vcenter">
+                     <ul class="m0 p0">
+                        <?php
 
-                     $html;
+                        ob_start();
+                        for ($i=1; $i < 5 ; $i++) {
+                           ?>
+                              <li class="p1 pl1 pr1 secundario3_bg mb1 tarjeta white bold">
+                                 <a href="#" class="w_100 h_100">
+                                    Categoría de descargables
+                                 </a>
+                              </li>
+                        <?php
+                        };
 
-                     for ($i=1; $i < 5 ; $i++) {
-                        $html .= '<a href="#" class="small-12 fontL bold black p3">
-                        <li class="small-12">Categoría de descargables ' . $i . '</li></a>';
-                     };
+                        $html = ob_get_contents();
 
-                     echo $html;
+                        ob_end_clean();
 
-                     ?>
-                  </ul>
+                        echo $html;
+
+                        ?>
+                     </ul>
+                  </div>
                </nav>
 
             </div>
@@ -37,29 +47,43 @@
 
 
 
-         <div id="descargables-mosaico" class="sticky-here large-9 columns h_100 p5 pt1">
+         <div id="descargables-mosaico" class="sticky-here large-9 columns h_a p5 pt1 ">
 
             <?php
 
             $mosaico;
 
-            for ($i=1; $i < 30 ; $i++) {
-               $mosaico .=
-               '<div class="medium-6 columns h_a p4">
-                  <div class="large-12 fontM black text-left vcenter">
+            ob_start();
 
-               <a href="#">
-                  <h5 class="mb1">   Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
-                  <div class="h_15vh texto p0">
-                     <div class="vcenter">
+            for ($i=1; $i < 30 ; $i++) {
+
+               ?>
+               <div class="medium-6 columns h_30vh p4 text-left">
+
+                  <a href="#" class="tarjeta white_bg h_100 p4 rel">
+                     <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+                     <div class="fontXS">Publicado</div>
+                     <div class="texto columns small-9 mt1 p0 fontS">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facere, natus. Laborum?</p>
                      </div>
-                  </div>
-               </a>
+                     <div class="columns small-3 p2 absDownR primario_acento_bd">
+                           <div class="columns text-center secundario2">
+                              <i class="fa fa-arrow-down"></i>
+                           </div>
+                           <div class="columns p0 fontXS text-center secundario2">
+                              Descargar
+                           </div>
 
-                  </div>
-               </div>';
+                     </div>
+                  </a>
+
+               </div>
+
+               <?php
             };
+            $html = ob_get_contents();
+            ob_end_clean();
+            $mosaico = $html;
 
             echo $mosaico;
 

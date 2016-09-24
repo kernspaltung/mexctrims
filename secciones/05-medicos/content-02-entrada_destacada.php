@@ -1,17 +1,8 @@
    <div class="small-12 text-left p3 mb1">
-   <h4>Información para Médicos:</h4>
-</div>
-<aside class="medium-3 columns h_100 p0" data-sticky-container>
+         <h4>Información para Médicos:</h4>
+   </div>
 
 
-   <div class="sticky h_75vh fontM" data-sticky data-anchor="plantillas" data-margin-top="9">
-     <?php  ?>
-  </div>
-</aside>
-
-
-
-<section id="medicos-portada-entradas" class="medium-9 columns h_80 p0 ">
 
    <?php
    $medicos_destacada = get_term_by('name','Destacada Médicos', 'category' );
@@ -28,51 +19,33 @@
 
    ?>
 
-   <article id="medicos-portada-entrada-destacada" class="entrada_medicos small-12 columns p5 pt0">
+   <article id="medicos-portada-entrada-destacada" class="entrada_medicos columns small-12 medium-8 h_65vh p3">
       <!-- (.small-5.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.small-7.columns.h_100{lorem10} -->
 
 
+      <div class="columns h_100 p3 tarjeta white_bg rel">
 
-      <div  class="resumen_entrada small-12 columns h_100 p0 tarjeta">
+
          <!-- .small-12.columns.h_50*2 -->
          <!-- .small-12.columns.h_40+.small-12.columns.h_60   -->
 
-         <header class="columns p0 h_40">
+         <header class="columns p0 ha">
 
-            <div class="small-12 columns h_30vh p0">
-               <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
-                  <div class="h_100 imgLiquid imgLiquidFill">
-                     <?php echo get_the_post_thumbnail( get_the_ID(), 'large' ); ?>
-                  </div>
-               </a>
-            </div>
-
-            <div class="columns text-left p4 pt0 pb0 m0">
+            <div class="columns small-8 text-left p4 pt1 pb0 m0">
                <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="p0 m0">
-                  <h5 class=" black text-left m0 p pt2 pb2">
+                  <h5 class=" black text-left m0">
                      <?php echo apply_filters('the_title', get_the_title()); ?>
                   </h5>
                </a>
             </div>
-      <!-- (.small-6.columns.h_100.text-center>.small-12.columns.fontM.subheader.vcenter{Subtitulo entrada})+.small-6.columns.h_100>(.small-8.columns.h_100>(.small-12.columns.h_60>.small-12.fontM.black.vcenter)+.small-12.columns.h_40>.small-12.fontXS.subheader.vcenter{YYYY/MM/DD})+.small-4.columns.h_100.p0>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/100x100"] -->
 
-            <div class="medium-6 columns h_50 p0">
-
-               <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="h_100">
-                  <div class="vcenter text-left p4 pt0">
-                     Publicado el <?php echo get_the_date( 'd \d\e F\, Y', get_the_ID() ); ?>
-                  </div>
-               </a>
-
-            </div>
-
-            <div class="ficha-medico medium-6 columns h_50 p0">
+            <div class="ficha-medico columns small-4 p4 pt0 pb0">
 
                <a href="<?php echo get_the_author_link(); ?>" class="h_100">
 
-                  <div class="small-8 columns h_100 text-right">
+                  <div class="small-8 columns h_10vh text-right">
 
-                     <div class="fontM black vcenter">
+                     <div class="fontS black vcenter">
                         <?php echo get_the_author(); ?>
                      </div>
 
@@ -87,94 +60,113 @@
                </a>
 
             </div>
-
          </header>
 
+      <!-- (.small-6.columns.h_100.text-center>.small-12.columns.fontM.subheader.vcenter{Subtitulo entrada})+.small-6.columns.h_100>(.small-8.columns.h_100>(.small-12.columns.h_60>.small-12.fontM.black.vcenter)+.small-12.columns.h_40>.small-12.fontXS.subheader.vcenter{YYYY/MM/DD})+.small-4.columns.h_100.p0>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/100x100"] -->
 
-         <div class="contenido_y_comentarios columns h_60 pr0">
-
-            <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
-
-               <!-- (.small-12.columns.h_60>.small-12.fontS.black.vcenter{lorem22})+.small-12.columns.h_40>(.small-8.columns.h_100)+.small-4.columns.h_100>.small-6.fontL.black.vcenter{Leer más}+.small-6.columns.fontXL.black.vcenter>i.fa.fa-angle-right -->
-               <div class="extracto columns p4 text-left fontL h_60">
-                  <?php echo apply_filters('the_excerpt', get_the_excerpt() ); ?>
+      <div class="columns p4 pb0 fontXS text-left">
+         <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="">
+            Publicado el <?php echo get_the_date( 'd \d\e F\, Y', get_the_ID() ); ?>
+         </a>
+      </div>
+         <div class="columns medium-4 large-6 h_40 p2">
+            <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="w_100 h_100">
+               <div class="h_100 imgLiquid imgLiquidFill">
+                  <?php echo get_the_post_thumbnail( get_the_ID(), 'large' ); ?>
                </div>
+            </a>
+         </div>
 
-               <div class="categorias_noticia small-8 columns h_100 p2 text-left">
-                  <h5>Categorías:</h6>
-                  <div class="categorias-entrada small-12 columns fontM p0">
-                     <?php
-                     foreach( get_the_category() as $categoria ):
+         <div class="medium-8 large-6 columns h_50 p0">
 
-                        if( ! in_array( $categoria->term_id, $categorias_excluidas ) ) :
-                     ?>
 
-                           <li class="small-3 columns end">
-                              <a href="<?php echo get_category_link( $categoria->term_id ); ?>">
-                                 <?php echo $categoria->name; ?>
-                              </a>
-                           </li>
 
-                     <?php
-                        endif;
-                     endforeach; ?>
+            <div class="contenido_y_comentarios columns pr0">
+
+               <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+
+                  <!-- (.small-12.columns.h_60>.small-12.fontS.black.vcenter{lorem22})+.small-12.columns.h_40>(.small-8.columns.h_100)+.small-4.columns.h_100>.small-6.fontL.black.vcenter{Leer más}+.small-6.columns.fontXL.black.vcenter>i.fa.fa-angle-right -->
+                  <div class="extracto columns p2 text-left fontM">
+                     <?php echo apply_filters('the_excerpt', wp_trim_words( get_the_excerpt(), 13 )); ?>
                   </div>
-               </div>
 
-               <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_40 p0">
-                  <div class="small-10 columns h_100 p0">
-                     <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
-                     <div class="columns h_30">
-                        <div class="bold fontM black vcenter">
-                              <div class="small-6 columns p0 fontS h_100">
-                                 <div class="p1 small-6 columns"><i class="fa fa-comments-o fontXL"></i></div>
-                                 <div class="p2 small-6 columns">Comentarios</div>
-                              </div>
-                              <div class="small-6 columns pt0 text-right fontL h_100">
-                                 <div class="p1">
-                                    (<?php echo get_comments_number( get_the_ID() ); ?>)
-                                 </div>
-                              </div>
-                           </div>
+                  <div class="categorias_noticia columns p2 text-left">
+                     <div class="categorias-entrada small-12 columns fontM p0">
+                        <?php
+                        foreach( get_the_category() as $categoria ):
 
-                     </div>
-                     <div class="columns h_70 pl0">
-                           <div class="small-2 columns p0 h_100">
-                              <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
-                              <div class="h_5vh imgLiquid imgLiquidNoFill">
-                                    <?php $user_id = $comments[0]->user_id; echo get_avatar( $user_id, '100' ); ?>
-                              </div>
-                              </a>
-                           </div>
-                           <div class="small-3 columns p0 h_100">
-                              <div class="fontXS black text-left pl1 vcenter">
-                                 <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
-                                    <?php echo get_comment_author( $comments[0]->comment_ID ); ?>
+                           if( ! in_array( $categoria->term_id, $categorias_excluidas ) ) :
+                        ?>
+
+                              <div class=" columns w_a f_l p1 fontXXS">
+                                 <a href="<?php echo get_category_link( $categoria->term_id ); ?>" class="tarjeta h_100 primario_bd p2">
+                                    <?php echo $categoria->name; ?>
                                  </a>
                               </div>
-                           </div>
-                           <div class="small-7 columns subheader fontS text-left black vcenter">
-                              <p>
-                                 <?php echo wp_trim_words( get_comment_text( $comments[0]->comment_ID ), 20 ); ?>
-                              </p>
-                           </div>
-                     </div>
-                  </div><!-- .contenido_y_comentarios -->
 
-                  <button class="small-2 columns button pointer h_100 p4">
-
-                     <div class="small-12 fontXL black p0">
-                        <i class="fa fa-angle-right text-right"></i>
+                        <?php
+                           endif;
+                        endforeach; ?>
                      </div>
+                  </div>
+
+               </div>
+
+
+            </div> <!-- contenido_y_comentarios -->
+            <div class="comentarios-boton columns p0">
+            <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_40 p0">
+               <div class="small-10 columns h_100 p0">
+                  <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
+                  <div class="columns w_a h_30 primario_acento_bg">
+                     <div class="h_5vh fontM black">
+                        <div class="columns w_a vcenter"><i class="fa fa-comments-o fontXL"></i></div>
+                           <div class="columns w_a vcenter p0 fontS ">
+                              <div class="p2 columns w_a">Comentarios</div>
+                           </div>
+                           <div class="columns w_a f_l vcenter h_a text-right fontM">
+                                 (<?php echo get_comments_number( get_the_ID() ); ?>)
+
+                           </div>
+                        </div>
+
+                  </div>
+                  <div class="columns h_70 pl0 primario_acento_blanco_bg">
+                        <div class="small-2 columns p0 h_a vcenter">
+                           <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
+                           <div class="h_5vh imgLiquid imgLiquidNoFill">
+                                 <?php $user_id = $comments[0]->user_id; echo get_avatar( $user_id, '100' ); ?>
+                           </div>
+                           </a>
+                        </div>
+                        <div class="columns w_a p0 h_a vcenter">
+                           <div class="fontXS black text-left">
+                              <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
+                                 <?php echo get_comment_author( $comments[0]->comment_ID ); ?>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="small-8 columns h_100 p0 subheader fontS text-left black vcenter">
+                           <i class="vcenter h_a p0 neutral_oscuro fontXS">
+                              <?php echo wp_trim_words( get_comment_text( $comments[0]->comment_ID ), 15 ); ?>
+                           </i>
+                        </div>
+                  </div>
+
+                  <button class="small-2 columns button h_a pointer absDownR m0 primario_acento_bd white_bg p2">
+
+                        <i class="columns fa fa-angle-right text-center"></i>
                      <div class="small-12 fontS black vcenter">Leer más</div>
 
                   </button>
 
-               </div>
+               </div><!-- .comentarios_boton -->
 
-            </a>
-         </div> <!-- contenido_y_comentarios -->
-      </div>  <!-- .resumen_entrada -->
+            </div>
+         </a>
+
+      </div><!-- .tarjeta -->
+
 
    </article> <!-- #medicos-portada-entrada-destacada -->
 
@@ -182,6 +174,3 @@
       endwhile;
    endif;
    ?>
-
-
-</section>
