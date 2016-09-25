@@ -28,7 +28,20 @@ while(have_posts()) {
 <article class="small-12 h_75vh">
    <header class="medium-4 columns p5 text-left h_100 h_50vh" data-sticky-container>
       <div class="sticky ml0 p0" data-sticky data-achor="plantillas">
-         <h1><?php echo $title; ?></h1>
+         <h4>
+            <a href="<?php echo get_the_permalink($post->post_parent); ?>">
+               <?php echo get_post($post->post_parent)->post_title; ?>
+            </a>
+            <i class="fa fa-angle-right p2 pt0 pb0 secundario1 "></i>
+            <?php echo $title; ?>
+         </h4>
+         <div class="columns fontM p3 icono pl0 mb1">
+            <a href="<?php echo get_the_permalink($post->post_parent); ?>">
+               <i class="fa fa-arrow-left p1 pl0 complementario"></i>
+               <span class="p1">Regresar</span>
+
+            </a>
+         </div>
          <nav>
 
             <ul class="h_100 m0 p0">
@@ -53,8 +66,8 @@ while(have_posts()) {
       $(this).attr('data-index',i)
       var newli = $('<li>');
 
-      newli.addClass('fontM p2 pl0 text-left cursor-pointer');
-      newli.html( (i+1) + '. ' + $(this).html());
+      newli.addClass('fontM p1 pl0 text-left cursor-pointer icono');
+      newli.html( '<b>'+(i+1)+'.</b> ' + $(this).html());
       newli.attr('data-index',i);
 
       newli.click(function(){
@@ -71,8 +84,34 @@ while(have_posts()) {
 
       $('article nav ul').append( newli );
 
+
       i++;
-   })
+   });
+   var scrolling = false;
+
+   $(window).scroll(function(){
+
+      if(!scrolling) {
+         scrolling = setTimeout(function(){
+
+            // check if visible:
+            $('#page-content').find('h1,h2,h3,h4,h5,h6').each(function(){
+
+               if ( u.isElementInView( $(window), $(this), true ) ) {
+
+                  $('#page-content').find('h1,h2,h3,h4,h5,h6').css({color:'black'});
+                  $(this).css({color:'red'});
+
+               }
+
+            })
+
+            scrolling = false;
+
+         }, 150 );
+
+      }
+   });
 
 </script>
 

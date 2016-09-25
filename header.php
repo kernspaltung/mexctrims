@@ -16,7 +16,7 @@
    $color_orilla = 'neutral_bd';
    if( is_page('Inicio') )
       $color_orilla = 'transparente_bd';
-   if( is_page('Información') )
+   if( is_page('Información') || $post->post_parent == get_page_by_title('Información')->ID ) 
       $color_orilla = 'secundario1_bd';
    if( is_page('Noticias') )
       $color_orilla = 'secundario2_bd';

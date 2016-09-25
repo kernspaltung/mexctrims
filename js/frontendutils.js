@@ -133,6 +133,21 @@ function FrontEndUtils(){
 		fe.shareH();
 	}
 
+
+
+	this.isElementInView = function (container, element, fullyInView) {
+        var pageTop = container.scrollTop();
+        var pageBottom = pageTop + container.height();
+        var elementTop = element.offset().top;
+        var elementBottom = elementTop + element.height();
+
+        if (fullyInView === true) {
+            return ((pageTop < elementTop) && (pageBottom > elementBottom));
+        } else {
+            return ((elementBottom <= pageBottom) && (elementTop >= pageTop));
+        }
+    }
+
 }
 
 
