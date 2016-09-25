@@ -73,6 +73,21 @@ $complementario: #df00c4;
 
 /* estilos para elementos: */
 
+.icono, .tarjeta {
+
+   transition: transform 0.2s;
+   -webkit-transition: transform 0.2s;
+   -moz-transition: transform 0.2s;
+   &:hover {
+      transform: scale(1.01);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+   }
+
+}
+
+
+
 *,h1,h2,h3,h4,h5,h6 {
    font-family: 'Lato', sans-serif;
    // outline: 2px dotted #def;
@@ -89,6 +104,8 @@ a {
 }
 
 button, .button {
+
+   @extend .icono;
    &:hover {
       background-color: $primario;
       color: $complementario;
@@ -447,18 +464,6 @@ textarea {
 }
 
 
-.icono, .tarjeta {
-
-   transition: transform 0.2s;
-   -webkit-transition: transform 0.2s;
-   -moz-transition: transform 0.2s;
-   &:hover {
-      transform: scale(1.01);
-      -webkit-transform: scale(1.02);
-      -moz-transform: scale(1.02);
-   }
-
-}
 .tarjeta {
    padding: $spacing * 1.5;
    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
@@ -481,4 +486,16 @@ body {
 
 .f_l {
    float: left !important;
+}
+
+
+
+#page-content {
+   h1 { font-size: 27px; @extend .mb1; }
+   h2 { font-size: 23px; @extend .mb1; }
+   h3 { font-size: 21px; @extend .mb1; }
+   h4 { font-size: 19px; @extend .mb1; }
+   h5 { font-size: 17px; @extend .mb1; }
+   h6 { font-size: 15px; @extend .mb1; }
+   p  { font-size: 14px; @extend .mb1; }
 }

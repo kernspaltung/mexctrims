@@ -1,4 +1,19 @@
-<?php get_header();
+<?php
+/*
+
+Page Template:
+Automatically takes all headings in the content, and creates an Index.
+
+////
+
+Plantilla de Página:
+Automáticamente toma los titulares del contenido, y construye un índice.
+
+
+*/
+
+
+get_header();
 
 if(have_posts()) {
 while(have_posts()) {
@@ -12,17 +27,17 @@ while(have_posts()) {
 
 <article class="small-12 h_75vh">
    <header class="medium-4 columns p5 text-left h_100 h_50vh" data-sticky-container>
-      <div class="sticky" data-sticky data-achor="plantillas">
+      <div class="sticky ml0 p0" data-sticky data-achor="plantillas">
          <h1><?php echo $title; ?></h1>
          <nav>
 
-            <ul class="h_100 ">
+            <ul class="h_100 m0 p0">
             </ul>
 
          </nav>
       </div>
    </header>
-   <section id="content" class="medium-8 columns text-left p5 h_a">
+   <section id="page-content" class="medium-8 columns text-left p5 h_a">
       <?php echo $content; ?>
    </section>
 
@@ -34,23 +49,23 @@ while(have_posts()) {
    $('article nav ul').html('');
 
    var i = 0;
-   $('#content').find('h1,h2,h3,h4,h5,h6').each(function(i){
+   $('#page-content').find('h1,h2,h3,h4,h5,h6').each(function(i){
       $(this).attr('data-index',i)
       var newli = $('<li>');
 
-      newli.addClass('mb1 fontXS p2 text-left cursor-pointer');
+      newli.addClass('fontM p2 pl0 text-left cursor-pointer');
       newli.html( (i+1) + '. ' + $(this).html());
       newli.attr('data-index',i);
 
       newli.click(function(){
 
 
-         var scrollTo = $('#content [data-index='+$(this).data('index')+']').offset().top;
+         var scrollTo = $('#page-content [data-index='+$(this).data('index')+']').offset().top;
 
          // scrollTo += parseInt($('body').scrollTop())
-         scrollTo -= parseInt($('#content').offset().top)
+         scrollTo -= parseInt($('#page-content').offset().top)
 
-         $('body').animate({ scrollTop: scrollTo })
+         $('html,body').animate({ scrollTop: scrollTo })
 
       })
 

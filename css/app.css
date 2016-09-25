@@ -378,7 +378,7 @@ li {
 .mb0 {
   margin-bottom: 0 !important; }
 
-.mb1 {
+.mb1, #page-content h1, #page-content h2, #page-content h3, #page-content h4, #page-content h5, #page-content h6, #page-content p {
   margin-bottom: 15px !important; }
 
 .mb2 {
@@ -6018,6 +6018,18 @@ table.hover tr:nth-of-type(even):hover {
           animation-delay: 700ms !important; }
 
 /* estilos para elementos: */
+.icono, button, .button, input[type="submit"], .tarjeta {
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s; }
+  .icono:hover, button:hover, .button:hover, input[type="submit"]:hover, .tarjeta:hover {
+    -ms-transform: scale(1.01);
+        transform: scale(1.01);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02); }
+
 *, h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif; }
 
@@ -6232,23 +6244,11 @@ input {
 textarea {
   height: 10vh !important; }
 
-.icono, .tarjeta {
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  -moz-transition: transform 0.2s; }
-  .icono:hover, .tarjeta:hover {
-    -ms-transform: scale(1.01);
-        transform: scale(1.01);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02); }
-
 .tarjeta {
   padding: 22.5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
 
-.icono {
+.icono, button, .button, input[type="submit"] {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
 
 body {
@@ -6259,3 +6259,24 @@ body {
 
 .f_l {
   float: left !important; }
+
+#page-content h1 {
+  font-size: 27px; }
+
+#page-content h2 {
+  font-size: 23px; }
+
+#page-content h3 {
+  font-size: 21px; }
+
+#page-content h4 {
+  font-size: 19px; }
+
+#page-content h5 {
+  font-size: 17px; }
+
+#page-content h6 {
+  font-size: 15px; }
+
+#page-content p {
+  font-size: 14px; }

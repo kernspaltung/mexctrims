@@ -47,7 +47,7 @@
 
 
 
-         <div id="descargables-mosaico" class="sticky-here large-9 columns h_a p5 pt1 ">
+         <div id="descargables-mosaico" class="sticky-here large-9 columns h_a p5 pt1 mb2 pb4">
 
             <?php
 
@@ -58,7 +58,7 @@
             for ($i=1; $i < 30 ; $i++) {
 
                ?>
-               <div class="medium-6 columns h_30vh p4 text-left">
+               <div class="medium-6 columns h_30vh p4 text-left ">
 
                   <a href="#" class="tarjeta white_bg h_100 p4 rel">
                      <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>

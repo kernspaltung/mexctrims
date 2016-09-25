@@ -1,8 +1,11 @@
+
 - Mejorar presentación h1's dinámicos y contenido adyacente
+- correccion colores menu contacto y buscar
 - Integrar Content - Listado
 - Revisar Integración Completa
 - Integrar Twitter
 - Link autor
+- header: cambiar clase _bd por _bdb
 
 - Front End Posting: CF7?
 
@@ -24,7 +27,9 @@
 
 
 //////////////////////
-por revisar:
+listos / por revisar:
+
+x margin bottom en descargables
 
 x Mejorar Portada Información
 
