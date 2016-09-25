@@ -60,7 +60,7 @@
 
 $color_texto: #232222;
 $primario: #b9cf46;
-$primario_oscuro: #b9cf46;
+$primario_oscuro: #899f16;
 $primario_acento: #c8fb00;
 $primario_acento_blanco: #f0fff8;
 $secundario_blanco: #f8fff0;
@@ -208,6 +208,12 @@ header#header {
 .primario {
    &, * {
       color: $primario !important;
+   }
+}
+
+.primario_oscuro {
+   &, * {
+      color: $primario_oscuro !important;
    }
 }
 .primario_acento {
@@ -445,7 +451,7 @@ header#header {
 
 .white {
    * {
-      color: white !important;
+      // color: white !important;
    }
 }
 
@@ -519,4 +525,32 @@ body {
       -moz-transform: scale(1.02);
       color: black;
    }
+}
+
+
+
+
+.wpcf7-radio {
+   .wpcf7-list-item {
+      display: inline-block;
+      width: 30% !important;
+      float: left;
+   }
+   input[type="radio"] {
+      float: left;
+   }
+   label {
+      // width: 33% !important;
+      margin: 0;
+      float: left;
+   }
+}
+
+
+input[type="radio"] {
+   color: $complementario !important;
+}
+textarea,input {
+   color: $neutral_oscuro !important;
+   @extend .neutral_oscuro;
 }

@@ -13,23 +13,23 @@
       </main>
 
 
-      <footer id="footer" class="columns h_10vh fixed bottom white_bg z1k neutral_oscuro p0">
-         <div class="small-12 medium-6 large-4 small-centered columns p0 h_100 rel">
-            <div class="small-4 columns text-center vcenter p0 secundario1_hover icono  p1">
+      <footer id="footer" class="columns h_10vh fixed bottom white_bg z1k p0 text-right">
+         <div class="small-12 medium-6 large-4 medium-offset-9 large-offset-8 columns p0 h_100 rel">
+            <div class="small-4 columns text-center vcenter p0 secundario1_hover icono  p1" style="color:#3b5998">
                <a href="http://facebook.com/mexctrims" target="_blank">
-                  <i class="fa fa-facebook columns fontL"></i>
+                  <i class="fa fa-facebook columns fontL" style="color:#3b5998"></i>
                   <span class="columns fontS p2 pb0">Facebook</span>
                </a>
             </div>
-            <div class="small-4 columns text-center vcenter p0 secundario1_hover icono p1">
+            <div class="small-4 columns text-center vcenter p0 secundario1_hover icono p1" style="color:#1A8BF0">
                <a href="#" target="_blank" class="primario_hover">
-                  <i class="fa fa-twitter columns fontL"></i>
+                  <i class="fa fa-twitter columns fontL" style="color:#1A8BF0"></i>
                   <span class="columns fontS p1 pb0">Twitter</span>
                </a>
             </div>
-            <div class="boton-contacto small-4 columns text-center vcenter p0 secundario1_hover icono p1">
+            <div class="boton-contacto small-4 columns text-center vcenter p0 secundario1_hover icono p1" style="color:#b9cf46">
                <a href="#" target="_blank" class="primario_hover">
-                  <i class="fa fa-envelope columns fontL"></i>
+                  <i class="fa fa-envelope columns fontL" style="color:#b9cf46"></i>
                   <span class="columns fontS p1 pb0">Contáctanos</span>
                </a>
             </div>

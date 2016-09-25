@@ -12,7 +12,7 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
    <div class="small-12 columns row h_60vh text-left fontM p5 p_sm_1">
       <div class="small-12 small-push-12 medium-7 columns p5 p_sm_1 h_100">
          <div class="vcenter font_sm_S">
-            <?php echo apply_filters('the_content', $introduccion->post_content ); ?>
+            <?php echo apply_filters('the_excerpt', $introduccion->post_excerpt ); ?>
          </div>
       </div>
       <div class="medium-5 columns h_100 h_sm_50">
@@ -53,7 +53,7 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
             </div>
             <div class="extracto p0 fontM">
                <div class="vcenter p5 pt0 ">
-                  <?php echo apply_filters( 'the_content', $bullet->post_content ); ?>
+                  <?php echo apply_filters( 'the_excerpt', $bullet->post_excerpt ); ?>
                </div>
             </div>
             </a>

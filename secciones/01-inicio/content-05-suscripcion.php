@@ -5,11 +5,27 @@ $lista_correo = get_page_by_title( 'Lista de correo' );
 
 ?>
 
-<section id="inicio-registro" class="small-12 columns text-center rel pt0 mt3 ">
+<section id="inicio-contacto-datos" class="h_20vh primario_acento_bg columns text-center rel pt0 mt3 m0">
+   <!-- .columns.medium-6.large-4.p5>h1{Contacto} -->
+   <div class="columns medium-6 large-4 p5 h_100">
+      <div class="vcenter">
+         <h1>Contacto</h1>
+      </div>
+   </div>
+   <div class="columns medium-6 large-4 p0 h_100">
+      <div class="vcenter columns h_a text-center p0">
+         <div class="icono text-center columns">mexctrims@mexctrims.com</div>
+         <div class="icono text-center columns medium-6 mt1"><a href="#"><i class="fa fa-twitter"></i></a></div>
+         <div class="icono text-center columns medium-6 mt1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+      </div>
+   </div>
+</section>
 
-   <div id="inicio-contacto-formulario" class="small-12 row h_a p5 p_sm_1 pt1 rel primario_acento_bd">
+<section id="inicio-registro" class="columns text-center rel pt0 p0 m0">
+
+   <div id="inicio-contacto-formulario" class="columns h_a p5  p_sm_1 pt1 rel secundario2_bg white">
       <div class="medium-6 columns p5 pt0 pb0">
-         <div class="columns fontS text-left p3">
+         <div class="columns fontM text-left p3">
             <h4 class="mt2">
                <?php echo apply_filters( 'the_title', $lista_correo -> post_title ); ?>
             </h4>

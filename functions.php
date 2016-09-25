@@ -4,6 +4,13 @@ include_once 'backend/enlaces.php';
 
 add_theme_support( 'post-thumbnails' );
 
+
+add_action( 'init', 'add_excerpts_to_pages' );
+function add_excerpts_to_pages() {
+    add_post_type_support( 'page', 'excerpt' );
+}
+
+
 global $themeDir;
 
 $themeDir = get_stylesheet_directory_uri() . "/";
