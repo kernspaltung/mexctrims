@@ -22,8 +22,8 @@
                         ob_start();
                         for ($i=1; $i < 5 ; $i++) {
                            ?>
-                              <li class="p1 pl1 pr1 secundario3_bg mb1 tarjeta white bold">
-                                 <a href="#" class="w_100 h_100">
+                              <li class="p1 pl1 pr1 secundario3_bd mb1 tarjeta">
+                                 <a href="#" class="w_100 h_100 fontS font2">
                                     Categoría de descargables
                                  </a>
                               </li>
@@ -58,19 +58,19 @@
             for ($i=1; $i < 30 ; $i++) {
 
                ?>
-               <div class="medium-6 columns h_30vh p4 text-left ">
+               <div class="medium-6 columns h_45vh p4 text-left ">
 
                   <a href="#" class="tarjeta white_bg h_100 p4 rel">
                      <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
                      <div class="fontXS">Publicado</div>
                      <div class="texto columns small-9 mt1 p0 fontS">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo facere, natus. Laborum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quae quam quasi.</p>
                      </div>
                      <div class="columns small-3 p2 absDownR primario_acento_bd">
-                           <div class="columns text-center secundario2">
-                              <i class="fa fa-arrow-down"></i>
+                           <div class="columns text-center secundario3">
+                              <i class="fa fa-arrow-down fontL"></i>
                            </div>
-                           <div class="columns p0 fontXS text-center secundario2">
+                           <div class="columns p0 fontXS text-center neutral_oscuro">
                               Descargar
                            </div>
 

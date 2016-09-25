@@ -11,6 +11,6 @@ endif;
 
 <div class="small-12 h_15vh p3">
    <div class="vcenter">
-      <h3><?php echo $title; ?></h3>
+      <h3 class="txsh1-dark w_a white bold fontXXXS"><?php echo $title; ?></h3>
    </div>
 </div>

@@ -451,7 +451,10 @@ header#header {
 
 
 .txsh1 {
-	text-shadow: 1px 1px 0 $neutral;
+	text-shadow: 2px 2px 2px $neutral;
+}
+.txsh1-dark {
+	text-shadow: 2px 2px 2px $neutral_oscuro;
 }
 
 

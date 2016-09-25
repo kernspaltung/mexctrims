@@ -6238,7 +6238,10 @@ header#header {
   color: white !important; }
 
 .txsh1 {
-  text-shadow: 1px 1px 0 #97908d; }
+  text-shadow: 2px 2px 2px #97908d; }
+
+.txsh1-dark {
+  text-shadow: 2px 2px 2px #74706f; }
 
 input {
   height: 30px !important;
