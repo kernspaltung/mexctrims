@@ -13,7 +13,7 @@ function styles() {
 	global $themeDir;
 
 	wp_enqueue_style("font-awesome", $themeDir . "bower_components/font-awesome/css/font-awesome.min.css",array());
-	wp_enqueue_style("google-fonts", 'https://fonts.googleapis.com/css?family=Lato:100,300');
+	wp_enqueue_style("google-fonts", 'https://fonts.googleapis.com/css?family=Lato:100,300|Montserrat');
 	wp_enqueue_style("app", $themeDir . "css/app.css",array());
 
 }

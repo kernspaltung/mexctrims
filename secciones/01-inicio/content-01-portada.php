@@ -28,7 +28,7 @@ $bienvenida = get_page_by_title('Bienvenida');
          <div class="vcenter">
 
             <div class="mt_sm_2 imgLiquid imgLiquidNoFill h_25vh">
-               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-150w-2x.png">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logotipo-480w-2x.png">
             </div>
 
             <h6 class="mt1 mt_sm_0 fontL text-center p2 pt0 pb0">
