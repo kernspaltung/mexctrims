@@ -4,21 +4,9 @@
       Noticias
    </h3>
 
-   <section id="twitter" class="columns hide-for-small-only medium-6 h_70vh white_bg mt1">
-      <div class="vcenter columns small-6 small-offset-3 end text-center p5 primario_acento_bd tarjeta">
-         <div class="columns">
-            proximamente:
-         </div>
-         <div class="columns">
-            twitter
-         </div>
-         <div class="columns">
-            @mexctrims
-         </div>
-         <div class="columns text-center fontL">
-            <i class="fa fa-twitter"></i>
-         </div>
-      </div>
+   <section id="twitter" class="columns hide-for-small-only medium-6 h_70vh white_bg mt1 scrollH">
+      <a class="twitter-timeline" data-lang="es" data-link-color="#19CF86" href="https://twitter.com/mexctrims">Tweets by mexctrims</a>
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
    </section>
 
    <section id="noticias" class="columns hide-for-small-only medium-6 h_60vh ">
