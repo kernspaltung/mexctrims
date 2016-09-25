@@ -1,6 +1,7 @@
 <?php
 
 include_once 'backend/enlaces.php';
+include_once 'backend/descargables.php';
 
 add_theme_support( 'post-thumbnails' );
 

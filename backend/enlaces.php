@@ -1,9 +1,9 @@
 <?php
 
-add_action( 'init', 'register_cpt' );
+add_action( 'init', 'register_cpt_enlace' );
 
 
-function register_cpt() {
+function register_cpt_enlace() {
 	$labels = array(
 		'name'               => _x( 'Enlaces', 'post type general name', 'mexctrims' ),
 		'singular_name'      => _x( 'Enlace', 'post type singular name', 'mexctrims' ),
