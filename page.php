@@ -16,18 +16,18 @@ Automáticamente toma los titulares del contenido, y construye un índice.
 get_header();
 
 if(have_posts()) {
-while(have_posts()) {
-   the_post();
-   $title = get_the_title();
-   $content = apply_filters('the_content', get_the_content());
-}
+   while(have_posts()) {
+      the_post();
+      $title = get_the_title();
+      $content = apply_filters('the_content', get_the_content());
+   }
 }
 
 ?>
 
 <article class="small-12 h_75vh">
    <header class="medium-4 columns p5 text-left h_100 h_50vh" data-sticky-container>
-      <div class="sticky ml0 p0" data-sticky data-achor="plantillas">
+      <div class="sticky ml0 p0" data-sticky data-achor="plantillas" data-margin-top="2">
          <h4>
             <a href="<?php echo get_the_permalink($post->post_parent); ?>">
                <?php echo get_post($post->post_parent)->post_title; ?>
@@ -42,7 +42,7 @@ while(have_posts()) {
 
             </a>
          </div>
-         <nav>
+         <nav id="page-index-menu">
 
             <ul class="h_100 m0 p0">
             </ul>
@@ -57,63 +57,6 @@ while(have_posts()) {
 </article>
 
 
-<script type="text/javascript">
-
-   $('article nav ul').html('');
-
-   var i = 0;
-   $('#page-content').find('h1,h2,h3,h4,h5,h6').each(function(i){
-      $(this).attr('data-index',i)
-      var newli = $('<li>');
-
-      newli.addClass('fontM p1 pl0 text-left cursor-pointer icono');
-      newli.html( '<b>'+(i+1)+'.</b> ' + $(this).html());
-      newli.attr('data-index',i);
-
-      newli.click(function(){
-
-
-         var scrollTo = $('#page-content [data-index='+$(this).data('index')+']').offset().top;
-
-         // scrollTo += parseInt($('body').scrollTop())
-         scrollTo -= parseInt($('#page-content').offset().top)
-
-         $('html,body').animate({ scrollTop: scrollTo })
-
-      })
-
-      $('article nav ul').append( newli );
-
-
-      i++;
-   });
-   var scrolling = false;
-
-   $(window).scroll(function(){
-
-      if(!scrolling) {
-         scrolling = setTimeout(function(){
-
-            // check if visible:
-            $('#page-content').find('h1,h2,h3,h4,h5,h6').each(function(){
-
-               if ( u.isElementInView( $(window), $(this), true ) ) {
-
-                  $('#page-content').find('h1,h2,h3,h4,h5,h6').css({color:'black'});
-                  $(this).css({color:'red'});
-
-               }
-
-            })
-
-            scrolling = false;
-
-         }, 150 );
-
-      }
-   });
-
-</script>
 
 
 <?php get_footer(); ?>

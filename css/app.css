@@ -309,7 +309,7 @@ li {
 .mt0.5 {
   margin-top: 7.5px !important; }
 
-.mt1 {
+.mt1, #page-content h1, #page-content h2, #page-content h3, #page-content h4, #page-content h5, #page-content h6 {
   margin-top: 15px !important; }
 
 .mt2 {
@@ -6094,7 +6094,7 @@ header#header {
   color: #97908d !important; }
 
 .neutral_oscuro, .neutral_oscuro * {
-  color: #77706d !important; }
+  color: #74706f !important; }
 
 .secundario1, .secundario1 * {
   color: #00df7f !important; }
@@ -6118,7 +6118,7 @@ header#header {
   color: #97908d !important; }
 
 .neutral_oscuro_hover:hover, .neutral_oscuro_hover:hover * {
-  color: #77706d !important; }
+  color: #74706f !important; }
 
 .secundario1_hover:hover, .secundario1_hover:hover * {
   color: #00df7f !important; }
@@ -6142,7 +6142,7 @@ header#header {
   background-color: #97908d !important; }
 
 .neutral_oscuro_bg_hover:hover, .neutral_oscuro_bg_hover:hover * {
-  background-color: #77706d !important; }
+  background-color: #74706f !important; }
 
 .secundario1_bg_hover:hover, .secundario1_bg_hover:hover * {
   background-color: #00df7f !important; }
@@ -6166,7 +6166,7 @@ header#header {
   border-color: #97908d !important; }
 
 .neutral_oscuro_bd_hover:hover {
-  border-color: #77706d !important; }
+  border-color: #74706f !important; }
 
 .secundario1_bd_hover:hover {
   border-color: #00df7f !important; }
@@ -6261,22 +6261,33 @@ body {
   float: left !important; }
 
 #page-content h1 {
-  font-size: 27px; }
+  font-size: 30px; }
 
 #page-content h2 {
-  font-size: 23px; }
+  font-size: 27px; }
 
 #page-content h3 {
-  font-size: 21px; }
+  font-size: 24px; }
 
 #page-content h4 {
-  font-size: 19px; }
+  font-size: 22px; }
 
 #page-content h5 {
-  font-size: 17px; }
+  font-size: 19px; }
 
 #page-content h6 {
-  font-size: 15px; }
+  font-size: 17px; }
 
 #page-content p {
-  font-size: 14px; }
+  font-size: 17px; }
+
+#page-index-menu li {
+  transition: all 0.3s;
+  color: #37302d; }
+
+#page-index-menu .current {
+  -ms-transform: scale(1.02);
+      transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  color: black; }

@@ -64,7 +64,8 @@ $primario_acento: #c8fb00;
 $primario_acento_blanco: #f0fff8;
 $secundario_blanco: #f8fff0;
 $neutral: #97908d;
-$neutral_oscuro: #77706d;
+$neutral_oscuro: #74706f;
+$neutral_muy_oscuro: #37302d;
 $secundario1: #00df7f;
 $secundario2: #039ed9;
 $secundario3: #ff8100;
@@ -491,11 +492,24 @@ body {
 
 
 #page-content {
-   h1 { font-size: 27px; @extend .mb1; }
-   h2 { font-size: 23px; @extend .mb1; }
-   h3 { font-size: 21px; @extend .mb1; }
-   h4 { font-size: 19px; @extend .mb1; }
-   h5 { font-size: 17px; @extend .mb1; }
-   h6 { font-size: 15px; @extend .mb1; }
-   p  { font-size: 14px; @extend .mb1; }
+   h1 { font-size: 30px; @extend .mt1; @extend .mb1; }
+   h2 { font-size: 27px; @extend .mt1; @extend .mb1; }
+   h3 { font-size: 24px; @extend .mt1; @extend .mb1; }
+   h4 { font-size: 22px; @extend .mt1; @extend .mb1; }
+   h5 { font-size: 19px; @extend .mt1; @extend .mb1; }
+   h6 { font-size: 17px; @extend .mt1; @extend .mb1; }
+   p  { font-size: 17px; @extend .mb1; }
+}
+#page-index-menu {
+   li {
+      transition: all 0.3s;
+      color: $neutral_muy_oscuro;
+   }
+   .current {
+      // font-weight: bold;
+      transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      color: black;
+   }
 }

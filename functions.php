@@ -32,6 +32,9 @@ function scripts() {
 	wp_enqueue_script("frontendutils", $themeDir . "js/frontendutils.js",array('jquery'));
 	wp_enqueue_script("app", $themeDir . "js/app.js");
 
+	if( is_page() ) {
+		wp_enqueue_script("page-index", $themeDir . "js/page-index.js");
+	}
 }
 
 add_action('wp_enqueue_scripts','scripts');
