@@ -7,7 +7,7 @@
 
 
     <!-- lista noticias -->
-    <div class="small-12 large-8 columns ha p2 pt0 primario_acento_blanco_bg">
+    <div class="small-12 large-8 columns ha p2 pt0">
 
 
       <?php
@@ -23,16 +23,16 @@
 
 
 
-          <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="h_100 _bd rel tarjeta white_bg">
+          <a href="<?php echo get_the_permalink( get_the_ID() ); ?>" class="h_100 _bd rel tarjeta pt1 white_bg">
 
             <!-- Titulo noticia -->
-            <div id="noticias-titulo-destacado" class="columns p2 ha text-left fontM">
+            <div id="noticias-titulo-destacado" class="columns p2 pl0 pr0 ha text-left fontM">
               <?php echo get_the_title(); ?>
             </div><!-- Titulo noticia -->
 
 
             <!-- fecha destacada -->
-            <div id="noticias-fecha" class="medium-12 columns p2 text-right fontXS">
+            <div id="noticias-fecha" class="medium-12 columns p2 pl0 pr0 pt0 text-right fontXS">
               Publicado el <?php echo get_the_date(); ?>
             </div><!-- fecha destacada -->
 
@@ -46,8 +46,8 @@
 
 
             <!-- extracto destacada -->
-            <div id="noticias-extracto" class="medium-7 columns ha p2 pr0 pl1  fontS text-left">
-              <?php echo apply_filters('the_excerpt', wp_trim_words(get_the_excerpt(),12) ); ?>
+            <div id="noticias-extracto" class="medium-7 columns ha p2 pt0  fontS text-left">
+              <?php echo apply_filters('the_excerpt', wp_trim_words(get_the_excerpt(),8) ); ?>
             </div><!-- extracto destacada -->
 
 

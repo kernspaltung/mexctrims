@@ -77,7 +77,7 @@
                   }
                   ?>
 
-                  <article class="medium-6 columns h_60vh p2 text-left rel">
+                  <article class="medium-6 columns h_5   0vh p2 text-left rel">
 
                      <div class="tarjeta h_100 p4 rel white_bg">
                      <a href="<?php echo $link; ?>" class="" target="_blank">
@@ -111,8 +111,8 @@
                         $categorias = get_the_category(get_the_ID());
                         foreach ($categorias as $categoria) {
                            ?>
-                           <div class="columns w_a f_l p2 pl0 pt0  end fontXS font2">
-                              <div class="secundario1_bg white p2 tarjeta">
+                           <div class="columns w_a f_l p1 pl0 pt0  end fontXS font2">
+                              <div class="secundario1_bg white p1 tarjeta">
 
                                  <a href="<?php echo get_category_link($categoria -> term_id); ?>" class="white font2">
                                     <?php echo $categoria -> name; ?>

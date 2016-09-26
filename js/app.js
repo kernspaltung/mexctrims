@@ -37,7 +37,7 @@ function fix_sticky() {
    }
    $('.sticky').attr('data-margin-top', Math.ceil ( parseInt( $('#header').height()) / 14 ) );
    $('.sticky').attr('data-margin-top', Math.ceil ( parseInt( $('#header').height()) / 14 ) );
-   $('#noticias-aside-large .sticky').attr('data-margin-top', Math.ceil ($('#header').height() / 14 ) + 4 );
+   // $('#noticias-aside-large .sticky').attr('data-margin-top', Math.ceil ($('#header').height() / 14 ) + 4 );
 }
 
 

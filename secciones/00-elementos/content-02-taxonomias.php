@@ -1,10 +1,10 @@
 <!-- Categorias large -->
-<aside id="noticias-aside-large" class="taxonomias h_100 large-4 columns show-for-large ha " data-sticky-container>
-   <div class="sticky h_75vh fontM p4" data-sticky data-anchor="plantillas" data-margin-top="9">
+<aside id="noticias-aside-large" class="taxonomias h_70vh large-4 columns show-for-large " data-sticky-container>
+   <div class="sticky h_70vh fontM " data-sticky data-anchor="plantillas" data-margin-top="3">
 
-      <h2 class="columns fontL p3 text-center">Categorias</h2>
+      <h6 class="columns p2  font2 text-left">Categorias</h6>
 
-      <ul id="noticias-tags-lista" class="menu small-12 columns p0 h_20vh scrollH">
+      <ul id="noticias-tags-lista" class="menu small-12 columns p2 pt0 pl0 h_30vh scrollH">
          <?php
 
          $medicos_destacada = get_term_by('name','Destacada Médicos', 'category' );
@@ -24,7 +24,7 @@
                ?>
                <a href="<?php echo get_category_link( $categoria -> term_id ); ?>">
                   <?php $active = in_array( $categoria->term_id, $las_categorias ) ? 'active primario_acento_bg tarjeta' : ''; ?>
-                  <li class="small-4 columns fontXXS p3 text-center <?php echo $active; ?>">
+                  <li class="small-6 columns fontXS p2 pl0 plr0 text-center <?php echo $active; ?>">
                      <?php echo $categoria->name; ?>
                   </li>
                </a>
@@ -36,7 +36,7 @@
 
 
       <!-- Etiquetas large -->
-      <h2 class="columns fontL p3 text-center">Etiquetas</h2>
+      <h6 class="columns p2  font2 text-left">Etiquetas</h6>
 
       <ul id="noticias-tags-lista" class="menu small-12 columns p0 h_20vh scrollH">
          <?php
@@ -51,7 +51,7 @@
 
             <a href="<?php echo get_tag_link( $etiqueta->term_id); ?>">
                <?php $active = in_array( $etiqueta->term_id, $las_etiquetas ) ? 'active active primario_acento_bg tarjeta' : ''; ?>
-               <li class="small-3 columns fontXXS p2 text-center <?php echo $active; ?>">
+               <li class="w_a f_l columns fontXXS p2 text-center <?php echo $active; ?>">
                   <?php echo $etiqueta->name; ?>
                </li>
             </a>

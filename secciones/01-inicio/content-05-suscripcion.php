@@ -5,18 +5,32 @@ $lista_correo = get_page_by_title( 'Lista de correo' );
 
 ?>
 
-<section id="inicio-contacto-datos" class="h_20vh primario_acento_bg columns text-center rel pt0 mt3 m0">
+<section id="inicio-contacto-datos" class="h_20vh primario_bg white columns text-center rel pt0 mt3 m0 p0">
    <!-- .columns.medium-6.large-4.p5>h1{Contacto} -->
-   <div class="columns medium-6 large-4 p5 h_100">
+   <div class="columns medium-6 large-4 p5 h_100 txsh1">
       <div class="vcenter">
          <h1>Contacto</h1>
       </div>
    </div>
-   <div class="columns medium-6 large-4 p0 h_100">
+   <div class="columns medium-6 large-4 p0 h_100 primario_acento_bg">
       <div class="vcenter columns h_a text-center p0">
-         <div class="icono text-center columns">mexctrims@mexctrims.com</div>
-         <div class="icono text-center columns medium-6 mt1"><a href="#"><i class="fa fa-twitter"></i></a></div>
-         <div class="icono text-center columns medium-6 mt1"><a href="#"><i class="fa fa-facebook"></i></a></div>
+         <div class="icono text-center columns font2">
+            <a href="#">
+               <span class="secundario2 font2">
+                  mexctrims@mexctrims.com
+               </span>
+            </a>
+         </div>
+         <div class="icono text-center columns medium-6 mt1">
+            <a href="#">
+               <i class="fa fa-twitter secundario2"></i>
+            </a>
+         </div>
+         <div class="icono text-center columns medium-6 mt1">
+            <a href="#">
+               <i class="fa fa-facebook secundario2"></i>
+            </a>
+         </div>
       </div>
    </div>
 </section>
