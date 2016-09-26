@@ -19,7 +19,7 @@
 
    ?>
 
-   <article id="medicos-portada-entrada-destacada" class="entrada_medicos columns small-12 medium-8 h_65vh p3">
+   <article id="medicos-portada-entrada-destacada" class="entrada_medicos columns small-12 medium-8 h_75vh p3">
       <!-- (.small-5.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.small-7.columns.h_100{lorem10} -->
 
 
@@ -33,7 +33,7 @@
 
             <div class="columns small-8 text-left p4 pt1 pb0 m0">
                <a href="<?php echo get_the_permalink(get_the_ID()); ?>" class="p0 m0">
-                  <h5 class=" black text-left m0">
+                  <h5 class="fontL black text-left m0">
                      <?php echo apply_filters('the_title', get_the_title()); ?>
                   </h5>
                </a>
@@ -90,21 +90,21 @@
                      <?php echo apply_filters('the_excerpt', wp_trim_words( get_the_excerpt(), 13 )); ?>
                   </div>
 
-                  <div class="categorias_noticia columns p2 text-left">
+                  <div class="categorias_noticia columns h_a p2 pt0 text-left">
                      <div class="categorias-entrada small-12 columns fontM p0">
                         <?php
                         foreach( get_the_category() as $categoria ):
 
                            if( ! in_array( $categoria->term_id, $categorias_excluidas ) ) :
-                        ?>
+                              ?>
 
-                              <div class=" columns w_a f_l p1 fontXXS">
-                                 <a href="<?php echo get_category_link( $categoria->term_id ); ?>" class="tarjeta h_100 primario_bd p2">
+                              <div class=" columns w_a f_l p1 pl0 fontXXS">
+                                 <a href="<?php echo get_category_link( $categoria->term_id ); ?>" class="h_100 p1 primario_acento_bg tarjeta font2">
                                     <?php echo $categoria->name; ?>
                                  </a>
                               </div>
 
-                        <?php
+                              <?php
                            endif;
                         endforeach; ?>
                      </div>

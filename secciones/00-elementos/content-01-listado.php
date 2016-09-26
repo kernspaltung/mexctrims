@@ -77,7 +77,7 @@
                   }
                   ?>
 
-                  <article class="medium-6 columns h_5   0vh p2 text-left rel">
+                  <article class="medium-6 columns h_55vh p2 text-left rel">
 
                      <div class="tarjeta h_100 p4 rel white_bg">
                      <a href="<?php echo $link; ?>" class="" target="_blank">
