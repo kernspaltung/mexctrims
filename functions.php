@@ -421,6 +421,7 @@ function search_title_highlight() {
 function search_content_highlight() {
   $content = get_the_content();
   $keys = implode('|', explode(' ', get_search_query()));
+  $content = wp_trim_words( $content, 85 );
   $content = preg_replace('/(' . $keys .')/iu', '<strong class="search-highlight">\0</strong>', $content);
 
   return '<p>' . $content . '</p>';

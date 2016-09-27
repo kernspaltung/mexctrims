@@ -21,7 +21,7 @@
             <?php echo apply_filters( 'the_excerpt', search_excerpt_highlight() ); ?>
          </p>
          <span class="contenido fontM">
-            <?php echo apply_filters( 'the_content', wp_trim_words( search_content_highlight(), 85 ) ); ?>
+            <?php echo apply_filters( 'the_content', search_content_highlight() ); ?>
          </span>
       </a>
    </article>
