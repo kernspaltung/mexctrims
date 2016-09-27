@@ -4,7 +4,7 @@ $medicos = get_page_by_title( 'Médicos' );
 
 ?>
 
-<section id="medicos-portada" class="h_50vh small-12 columns mb3">
+<section id="medicos-portada" class="h_60vh small-12 columns mb3">
 
   <header id="medicos-portada-intro" class="small-12 columns h_100">
     <!-- (.small-5.columns.h_100>(.small-4.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.small-8.columns.h_100>.small-12.columns.fontXL.black.uppercase.vcenter{Sección Medicos})+.small-7.columns.h_100>.small-12.columns.h_50.fontXS+.small-9.columns.h_50.fontXS+button.small-3.columns.button.hollow.cursor-pointer.h_50.fontS.uppercase{Contribución} -->

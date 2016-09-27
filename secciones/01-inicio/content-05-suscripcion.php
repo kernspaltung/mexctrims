@@ -5,9 +5,9 @@ $lista_correo = get_page_by_title( 'Lista de correo' );
 
 ?>
 
-<section id="inicio-contacto-datos" class="h_20vh primario_bg white columns text-center rel pt0 mt3 m0 p0">
+<section id="inicio-contacto-datos" class="h_20vh primario_acento_bg black columns text-center rel pt0 mt3 m0 p0">
    <!-- .columns.medium-6.large-4.p5>h1{Contacto} -->
-   <div class="columns medium-6 large-4 p5 h_100 txsh1">
+   <div class="columns medium-6 large-4 p5 h_100">
       <div class="vcenter">
          <h1>Contacto</h1>
       </div>

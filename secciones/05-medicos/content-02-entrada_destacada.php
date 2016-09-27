@@ -1,6 +1,8 @@
+   <!--
    <div class="small-12 text-left p3 mb1">
-         <h4>Información para Médicos:</h4>
+      <h4>Información para Médicos:</h4>
    </div>
+   -->
 
 
 
@@ -19,7 +21,7 @@
 
    ?>
 
-   <article id="medicos-portada-entrada-destacada" class="entrada_medicos columns small-12 medium-8 h_75vh p3">
+   <article id="medicos-portada-entrada-destacada" class="entrada_medicos columns small-12 medium-8 h_70vh p3">
       <!-- (.small-5.columns.h_100>.h_100.imgLiquid.imgLiquidFill>img[src="http://fakeimg.pl/600x300"])+.small-7.columns.h_100{lorem10} -->
 
 
@@ -116,53 +118,76 @@
             </div> <!-- contenido_y_comentarios -->
             <div class="comentarios-boton columns p0">
             <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_40 p0">
-               <div class="small-10 columns h_100 p0">
-                  <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
-                  <div class="columns w_a h_30 primario_acento_bd">
-                     <div class="h_5vh fontM black">
-                        <div class="columns w_a vcenter"><i class="fa fa-comments-o fontXL"></i></div>
-                           <div class="columns w_a vcenter p0 fontS ">
-                              <div class="p2 columns w_a">Comentarios</div>
-                           </div>
-                           <div class="columns w_a f_l vcenter h_a text-right fontM">
-                                 (<?php echo get_comments_number( get_the_ID() ); ?>)
+                  <div class="comentarios-boton columns h_15vh p0 mb2 absDownR ">
+
+                        <div id="medicos-portada-entrada-destacada-comentarios" class="columns h_100 p0">
+
+
+                           <div class="small-7 medium-8 large-9 columns h_100 p0">
+                              <?php if( get_comments_number( get_the_ID() ) > 0 ) : ?>
+                              <!-- (.small-12.columns.h_30>.small-12.bold.fontM.black.vcenter{Comentarios (12)})+.small-12.columns.h_70>.small-12.bold.fontM.black.vcenter{lorem13} -->
+                              <div class="columns h_30 primario_acento_bd p0">
+
+                                 <div class="h_5vh fontM black p0">
+
+                                    <div class="columns w_a vcenter ">
+                                       <i class="fa fa-comments-o fontL"></i>
+                                    </div>
+                                    <div class="columns w_a vcenter p0 fontS ">
+                                       <div class="p1 columns w_a">Comentarios</div>
+                                    </div>
+                                    <div class="columns w_a f_l vcenter h_a text-right fontM">
+                                       (<?php echo get_comments_number( get_the_ID() ); ?>)
+                                    </div>
+                                 </div>
+
+                              </div>
+                              <div class="columns h_70 p0 primario_acento_blanco_bg">
+
+                                 <div class="small-5 columns  h_a p2">
+
+                                    <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
+
+                                       <div class="columns h_5vh imgLiquid imgLiquidNoFill">
+                                          <?php $user_id = $comments[0]->user_id; echo get_avatar( $user_id, '100' ); ?>
+                                       </div>
+
+                                       <div class="columns p0 fontXXS black text-center">
+                                          <?php echo get_comment_author( $comments[0]->comment_ID ); ?>
+                                       </div>
+
+                                    </a>
+
+                                 </div>
+
+                                 <div class="small-7 columns h_100 p0 subheader fontS text-left black vcenter">
+                                    <i class="h_a p3 neutral_oscuro fontXXS">
+                                       <?php echo wp_trim_words( get_comment_text( $comments[0]->comment_ID ), 9 ); ?>
+                                    </i>
+                                 </div>
+                              </div>
+
+                           <?php endif; ?>
+
+                           </div><!-- .comentarios_boton -->
+
+                        <div class="small-5 medium-4 large-3 columns <?php echo get_comments_number( get_the_ID() ) == 0 ? 'small-offset-7 medium-offset-8 large-offset-9' : ''; ?> button h_100 pointer   primario_acento_bd p2">
+
+                           <div class="vcenter h_a">
+
+                              <i class="columns fa fa-angle-right text-right"></i>
+                              <div class="small-12 fontXS black vcenter">Leer más</div>
 
                            </div>
+
                         </div>
 
+                     </div>
+                     <!-- </a> -->
                   </div>
-                  <div class="columns h_70 pl0 primario_acento_blanco_bg">
-                        <div class="small-2 columns p0 h_a vcenter">
-                           <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
-                           <div class="h_5vh imgLiquid imgLiquidNoFill">
-                                 <?php $user_id = $comments[0]->user_id; echo get_avatar( $user_id, '100' ); ?>
-                           </div>
-                           </a>
-                        </div>
-                        <div class="columns w_a p0 h_a vcenter">
-                           <div class="fontXS black text-left">
-                              <a href="<?php echo get_comment_author_url( $comments[0]->comment_ID ); ?>">
-                                 <?php echo get_comment_author( $comments[0]->comment_ID ); ?>
-                              </a>
-                           </div>
-                        </div>
-                        <div class="small-8 columns h_100 p0 subheader fontS text-left black vcenter">
-                           <i class="vcenter h_a p0 neutral_oscuro fontXS">
-                              <?php echo wp_trim_words( get_comment_text( $comments[0]->comment_ID ), 15 ); ?>
-                           </i>
-                        </div>
-                  </div>
-
-                  <button class="small-2 columns button h_a pointer absDownR m0 primario_acento_bd white_bg p2">
-
-                        <i class="columns fa fa-angle-right text-center"></i>
-                     <div class="small-12 fontS black vcenter">Leer más</div>
-
-                  </button>
 
                </div><!-- .comentarios_boton -->
 
-            </div>
          </a>
 
       </div><!-- .tarjeta -->
