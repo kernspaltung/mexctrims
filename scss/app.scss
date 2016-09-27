@@ -554,3 +554,13 @@ textarea,input {
    color: $neutral_oscuro !important;
    @extend .neutral_oscuro;
 }
+
+
+
+
+.search-highlight {
+
+   background-color: $primario_acento;
+   padding: $spacing / 3;
+
+}

@@ -401,3 +401,27 @@ function revisar_roles() {
 
 	return $rol_permitido;
 }
+
+
+function search_excerpt_highlight() {
+    $excerpt = get_the_excerpt();
+    $keys = implode('|', explode(' ', get_search_query()));
+    $excerpt = preg_replace('/(' . $keys .')/iu', '<span class="search-highlight">\0</span>', $excerpt);
+
+    return '<p>' . $excerpt . '</p>';
+}
+
+function search_title_highlight() {
+    $title = get_the_title();
+    $keys = implode('|', explode(' ', get_search_query()));
+    $title = preg_replace('/(' . $keys .')/iu', '<span class="search-highlight">\0</span>', $title);
+
+    return $title;
+}
+function search_content_highlight() {
+  $content = get_the_content();
+  $keys = implode('|', explode(' ', get_search_query()));
+  $content = preg_replace('/(' . $keys .')/iu', '<strong class="search-highlight">\0</strong>', $content);
+
+  return '<p>' . $content . '</p>';
+}

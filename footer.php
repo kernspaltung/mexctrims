@@ -3,8 +3,8 @@
          global $block_ads;
          if( ! is_page('Información') && ! is_page('Médicos') && ! $block_ads ) : ?>
 
-            <aside id="enlaces_destacados" class="medium-3 large-2 columns fontM" data-sticky-container> <!-- antes h_100 -->
-               <div class="sticky h_75vh fontM white_bg" data-sticky data-anchor="plantillas" data-margin-top="7">
+            <aside id="enlaces_destacados" class="medium-3 large-2 columns fontM p0" data-sticky-container> <!-- antes h_100 -->
+               <div class="sticky h_75vh fontM white_bg" data-sticky data-anchor="plantillas" data-margin-top="5">
                   <?php get_template_part( 'secciones/00-elementos/content', '06-enlaces_destacados' ); ?>
                </div>
             </aside>

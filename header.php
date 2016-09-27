@@ -64,14 +64,17 @@
             </a>
          </div>
          <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
-            <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
+            <div class="button white_bg black small-12 h_15vh m0 p0">
                <div class="vcenter icono">
                   <i class="fa fa-search fontL p2 neutral"></i>
                   <h6 class="fontM font_sm_S neutral_oscuro">
                      Buscar
                   </h6>
                </div>
-            </a>
+            </div>
+         </div>
+         <div id="buscar_input" class="small-6 medium-4 columns small-text-center medium-text-right h_100 hidden">
+            <?php echo get_search_form(); ?>
          </div>
 
       </div>
@@ -109,7 +112,7 @@
       </header>
 
 
-      <main id="principal" class="columns h_a pt_15vh pt_sm_25vh mb_10vh">
+      <main id="principal" class="columns h_a pl0 pr0 pt_15vh pt_sm_25vh mb_10vh">
 
          <?php get_template_part('secciones/00-elementos/content','00-portada_variable'); ?>
          <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->

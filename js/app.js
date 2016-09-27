@@ -9,6 +9,14 @@ $(document).ready(function(){
    resize_setup();
    $(document).foundation();
 
+   $('#header_quicklinks #buscar').unbind('click');
+
+      $('#header_quicklinks #buscar').click(function(){
+
+      $('#header_quicklinks #buscar, #header_quicklinks #contacto').addClass('hidden');
+      $('#header_quicklinks #buscar_input').removeClass('hidden');
+
+   })
 
 
 })
