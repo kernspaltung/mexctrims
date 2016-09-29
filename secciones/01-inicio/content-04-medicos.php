@@ -1,4 +1,4 @@
-<?php
+<?php 
 $medicos_intro = get_page_by_title('Introducción Médicos');
 $medicos = get_page_by_title('Médicos');
 ?>

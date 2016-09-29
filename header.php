@@ -28,7 +28,7 @@
       $color_orilla = 'primario_acento_bd';
    ?>
 
-   <header id="header" class="small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k1 <?php echo $color_orilla; ?>">
+   <header id="header" class="small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k1 shadow <?php echo $color_orilla; ?>">
 
       <div id="logo" class="small-6 medium-3 large-2 columns h_100 h_sm_50 p0">
          <a href="<?php echo site_url(); ?>" class="button white_bg black small-12 h_15vh m0 p0">
@@ -40,32 +40,32 @@
       </div>
 
 
-      <div id="header_quicklinks" class="small-6 medium-3 columns h_sm_50 medium-push-6 large-push-7 text-right p0">
+      <div id="header_quicklinks" class="small-6 medium-4 columns h_100 h_sm_50 medium-push-5 large-push-6 text-right p0">
 
-         <div id="area_medicos" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
+         <div id="area_medicos" class="small-6 medium-4 columns small-text-center medium-text-right h_100 p0">
 
             <?php $page = get_page_by_title('Médicos'); ?>
 
-            <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
+            <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0">
                <div class="vcenter icono">
-                  <i class="fa fa-user-md fontXL p2 primario"></i>
+                  <i class="fa fa-user-md fontL p2 primario"></i>
                   <h6 class="fontM font_sm_S  neutral_oscuro"><?php echo get_the_title( $page->ID ); ?></h6>
                </div>
             </a>
          </div>
-         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100">
-            <a href="<?php echo get_the_permalink( get_page_by_title("Contáctanos")->ID ); ?>" class="button white_bg black small-12 h_15vh m0 p0">
+         <div id="contacto" class="boton-contacto hide-for-small-only medium-4 columns small-text-center medium-text-right h_100 p0">
+            <a href="<?php echo get_the_permalink( get_page_by_title("Contáctanos")->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0">
                <div class="vcenter icono">
                   <i class="fa fa-envelope fontL p2 neutral"></i>
                   <h6 class="fontM font_sm_S neutral_oscuro">
-                     Contáctanos
+                     Contácto
                   </h6>
                </div>
             </a>
          </div>
-         <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100">
-            <div class="button white_bg black small-12 h_15vh m0 p0">
-               <div class="vcenter icono">
+         <div id="buscar" class="small-6 medium-4 columns small-text-center medium-text-right h_100 p0">
+            <div class="button white_bg black small-12 h_100 m0 p0">
+               <div class="vcenter ha icono">
                   <i class="fa fa-search fontL p2 neutral"></i>
                   <h6 class="fontM font_sm_S neutral_oscuro">
                      Buscar
@@ -80,7 +80,7 @@
       </div>
 
 
-      <div id="menu" class="small-12 medium-6 columns h_100 h_sm_50 medium-pull-3 p0 m0">
+      <div id="menu" class="small-12 medium-5 columns h_100 h_sm_50 medium-pull-4 p0 m0">
          <ul class="w_100 h_100 m0 p0 ">
 
             <?php
@@ -97,7 +97,7 @@
                <li class="small-4 columns w_100 text-center h_100 neutral_oscuro">
                   <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
                      <div class="vcenter icono">
-                        <i class="fa fa-<?php echo $icono; ?> fontXL p2 <?php echo $colores[$i]; ?>"></i>
+                        <i class="fa fa-<?php echo $icono; ?> fontL font-md-XL p2 <?php echo $colores[$i]; ?>"></i>
                         <div class="neutral font_sm_S"><?php echo get_the_title( $page->ID ); ?></div>
                      </div>
                   </a>

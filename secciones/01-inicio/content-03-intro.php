@@ -1,4 +1,4 @@
-<?php
+<?php  
 
 $introduccion = get_page_by_title('Introducción');
 $secciones = get_page_by_title('Secciones');

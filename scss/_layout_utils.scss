@@ -945,6 +945,27 @@ $screen-lg-min: 1025px;
 
 }
 
+
+@media screen and (max-width:1024px) {
+
+	.h {
+		display: block;
+	}
+
+	.h_md_15vh {
+		display: block;
+		height: 15vh !important;
+	}
+	.h_md_25vh {
+
+		display: block;
+		height: 25vh !important;
+
+	}
+}
+
+
+
 //cursor
 .cursor-pointer {
 		cursor: pointer;
@@ -1076,7 +1097,7 @@ $screen-lg-min: 1025px;
 
 @media (max-width:768px) {
 	.font_sm_XXL {
-		font-size: $fontXL !important;
+		font-size: $fontXXL !important;
 	}
 	.font_sm_XL {
 		font-size: $fontXL !important;
@@ -1097,6 +1118,59 @@ $screen-lg-min: 1025px;
 		font-size: $fontXXS !important;
 	}
 }
+
+
+@media (max-width:1024px) {
+	.font_md_XXL {
+		font-size: $fontXXXL !important;
+	}
+	.font_md_XL {
+		font-size: $fontXL !important;
+	}
+	.font_md_L {
+		font-size: $fontL !important;
+	}
+	.font_md_M {
+		font-size: $fontM !important;
+	}
+	.font_md_S {
+		font-size: $fontS !important;
+	}
+	.font_md_XS {
+		font-size: $fontXS !important;
+	}
+	.font_md_XXS {
+		font-size: $fontXXS !important;
+	}
+}
+
+// large
+@media (max-width:1440px) {
+	.font_lg_XXL {
+		font-size: $fontXXL !important;
+	}
+	.font_lg_XL {
+		font-size: $fontXL !important;
+	}
+	.font_lg_L {
+		font-size: $fontL !important;
+	}
+	.font_lg_M {
+		font-size: $fontM !important;
+	}
+	.font_lg_S {
+		font-size: $fontS !important;
+	}
+	.font_lg_XS {
+		font-size: $fontXS !important;
+	}
+	.font_lg_XXS {
+		font-size: $fontXXS !important;
+	}
+}
+
+//
+
 
 .fontXXXL {
 	font-size: $fontXXXL !important;
