@@ -556,6 +556,9 @@ li {
   .h_sm_10vh {
     display: block;
     height: 10vh !important; }
+  .h_sm_12vh {
+    display: block;
+    height: 12vh !important; }
   .h_sm_15vh {
     display: block;
     height: 15vh !important; }

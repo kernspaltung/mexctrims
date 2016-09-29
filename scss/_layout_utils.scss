@@ -706,6 +706,14 @@ $screen-lg-min: 1025px;
 		display: block;
 		height: 10vh !important;
 	}
+.h_sm_12vh {
+
+	display: block;
+	height: 12vh !important;
+
+}
+
+
 	.h_sm_15vh {
 		display: block;
 		height: 15vh !important;
@@ -1094,7 +1102,7 @@ $screen-lg-min: 1025px;
 	font-size: $fontXXL !important;
 }
 
-
+// 
 @media (max-width:768px) {
 	.font_sm_XXL {
 		font-size: $fontXXL !important;
