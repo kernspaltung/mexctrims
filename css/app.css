@@ -528,6 +528,53 @@ li {
 .pl6 {
   padding-left: 90px !important; }
 
+@media screen and (max-width: 1440px) {
+  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_33vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, .h_10, .h_20, .h_25, .h_33, .h_30, .h_35, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_10, .minH_20, .minH_30, .minH_60, .minH_100, .minH_20vh, .minH_50vh, .minH_70vh, .minH_100vh, .maxH_80 {
+    display: block; }
+  .h_lg_15vh {
+    display: block;
+    height: 15vh !important; }
+  .h_lg_25vh {
+    display: block;
+    height: 25vh !important; }
+  .h_lg_50vh {
+    display: block;
+    height: 50vh !important; }
+  .h_lg_70vh {
+    display: block;
+    height: 50vh !important; } }
+
+@media screen and (max-width: 1024px) {
+  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_33vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, .h_10, .h_20, .h_25, .h_33, .h_30, .h_35, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_10, .minH_20, .minH_30, .minH_60, .minH_100, .minH_20vh, .minH_50vh, .minH_70vh, .minH_100vh, .maxH_80 {
+    display: block; }
+  .h_md_15vh {
+    display: block;
+    height: 15vh !important; }
+  .h_md_25vh {
+    display: block;
+    height: 25vh !important; }
+  .h_md_30vh {
+    display: block;
+    height: 30vh !important; }
+  .h_md_40vh {
+    display: block;
+    height: 30vh !important; }
+  .h_md_50vh {
+    display: block;
+    height: 50vh !important; }
+  .h_md_60vh {
+    display: block;
+    height: 60vh !important; }
+  .h_md_80vh {
+    display: block;
+    height: 80vh !important; }
+  .h_md_50 {
+    display: block;
+    height: 50% !important; }
+  .h_md_70 {
+    display: block;
+    height: 60% !important; } }
+
 @media screen and (max-width: 640px) {
   .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_33vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, .h_10, .h_20, .h_25, .h_33, .h_30, .h_35, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_10, .minH_20, .minH_30, .minH_60, .minH_100, .minH_20vh, .minH_50vh, .minH_70vh, .minH_100vh, .maxH_80 {
     display: block; }
@@ -708,17 +755,9 @@ li {
   .pt_sm_4 {
     padding-top: 30px !important; }
   .pt_sm_25vh {
-    padding-top: 25vh; } }
-
-@media screen and (max-width: 1024px) {
-  .h, .h_1vh, .h_2vh, .h_3vh, .h_5vh, .h_10vh, .h_12vh, .h_15vh, .h_20vh, .h_25vh, .h_30vh, .h_33vh, .h_35vh, .h_40vh, .h_45vh, .h_50vh, .h_55vh, .h_60vh, .h_65vh, .h_70vh, .h_75vh, .h_77vh, .h_80vh, .h_85vh, .h_89vh, .h_90vh, .h_100vh, .h_10, .h_20, .h_25, .h_33, .h_30, .h_35, .h_40, .h_50, .h_55, .h_60, .h_70, .h_75, .h_80, .h_85, .h_90, .h_100, .h_full, .minH_10, .minH_20, .minH_30, .minH_60, .minH_100, .minH_20vh, .minH_50vh, .minH_70vh, .minH_100vh, .maxH_80 {
-    display: block; }
-  .h_md_15vh {
-    display: block;
-    height: 15vh !important; }
-  .h_md_25vh {
-    display: block;
-    height: 25vh !important; } }
+    padding-top: 25vh; }
+  .pl_sm_0 {
+    padding-left: 0 !important; } }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -766,12 +805,12 @@ li {
   overflow-y: auto;
   overflow-x: hidden; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .scroll_sm_h {
     overflow-y: auto;
     overflow-x: hidden; } }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
   .scroll_md_h {
     overflow-y: auto;
     overflow-x: hidden; } }
@@ -803,20 +842,20 @@ li {
 .fontXXL {
   font-size: 36px !important; }
 
-@media (max-width: 768px) {
-  .font_sm_XXL {
+@media (max-width: 1440px) {
+  .font_lg_XXL {
     font-size: 36px !important; }
-  .font_sm_XL {
+  .font_lg_XL {
     font-size: 25px !important; }
-  .font_sm_L {
+  .font_lg_L {
     font-size: 18px !important; }
-  .font_sm_M {
+  .font_lg_M {
     font-size: 14px !important; }
-  .font_sm_S {
+  .font_lg_S {
     font-size: 12px !important; }
-  .font_sm_XS {
+  .font_lg_XS {
     font-size: 10px !important; }
-  .font_sm_XXS {
+  .font_lg_XXS {
     font-size: 9px !important; } }
 
 @media (max-width: 1024px) {
@@ -835,20 +874,20 @@ li {
   .font_md_XXS {
     font-size: 9px !important; } }
 
-@media (max-width: 1440px) {
-  .font_lg_XXL {
+@media (max-width: 640px) {
+  .font_sm_XXL {
     font-size: 36px !important; }
-  .font_lg_XL {
+  .font_sm_XL {
     font-size: 25px !important; }
-  .font_lg_L {
+  .font_sm_L {
     font-size: 18px !important; }
-  .font_lg_M {
+  .font_sm_M {
     font-size: 14px !important; }
-  .font_lg_S {
+  .font_sm_S {
     font-size: 12px !important; }
-  .font_lg_XS {
+  .font_sm_XS {
     font-size: 10px !important; }
-  .font_lg_XXS {
+  .font_sm_XXS {
     font-size: 9px !important; } }
 
 .fontXXXL {

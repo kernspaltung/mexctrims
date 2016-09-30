@@ -39,8 +39,8 @@ $bienvenida = get_page_by_title('Bienvenida');
             </h6>
          </div>
       </div>
-      <div class="columns small-12 medium-11 large-8 medium-offset-1 large-offset-2 font_sm_S font_md_M font_lg_L p5 pt_sm_1 p_sm_0 mt3">
-         <h6 class="columns  p3 text-left white_bg tarjeta">
+      <div class="columns small-12 medium-11 large-8 medium-offset-1 large-offset-2 p5 pt_sm_1 p_sm_0 mt3">
+         <h6 class="columns  p3 text-left white_bg tarjeta font_sm_M font_md_L font_lg_L">
             <?php echo apply_filters('the_content', $bienvenida -> post_content ); ?>
          </h6>
       </div>

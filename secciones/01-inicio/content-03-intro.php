@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 $introduccion = get_page_by_title('Introducción');
 $secciones = get_page_by_title('Secciones');
@@ -7,11 +7,14 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
 
 ?>
 
-<section id="inicio-introduccion" class="small-12 medium-10 medium-offset-1 end text-center rel mt2 mt_sm_0 h_60vh h_sm_90vh">
+<section id="inicio-introduccion" class="small-12 end text-center rel mt0 mt_sm_0 h_60vh h_sm_70vh">
 
-   <div class="small-12 columns row h_60vh text-left fontM p5 p_sm_1">
-      <div class="small-12 small-push-12 medium-7 columns p5 p_sm_1 h_100">
-         <div class="vcenter font_sm_S">
+   <div class="small-12 columns row h_100 text-left fontM p0 p_sm_1">
+      <div class="small-12 small-push-12 medium-7 columns p3 p_sm_1 h_sm_50 h_md_50">
+        <div class="vcenter text-left font_sm_L font_md_M font_lg_L bold">
+           <?php echo apply_filters('the_title', $introduccion->post_title ); ?>
+        </div>
+         <div class="vcenter font_sm_S font_md_M font_lg_L">
             <?php echo apply_filters('the_content', $introduccion->post_content ); ?>
          </div>
       </div>
@@ -23,7 +26,7 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
    </div>
 </section>
 
-<section id="inicio_bullets" class="expanded row h_100 text-center rel mt4 mb4">
+<section id="inicio_bullets" class="expanded row h_100 text-center rel mt2 mb2">
 
 
    <?php
@@ -49,18 +52,18 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
    ?>
 
 
-   <div class="small-12 medium-4 columns text-center m0  h_35vh h_sm_50vh p4">
+   <div class="small-12 medium-4 columns text-center m0 h_sm_50vh h_md_40vh h_lg_25vh p2">
       <div class="columns h_100 <?php echo $color_bg; ?> tarjeta black p4 pt0 pb0">
 
             <div class="vcenter">
                <a href="<?php echo get_the_permalink($bullet->ID); ?>" class="w_100 h_100 m0 white txsh1 ">
-               <div class="titulo mt2 mb1">
-                  <i class="fa fa-<?php echo $iconos[$i]; ?> fontXXL white"></i>
-                  <h5 class="font2">
+               <div class="titulo mt1 mb0">
+                  <i class="fa fa-<?php echo $iconos[$i]; ?> font_sm_XXL font_md_M font_lg_L white"></i>
+                  <h5 class="font2 font_sm_L font_md_M font_lg_L">
                      <?php echo get_the_title( $bullet->ID ); ?>
                   </h5>
                </div>
-               <div class="extracto p0  fontL">
+               <div class="extracto p0 font_sm_L font_md_S font_lg_M">
                   <?php echo $bullet->post_excerpt; ?>
                </div>
                </a>
