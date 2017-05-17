@@ -11,22 +11,10 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
    </div>
 </div>
 
-<section id="info-intro" class="small-12 medium-6 columns h_45vh">
-   <!-- .imagen.small-6.columns.h_100.imgLiquid.imgLiquidFill>img[http://fakeimg.pl/300x600] -->
-   <div class="imagen small-12 columns h_100 imgLiquid imgLiquidFill mb2">
-      <?php echo get_the_post_thumbnail( $informacion->ID, 'large'); ?>
-   </div>
-   <div class="texto small-12 large-10 large-offset-1 h_a p5 pb0">
-      <div class="p5">
-         <?php # echo apply_filters('the_content', $informacion->post_content ); ?>
-      </div>
-   </div>
-
-</section>
 
 <!-- (h1>lorem9^+p>lorem10^+h2>lorem9^+(p>lorem18)*3)*4 -->
 
-<section id="info-menu" class="small-12 medium-6 columns h_45vh mt_sm_2 ">
+<section id="info-menu" class="small-12 columns h_45vh mt_sm_2 ">
 
    <?php
    $iconos = array( 'neurona2', 'nodo', 'cerebro', 'red2' );
@@ -35,14 +23,14 @@ $paginas = get_pages( array( 'child_of' => get_the_ID() ) );
       $icono = $iconos[$i];
       ?>
 
-      <div class="small-12 medium-6 columns h_50 h_sm_50 text-center p3">
-         <a href="<?php echo get_the_permalink( $pagina -> ID ); ?>" class="h_100 w_100 tarjeta white_bg">
+      <div class="small-4 w_20 columns h_50 h_sm_50 text-center p4 boton-info">
+         <a href="<?php echo get_the_permalink( $pagina -> ID ); ?>" class="h_100 w_100 tarjeta secundario<?php echo ($i%3)+1; ?>_bg ">
             <div class="vcenter neutral_oscuro icono">
-               <div class="w_100 h_5vh imgLiquid imgLiquidNoFill mb1">
+               <!-- <div class="w_100 h_5vh imgLiquid imgLiquidNoFill mb1">
                   <img src="<?php echo get_stylesheet_directory_uri() . '/img/iconos/' . $icono . '.png'; ?>"></i>
-               </div>
-               <h4 class="w_100 "><?php echo get_the_title( $pagina->ID ); ?></h4>
-               <p><?php # echo get_the_excerpt( $pagina->ID ); ?></p>
+               </div> -->
+               <h5 class="w_100 white"><?php echo get_the_title( $pagina->ID ); ?></h5>
+               <!-- <p><?php # echo get_the_excerpt( $pagina->ID ); ?></p> -->
             </div>
          </a>
       </div>

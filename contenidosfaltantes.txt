@@ -5,7 +5,7 @@ Textos Portada
 
 	- 1 párrafo introductorio
 	- Texto introducción (título y 2-3 párrafos breves)
-	- Párrafos introductorios a Información, Noticias y Descargables
+	- Párrafos introductorios a Información, Noticias y Artículos
 	- Enunciado introductorio sección médicos
 	- Texto invitando a suscribirse
 

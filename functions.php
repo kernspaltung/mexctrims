@@ -1,7 +1,8 @@
 <?php
 
 include_once 'backend/enlaces.php';
-include_once 'backend/descargables.php';
+include_once 'backend/articulos.php';
+include_once 'backend/noticias.php';
 
 add_theme_support( 'post-thumbnails' );
 

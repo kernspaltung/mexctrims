@@ -12,14 +12,14 @@
 
       <?php
 
-      $q = new WP_Query( array( 'post_type'=>'post', 'posts_per_page'=>12 ) );
+      $q = new WP_Query( array( 'post_type'=>'noticia', 'posts_per_page'=>12 ) );
       if( $q -> have_posts() ) :
          while( $q -> have_posts() ) :
             $q -> the_post();
 
    // for temporal
          ?>
-         <article id="noticias-contenedor-contenido" class="small-6 columns p3 h_50vh ">
+         <article id="noticias-contenedor-contenido" class="small-6 columns p3 h_6x ">
 
 
 
@@ -38,16 +38,16 @@
 
 
             <!-- Imagen destacada -->
-            <div id="noticias-imagen" class="medium-5 columns h_15vh p0 ">
-              <div class="h_100 imgLiquid imgLiquidFill">
+            <div id="noticias-imagen" class="columns h_40 p0 ">
+              <div class="h_100 imgLiquid imgLiquidNoFill">
                 <?php echo get_the_post_thumbnail(); ?>
               </div>
             </div><!-- Imagen destacada -->
 
 
             <!-- extracto destacada -->
-            <div id="noticias-extracto" class="medium-7 columns ha p2 pt0  fontS text-left">
-              <?php echo apply_filters('the_excerpt', wp_trim_words(get_the_excerpt(),8) ); ?>
+            <div id="noticias-extracto" class="columns ha p0 pt1  fontM text-left">
+              <?php echo apply_filters('the_excerpt', wp_trim_words(get_the_excerpt(),25) ); ?>
             </div><!-- extracto destacada -->
 
 

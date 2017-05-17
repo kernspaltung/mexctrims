@@ -7,19 +7,19 @@
 
 
 
-      <div id="descargables-lista-mosaico" class="large-12 columns h_80vh">
+      <div id="articulos-lista-mosaico" class="large-12 columns h_80vh">
          <!-- Nav / mosaicos -->
 
 
          <aside class="large-3 columns h_100 p0" data-sticky-container>
-            <div class="sticky h_75vh fontM" data-sticky data-anchor="descargables-mosaico">
+            <div class="sticky h_75vh fontM" data-sticky data-anchor="articulos-mosaico">
 
-               <nav id="descargables-menu-mosaico" class="columns h_70vh m0">
+               <nav id="articulos-menu-mosaico" class="columns h_70vh m0">
                   <div class="vcenter">
                      <ul class="m0 p0">
                         <?php
-                        $categoria_descargables = get_term_by("name","Descargables","category");
-                        $categorias = get_term_children( $categoria_descargables -> term_id, "category" );
+                        $categoria_articulos = get_term_by("name","Artículos","category");
+                        $categorias = get_term_children( $categoria_articulos -> term_id, "category" );
 
                         ob_start();
                         foreach ($categorias as $categoria ) {
@@ -50,7 +50,7 @@
 
 
 
-         <div id="descargables-mosaico" class="sticky-here large-9 columns h_a p5 pt1 mb2 pb4">
+         <div id="articulos-mosaico" class="sticky-here large-9 columns h_a p5 pt1 mb2 pb4">
 
             <?php
 
@@ -58,16 +58,21 @@
 
             ob_start();
 
-            $args = array( 'post_type' => 'descargable', 'posts_per_page' => -1 );
+            $args = array( 'post_type' => 'articulo', 'posts_per_page' => -1 );
 
             $q = new WP_Query( $args );
 
             if( $q -> have_posts() ) :
                while ( $q -> have_posts() ) :
                   $q -> the_post();
-                  $archivo = get_post_meta(get_the_ID(),'descargable_archivo',true);
-                  $link = $archivo['url'];
-                  $type = $archivo['type'];
+                  $archivo = get_post_meta(get_the_ID(),'articulo_archivo',true);
+                  if( is_array( $archivo ) ){
+
+                     $link = $archivo['url'];
+                     $type = $archivo['type'];
+
+                  }
+
                   $icon = 'fa-arrow-down';
 
                   switch( $type ) {
@@ -77,10 +82,10 @@
                   }
                   ?>
 
-                  <article class="medium-6 columns h_55vh p2 text-left rel">
+                  <article class="medium-6 columns h_5x p2 text-left rel">
 
                      <div class="tarjeta h_100 p4 rel white_bg">
-                     <a href="<?php echo $link; ?>" class="" target="_blank">
+                     <!-- <a href="<?php echo $link; ?>" class="" target="_blank"> -->
                         <h6><?php echo get_the_title(); ?></h6>
 
                         <div class="fontXS">
@@ -96,16 +101,30 @@
                               <?php echo get_the_excerpt(); ?>
                            </p>
                         </div>
+                        <div class="columns small-3 p2 absDownR mr4 primario_acento_bd">
+                           <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                              <div class="columns text-center secundario3">
+                                 <i class="fa fa-arrow-right fontL"></i>
+                              </div>
+                              <div class="columns p0 fontXS text-center neutral_oscuro">
+                                 Ver más
+                              </div>
+                           </a>
+
+                        </div>
                         <div class="columns small-3 p2 absDownR primario_acento_bd">
+                           <a href="<?php echo $link; ?>">
+
                               <div class="columns text-center secundario3">
                                  <i class="fa <?php echo $icon; ?> fontL"></i>
                               </div>
                               <div class="columns p0 fontXS text-center neutral_oscuro">
                                  Descargar
                               </div>
+                           </a>
 
                         </div>
-                     </a>
+                     <!-- </a> -->
                      <div class="categorias columns p0">
                         <?php
                         $categorias = get_the_category(get_the_ID());

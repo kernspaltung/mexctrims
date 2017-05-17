@@ -20,7 +20,7 @@
       $color_orilla = 'secundario1_bd';
    if( is_page('Noticias') )
       $color_orilla = 'secundario2_bd';
-   if( is_page('Descargables') )
+   if( is_page('Artículos') )
       $color_orilla = 'secundario3_bd';
    if( is_page('Médicos') )
       $color_orilla = 'primario_bd';
@@ -85,7 +85,7 @@
 
             <?php
 
-            $paginas = array( 'Información', 'Noticias', 'Descargables' );
+            $paginas = array( 'Información', 'Noticias', 'Artículos' );
             $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
             $colores = array( 'secundario1', 'secundario2', 'secundario3','primario_acento txsh1');
 

@@ -81,8 +81,8 @@ if( is_page('Noticias') ):
 endif;
 
 
-if( is_page('Descargables') ):
+if( is_page('Artículos') ):
 
-   get_template_part( 'secciones/04-descargables/content','01-portada');
+   get_template_part( 'secciones/04-articulos/content','01-portada');
 
 endif;

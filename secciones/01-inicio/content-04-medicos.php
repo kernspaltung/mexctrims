@@ -9,7 +9,7 @@ $medicos = get_page_by_title('Médicos');
       Médicos
    </h1>
 
-   <div class="imagen small-12 medium-6 columns h_100 h_sm_50 imgLiquid imgLiquidNoFill">
+   <div class="imagen small-12 medium-6 columns h_90 h_sm_50 imgLiquid imgLiquidNoFill">
       <?php echo get_the_post_thumbnail( $medicos_intro -> ID ); ?>
    </div>
 

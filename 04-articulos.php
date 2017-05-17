@@ -1,5 +1,5 @@
 <?php
-// Template Name: Descargables
+// Template Name: Artículos
 
 get_header();
 ?>
