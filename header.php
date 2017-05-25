@@ -77,7 +77,7 @@
                </div>
             </div>
          </div>
-         <div id="buscar_input" class="columns small-8 small-text-center medium-text-right h_100 hidden pt3">
+         <div id="buscar_input" class="columns small-12 medium-8 absUpR text-center medium-text-right h_100 hidden pt3 p_sm_4 white_bg">
             <?php echo get_search_form(); ?>
          </div>
 
