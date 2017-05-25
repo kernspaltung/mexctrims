@@ -1,21 +1,21 @@
-   <div class="minH_100">
+   <div class="minH_100 h_sm_0">
 
 
-   <div class="large-12 columns minH_100 p0">
+   <div class="large-12 columns minH_100 h_sm_0 p0">
 
 
 
 
 
-      <div id="articulos-lista-mosaico" class="large-12 columns h_80vh">
+      <div id="articulos-lista-mosaico" class="large-12 columns h_80vh h_sm_0">
          <!-- Nav / mosaicos -->
 
 
-         <aside class="large-3 columns h_100 p0" data-sticky-container>
-            <div class="sticky h_75vh fontM" data-sticky data-anchor="articulos-mosaico">
+         <aside class="small-12 medium-3 columns h_100  p0" data-sticky-container data-sticky-on="medium">
+            <div class="sticky h_75vh h_sm_40vh fontM" data-sticky data-anchor="articulos-mosaico">
 
-               <nav id="articulos-menu-mosaico" class="columns h_70vh m0">
-                  <div class="vcenter">
+               <nav id="articulos-menu-mosaico" class="columns h_70vh h_sm_40vh m0">
+                  <div class="columns vcenter">
                      <ul class="m0 p0">
                         <?php
                         $categoria_articulos = get_term_by("name","Artículos","category");
@@ -25,7 +25,7 @@
                         foreach ($categorias as $categoria ) {
 
                            ?>
-                              <li class="p1 pl1 pr1 secundario3_bd mb1 tarjeta">
+                              <li class="columns p1 pl1 pr1 secundario3_bd mb1 tarjeta">
                                  <a href="<?php echo get_category_link( $categoria ); ?>" class="w_100 h_100 fontS font2">
                                     <?php echo get_term($categoria) -> name;  ?>
                                  </a>
@@ -50,7 +50,7 @@
 
 
 
-         <div id="articulos-mosaico" class="sticky-here large-9 columns h_a p5 pt1 mb2 pb4">
+         <div id="articulos-mosaico" class="sticky-here medium-9 columns h_a h_sm_0 p5 pt1 mb2 pb4">
 
             <?php
 

@@ -40,6 +40,8 @@ function resize_setup() {
 function do_resize() {
    fix_sticky();
 }
+
+
 function fix_sticky() {
    if( $('.sticky-here').length > 0 ) {
       $('.sticky').attr('data-anchor',$('.sticky-here').attr('id'));

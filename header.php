@@ -89,8 +89,8 @@
     <div id="menu" class="small-12 medium-5 columns h_100 h_sm_50 medium-pull-4 p0 m0">
       <ul class="w_100 h_100 m0 p0 ">
 
-         <?php 
-        $paginas = array( 'Información', 'Noticias', 'Descargables' );
+         <?php
+        $paginas = array( 'Información', 'Noticias', 'Artículos' );
         $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
         $colores = array( 'secundario1', 'secundario2', 'secundario3','primario_acento txsh1');
 
