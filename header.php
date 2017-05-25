@@ -32,7 +32,7 @@
       $color_orilla = 'primario_acento_bd';
    ?>
 
-   <header id="header" class="small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k1 <?php echo $color_orilla; ?>">
+   <header id="header" class="columns small-12 h_15vh h_sm_25vh p0 fixed white_bg z1k1 <?php echo $color_orilla; ?>">
 
       <div id="logo" class="small-6 medium-3 large-2 columns h_100 h_sm_50 p0">
          <a href="<?php echo site_url(); ?>" class="button white_bg black small-12 h_15vh m0 p0">
