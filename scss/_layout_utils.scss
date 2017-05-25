@@ -662,8 +662,96 @@ $screen-lg-min: 1025px;
 .pl6 {
 	padding-left: $spacing * 6 !important;
 }
+//
+//
+@media screen and (max-width:1440px) {
 
+	.h {
+		display: block;
+	}
 
+	.h_lg_15vh {
+		display: block;
+		height: 15vh !important;
+	}
+	.h_lg_25vh {
+
+		display: block;
+		height: 25vh !important;
+
+	}
+	.h_lg_50vh {
+
+		display: block;
+		height: 50vh !important;
+
+	}
+	.h_lg_70vh {
+		display: block;
+		height: 50vh !important;
+	}
+}
+//
+@media screen and (max-width:1024px) {
+
+	.h {
+		display: block;
+	}
+
+	.h_md_15vh {
+		display: block;
+		height: 15vh !important;
+	}
+	.h_md_25vh {
+
+		display: block;
+		height: 25vh !important;
+
+	}
+	.h_md_30vh {
+
+		display: block;
+		height: 30vh !important;
+
+	}
+	.h_md_40vh {
+
+		display: block;
+		height: 30vh !important;
+
+	}
+	.h_md_50vh {
+
+		display: block;
+		height: 50vh !important;
+
+	}
+	.h_md_60vh {
+
+		display: block;
+		height: 60vh !important;
+
+	}
+	.h_md_80vh {
+
+		display: block;
+		height: 80vh !important;
+
+	}
+	.h_md_50 {
+
+		display: block;
+		height: 50% !important;
+
+	}
+	.h_md_70 {
+
+		display: block;
+		height: 60% !important;
+
+	}
+}
+//
 @media screen and (max-width:640px) {
 
 
@@ -710,6 +798,14 @@ $screen-lg-min: 1025px;
 		display: block;
 		height: 10vh !important;
 	}
+.h_sm_12vh {
+
+	display: block;
+	height: 12vh !important;
+
+}
+
+
 	.h_sm_15vh {
 		display: block;
 		height: 15vh !important;
@@ -951,6 +1047,11 @@ $screen-lg-min: 1025px;
 
 	.pt_sm_25vh {
 		padding-top: 25vh;
+	}
+
+	.pl_sm_0 {
+
+		padding-left: 0 !important;
 	}
 
 }
@@ -1598,14 +1699,14 @@ $screen-lg-min: 1025px;
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:640px) {
 	.scroll_sm_h {
 		overflow-y: auto;
 		overflow-x: hidden;
 	}
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:640px) and (max-width:1024px){
 	.scroll_md_h {
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -1653,9 +1754,58 @@ $screen-lg-min: 1025px;
 }
 
 
-@media (max-width:768px) {
-	.font_sm_XXL {
+// large
+@media (max-width:1440px) {
+	.font_lg_XXL {
+		font-size: $fontXXL !important;
+	}
+	.font_lg_XL {
 		font-size: $fontXL !important;
+	}
+	.font_lg_L {
+		font-size: $fontL !important;
+	}
+	.font_lg_M {
+		font-size: $fontM !important;
+	}
+	.font_lg_S {
+		font-size: $fontS !important;
+	}
+	.font_lg_XS {
+		font-size: $fontXS !important;
+	}
+	.font_lg_XXS {
+		font-size: $fontXXS !important;
+	}
+}
+
+@media (max-width:1024px) {
+	.font_md_XXL {
+		font-size: $fontXXXL !important;
+	}
+	.font_md_XL {
+		font-size: $fontXL !important;
+	}
+	.font_md_L {
+		font-size: $fontL !important;
+	}
+	.font_md_M {
+		font-size: $fontM !important;
+	}
+	.font_md_S {
+		font-size: $fontS !important;
+	}
+	.font_md_XS {
+		font-size: $fontXS !important;
+	}
+	.font_md_XXS {
+		font-size: $fontXXS !important;
+	}
+}
+//
+@media (max-width:640px) {
+	.font_sm_XXL {
+		font-size: $fontXXL !important;
 	}
 	.font_sm_XL {
 		font-size: $fontXL !important;
@@ -1676,6 +1826,8 @@ $screen-lg-min: 1025px;
 		font-size: $fontXXS !important;
 	}
 }
+//
+
 
 .fontXXXL {
 	font-size: $fontXXXL !important;

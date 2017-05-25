@@ -43,8 +43,8 @@ $bienvenida = get_page_by_title('Bienvenida');
       </div>
 
 
-      <div class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 columns p5 pt_sm_1 mt3">
-         <h6 class="fontXL font_sm_M p5 text-left ml3 mr3 white_bg tarjeta">
+      <div class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 columns p5 p_sm_1 pt_sm_1 mt3">
+         <h6 class="fontXL font_sm_M p5 text-left columns medium-10 medium-centered white_bg tarjeta">
             <?php echo apply_filters('the_content', $bienvenida -> post_content ); ?>
          </h6>
       </div>

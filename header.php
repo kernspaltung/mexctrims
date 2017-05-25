@@ -1,15 +1,17 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 
    <title>Mexctrims</title>
 
-   <?php wp_head(); ?>
+  <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/fav.png">
+
+  <?php wp_head(); ?>
 
 </head>
 <body>
@@ -81,41 +83,42 @@
 
       </div>
 
-
-      <div id="menu" class="small-12 medium-6 columns h_100 h_sm_50 medium-pull-3 p0 m0">
-         <ul class="w_100 h_100 m0 p0 ">
-
-            <?php
-
-            $paginas = array( 'Información', 'Noticias', 'Artículos' );
-            $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
-            $colores = array( 'secundario1', 'secundario2', 'secundario3','primario_acento txsh1');
-
-            for ($i=0; $i < 3; $i++) {
-               $page = get_page_by_title($paginas[$i]);
-               $icono = $iconos[$i];
-               ?>
-
-               <li class="small-4 columns w_100 text-center h_100 neutral_oscuro">
-                  <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
-                     <div class="vcenter icono">
-                        <i class="fa fa-<?php echo $icono; ?> fontXL p2 <?php echo $colores[$i]; ?>"></i>
-                        <div class="neutral font_sm_S"><?php echo get_the_title( $page->ID ); ?></div>
-                     </div>
-                  </a>
-               </li>
-
-               <?php } ?>
-
-            </ul>
-         </div>
+    </div>
 
 
-      </header>
+    <div id="menu" class="small-12 medium-5 columns h_100 h_sm_50 medium-pull-4 p0 m0">
+      <ul class="w_100 h_100 m0 p0 ">
+
+         <?php 
+        $paginas = array( 'Información', 'Noticias', 'Descargables' );
+        $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
+        $colores = array( 'secundario1', 'secundario2', 'secundario3','primario_acento txsh1');
+
+        for ($i=0; $i < 3; $i++) {
+          $page = get_page_by_title($paginas[$i]);
+          $icono = $iconos[$i];
+          ?>
+
+          <li class="small-4 columns w_100 text-center h_100 neutral_oscuro">
+            <a href="<?php echo get_the_permalink( $page->ID ); ?>" class="button white_bg black small-12 h_100 m0 p0"> <!-- antes h_15vh -->
+              <div class="vcenter icono">
+                <i class="fa fa-<?php echo $icono; ?> fontL font-md-XL p2 <?php echo $colores[$i]; ?>"></i>
+                <div class="neutral fontM font_sm_S"><?php echo get_the_title( $page->ID ); ?></div>
+              </div>
+            </a>
+          </li>
+
+          <?php } ?>
+
+        </ul>
+      </div>
 
 
-      <main id="principal" class="columns h_a pl0 pr0 pt_15vh pt_sm_25vh mb_10vh">
+    </header>
 
-         <?php get_template_part('secciones/00-elementos/content','00-portada_variable'); ?>
-         <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->
-         <div id="plantillas" class="medium-9 large-10 columns minH_100 scroll_md_h rel text-center">
+
+    <main id="principal" class="columns h_a pl0 pr0 pt_15vh pt_sm_25vh mb_10vh">
+
+      <?php get_template_part('secciones/00-elementos/content','00-portada_variable'); ?>
+      <!-- sustitui ' h_100 ' POR ' minH_100 '  para que se acomodara el contenido en tamanos -->
+      <div id="plantillas" class="medium-9 large-10 columns minH_100 scroll_md_h rel text-center">

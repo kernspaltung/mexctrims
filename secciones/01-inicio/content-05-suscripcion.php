@@ -1,5 +1,5 @@
 <?php
-
+ 
 $contacto = get_page_by_title( 'Contáctanos' );
 $lista_correo = get_page_by_title( 'Lista de correo' );
 

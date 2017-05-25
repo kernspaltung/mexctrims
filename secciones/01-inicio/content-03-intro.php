@@ -7,10 +7,10 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
 
 ?>
 
-<section id="inicio-introduccion" class="small-12 end text-center rel mt0 mt_sm_0 h_60vh h_sm_70vh">
+<section id="inicio-introduccion" class="small-12 end text-center rel mt0 mt_sm_0 h_60vh h_sm_100vh mt_sm_4">
 
    <div class="small-12 columns row h_100 text-left fontM p0 p_sm_1">
-      <div class="small-12 small-push-12 medium-7 columns p3 p_sm_1 h_sm_50 h_md_50">
+      <div class="small-12 small-push-12 medium-7 columns p3 p_sm_1 h_sm_100 h_md_50 font_sm_S">
 
          <div class="vcenter">
 
@@ -19,7 +19,7 @@ $iconos = array( 'question', 'newspaper-o', 'download','check-square-o');
          </div>
 
       </div>
-      <div class="medium-5 columns h_100 h_sm_50">
+      <div class="medium-5 columns h_100 h_sm_a hide-for-small-only ">
          <div class="h_100 small-12 imgLiquid imgLiquidFill">
             <?php echo get_the_post_thumbnail($introduccion->ID); ?>
          </div>

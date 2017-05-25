@@ -50,7 +50,7 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
@@ -487,7 +487,11 @@ textarea {
    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
+.shadow {
 
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+
+}
 
 body {
    background-color: whitesmoke;
@@ -697,4 +701,9 @@ textarea,input {
       width: 20%;
    }
 
+}
+
+
+iframe {
+   max-width: 100%;
 }
