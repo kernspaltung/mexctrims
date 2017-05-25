@@ -37,7 +37,7 @@ $bienvenida = get_page_by_title('Bienvenida');
       <div class="small-12 medium-6 columns h_40vh h_sm_50vh">
          <div class="columns h_a mt1">
 
-            <?php echo apply_filters('the_content', $portada -> post_content ); ?>
+            <?php #echo apply_filters('the_content', $portada -> post_content ); ?>
 
          </div>
       </div>
