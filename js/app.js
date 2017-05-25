@@ -14,6 +14,7 @@ $(document).ready(function(){
       $('#header_quicklinks #buscar').click(function(){
 
       $('#header_quicklinks #buscar, #header_quicklinks #contacto').addClass('hidden');
+      $('#header_quicklinks #buscar').addClass('hidden');
       $('#header_quicklinks #buscar_input').removeClass('hidden');
 
    })

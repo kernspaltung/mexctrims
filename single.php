@@ -24,9 +24,15 @@ if (have_posts()) :
          <?php get_template_part( 'secciones/00-elementos/content','03-taxonomias_acordeon' ); ?>
 
 
-          <section id="single-contenido-entrada" class="small-12 columns p6 text-left">
+          <section id="single-contenido-entrada" class="small-12 columns p_sm_0  p_md_6 text-left">
 
             <h3 class="mb2"><?php echo get_the_title(); ?></h3>
+
+            <div class="columns h_40vh imgLiquid imgLiquidNoFill mb2">
+
+               <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
+
+            </div>
 
             <?php echo apply_filters( 'the_content', get_the_content()); ?>
 

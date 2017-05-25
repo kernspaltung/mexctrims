@@ -101,28 +101,30 @@
                               <?php echo get_the_excerpt(); ?>
                            </p>
                         </div>
-                        <div class="columns small-3 p2 absDownR mr4 primario_acento_bd">
-                           <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
-                              <div class="columns text-center secundario3">
-                                 <i class="fa fa-arrow-right fontL"></i>
-                              </div>
-                              <div class="columns p0 fontXS text-center neutral_oscuro">
-                                 Ver más
-                              </div>
-                           </a>
+                        <div class="botones-acciones columns small-6 absDownR mb1">
+                           <div class="columns small-6 p2 primario_acento_bd">
+                              <a href="<?php echo $link; ?>">
 
-                        </div>
-                        <div class="columns small-3 p2 absDownR primario_acento_bd">
-                           <a href="<?php echo $link; ?>">
+                                 <div class="columns text-center secundario3">
+                                    <i class="fa <?php echo $icon; ?> fontL"></i>
+                                 </div>
+                                 <div class="columns p0 fontXS text-center neutral_oscuro">
+                                    Descargar
+                                 </div>
+                              </a>
 
-                              <div class="columns text-center secundario3">
-                                 <i class="fa <?php echo $icon; ?> fontL"></i>
-                              </div>
-                              <div class="columns p0 fontXS text-center neutral_oscuro">
-                                 Descargar
-                              </div>
-                           </a>
+                           </div>
+                           <div class="columns small-6 p2 primario_acento_bd">
+                              <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                                 <div class="columns text-center secundario3">
+                                    <i class="fa fa-arrow-right fontL"></i>
+                                 </div>
+                                 <div class="columns p0 fontXS text-center neutral_oscuro">
+                                    Ver más
+                                 </div>
+                              </a>
 
+                           </div>
                         </div>
                      <!-- </a> -->
                      <div class="categorias columns p0">

@@ -136,7 +136,7 @@ function mexctrims_registration_form_fields() {
 					<input name="mexctrims_usuario_apellido" id="mexctrims_usuario_last" type="text"/>
 				</p>
 				<p>
-					<label for="mexctrims_usuario_clave_medico">Clave Médico</label>
+					<label for="mexctrims_usuario_clave_medico">Número de Cédula Profesional</label>
 					<input name="mexctrims_usuario_clave_medico" id="mexctrims_usuario_clave_medico" type="text"/>
 				</p>
 				<p>

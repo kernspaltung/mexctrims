@@ -1,4 +1,4 @@
-
+<?php $category = get_query_var('cat'); ?>
   <!-- seccion  archivo -->
   <section id="noticias-archivo" class="sticky-here small-12 columns p0 pt0">
 
@@ -11,15 +11,18 @@
 
 
       <?php
-
-      $q = new WP_Query( array( 'post_type'=>'noticia', 'posts_per_page'=>12 ) );
+      $args =array( 'post_type'=>'noticia', 'posts_per_page'=>-1 );
+      if( get_query_var('cat') ) {
+         $args['cat'] = get_query_var('cat');
+      }
+      $q = new WP_Query( $args );
       if( $q -> have_posts() ) :
          while( $q -> have_posts() ) :
             $q -> the_post();
 
    // for temporal
          ?>
-         <article id="noticias-contenedor-contenido" class="small-6 columns p3 h_6x ">
+         <article id="noticias-contenedor-contenido" class="medium-6 columns p3 h_6x ">
 
 
 
@@ -49,7 +52,6 @@
             <div id="noticias-extracto" class="columns ha p0 pt1  fontM text-left">
               <?php echo apply_filters('the_excerpt', wp_trim_words(get_the_excerpt(),25) ); ?>
             </div><!-- extracto destacada -->
-
 
 
 

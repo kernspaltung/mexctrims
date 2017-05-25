@@ -127,7 +127,7 @@ button, .button {
 }
 
 .hollow {
-   border-color: $primario_acento !important;
+   outline-color: $primario_acento !important;
    &:hover {
       background-color: $primario_acento !important;
       color: $complementario  !important;
@@ -342,42 +342,42 @@ header#header {
 
 .primario_bd_hover {
    &:hover {
-      @extend .border; border-color: $primario !important;
+      @extend .border; outline-color: $primario !important;
    }
 }
 .primario_acento_bd_hover {
    &:hover {
-      @extend .border; border-color: $primario_acento !important;
+      @extend .border; outline-color: $primario_acento !important;
    }
 }
 .neutral_bd_hover {
    &:hover {
-      @extend .border; border-color: $neutral !important;
+      @extend .border; outline-color: $neutral !important;
    }
 }
 .neutral_oscuro_bd_hover {
    &:hover {
-      @extend .border; border-color: $neutral_oscuro !important;
+      @extend .border; outline-color: $neutral_oscuro !important;
    }
 }
 .secundario1_bd_hover {
    &:hover {
-      @extend .border; border-color: $secundario1 !important;
+      @extend .border; outline-color: $secundario1 !important;
    }
 }
 .secundario2_bd_hover {
    &:hover {
-      @extend .border; border-color: $secundario2 !important;
+      @extend .border; outline-color: $secundario2 !important;
    }
 }
 .secundario3_bd_hover {
    &:hover {
-      @extend .border; border-color: $secundario3 !important;
+      @extend .border; outline-color: $secundario3 !important;
    }
 }
 .complementario_bd_hover {
    &:hover {
-      @extend .border; border-color: $complementario !important;
+      @extend .border; outline-color: $complementario !important;
    }
 }
 
@@ -412,40 +412,40 @@ header#header {
 }
 
 .border {
-   border: 1px solid white;
+   outline: 1px solid white;
 }
 
 .primario_bd {
    @extend .border;
-   border-color: $primario !important;
+   outline-color: $primario !important;
 }
 .primario_acento_bd {
    @extend .border;
-   border-color: $primario_acento !important;
+   outline-color: $primario_acento !important;
 }
 .neutral_bd {
    @extend .border;
-   border-color: $neutral !important;
+   outline-color: $neutral !important;
 }
 .secundario1_bd {
    @extend .border;
-   border-color: $secundario1 !important;
+   outline-color: $secundario1 !important;
 }
 .secundario2_bd {
    @extend .border;
-   border-color: $secundario2 !important;
+   outline-color: $secundario2 !important;
 }
 .secundario3_bd {
    @extend .border;
-   border-color: $secundario3 !important;
+   outline-color: $secundario3 !important;
 }
 .complementario_bd {
    @extend .border;
-   border-color: $complementario !important;
+   outline-color: $complementario !important;
 }
 .transparente_bd {
    @extend .border;
-   border-color: transparent !important;
+   outline-color: transparent !important;
 }
 
 

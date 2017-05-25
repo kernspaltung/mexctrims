@@ -5,6 +5,8 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+   <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+
    <title>Mexctrims</title>
 
    <?php wp_head(); ?>
@@ -73,7 +75,7 @@
                </div>
             </div>
          </div>
-         <div id="buscar_input" class="small-6 medium-4 columns small-text-center medium-text-right h_100 hidden">
+         <div id="buscar_input" class="columns small-8 small-text-center medium-text-right h_100 hidden pt3">
             <?php echo get_search_form(); ?>
          </div>
 

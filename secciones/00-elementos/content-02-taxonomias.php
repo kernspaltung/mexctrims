@@ -19,10 +19,14 @@
 
 
          foreach( $categorias_noticias as $categoria ) :
+
+            $cat_url = get_the_permalink( get_page_by_title('Noticias') );
+            $cat_url = add_query_arg( 'cat', $categoria, $cat_url);
+
             ?>
-            <a href="<?php echo get_category_link( $categoria ); ?>">
-               <?php $active = in_array( $categoria, $categorias_noticias ) ? 'active primario_acento_bg tarjeta' : ''; ?>
-               <li class="small-6 columns fontXS p2 pl0 plr0 text-center <?php echo $active; ?>">
+            <a href="<?php echo $cat_url; ?>" class="columns small-6 p2">
+               <?php $active = (((int)get_query_var('cat')) == $categoria) ? 'active primario_acento_bg ' : 'primario_acento_bd'; ?>
+               <li class="columns fontXS p2 pl0 plr0 text-center tarjeta <?php echo $active; ?>">
                   <?php echo get_term($categoria)->name; ?>
                </li>
             </a>

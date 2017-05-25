@@ -51,6 +51,7 @@ if(have_posts()) {
       </div>
    </header>
    <section id="page-content" class="medium-8 columns text-left p5 h_a">
+      
       <?php echo $content; ?>
    </section>
 

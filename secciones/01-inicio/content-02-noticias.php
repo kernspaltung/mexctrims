@@ -39,7 +39,7 @@
 
                   <div class="extracto_fecha small-12 medium-6 columns p0 text-left h_80 h_sm_35">
                      <div class="columns p3 p_sm_3 pt0 pb0 fontM font_sm_S ">
-                        <?php echo apply_filters( 'the_excerpt', wp_trim_words( get_the_excerpt(), 12 ) ); ?>
+                        <?php echo apply_filters( 'the_excerpt', wp_trim_words( get_the_excerpt(), 25 ) ); ?>
                      </div>
 
                   </div>

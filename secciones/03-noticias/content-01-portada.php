@@ -44,12 +44,12 @@ if( $q -> have_posts() ) :
 
 
 
-             
+
              <div id="noticias-vermas" class="small-6 medium-5 large-4 columns ha p2 absDownR primario_acento_bd fontS text-center">
                Ver más
                <i class="fa fa-angle-right"></i>
              </div>
-             
+
 
            </a>
          </article>
@@ -71,7 +71,7 @@ endif;
 
 
 
-<?php get_template_part( 'secciones/00-elementos/content','03-taxonomias_acordeon' ); ?>
+<?php #get_template_part( 'secciones/00-elementos/content','03-taxonomias_acordeon' ); ?>
 
 
 

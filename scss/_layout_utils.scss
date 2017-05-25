@@ -693,6 +693,10 @@ $screen-lg-min: 1025px;
 		display: block;
 		height: 40% !important;
 	}
+	.h_sm_50 {
+		display: block;
+		height: 50% !important;
+	}
 
 	.h_sm_3vh {
 		display: block;
@@ -737,36 +741,36 @@ $screen-lg-min: 1025px;
 		display: block;
 		height: 40vh !important;
 	}
-	.h_md_50vh {
+	.h_sm_50vh {
 		display: block;
 		height: 50vh !important;
 	}
-	.h_md_60vh {
+	.h_sm_60vh {
 		display: block;
 		height: 60vh !important;
 	}
-	.h_md_65vh {
+	.h_sm_65vh {
 		display: block;
 		height: 65vh !important;
 	}
 
-	.h_md_70vh {
+	.h_sm_70vh {
 		display: block;
 		height: 70vh !important;
 	}
-	.h_md_80vh {
+	.h_sm_80vh {
 		display: block;
 		height: 80vh !important;
 	}
-	.h_md_85vh {
+	.h_sm_85vh {
 		display: block;
 		height: 85vh !important;
 	}
-	.h_md_90vh {
+	.h_sm_90vh {
 		display: block;
 		height: 90vh !important;
 	}
-	.h_md_100vh {
+	.h_sm_100vh {
 		display: block;
 		height: 100vh !important;
 	}
@@ -775,63 +779,63 @@ $screen-lg-min: 1025px;
 
 
 
-	.h_md_10 {
+	.h_sm_10 {
 		display: block;
 		height: 10%;
 	}
-	.h_md_20 {
+	.h_sm_20 {
 		display: block;
 		height: 20%;
 	}
-	.h_md_25 {
+	.h_sm_25 {
 		display: block;
 		height: 25%;
 	}
-	.h_md_33 {
+	.h_sm_33 {
 		display: block;
 		height: 33%;
 	}
-	.h_md_30 {
+	.h_sm_30 {
 		display: block;
 		height: 30%;
 	}
-	.h_md_40 {
+	.h_sm_40 {
 		display: block;
 		height: 40%;
 	}
-	.h_md_50 {
+	.h_sm_50 {
 		display: block;
 		height: 50%;
 	}
-	.h_md_55 {
+	.h_sm_55 {
 		display: block;
 		height: 55%;
 	}
-	.h_md_60 {
+	.h_sm_60 {
 		display: block;
 		height: 60%;
 	}
-	.h_md_70 {
+	.h_sm_70 {
 		display: block;
 		height: 70%;
 	}
-	.h_md_75 {
+	.h_sm_75 {
 		display: block;
 		height: 75%;
 	}
-	.h_md_80 {
+	.h_sm_80 {
 		display: block;
 		height: 80%;
 	}
-	.h_md_85 {
+	.h_sm_85 {
 		display: block;
 		height: 85%;
 	}
-	.h_md_90 {
+	.h_sm_90 {
 		display: block;
 		height: 90%;
 	}
-	.h_md_100,.h_md_full {
+	.h_sm_100,.h_sm_full {
 		display: block;
 		height: 100%;
 	}
@@ -840,59 +844,65 @@ $screen-lg-min: 1025px;
 
 
 
-	.mb_md_0 {
+	.mb_sm_0 {
 		margin-bottom: 0 !important;
 	}
-	.mb_md_1 {
+	.mb_sm_1 {
 		margin-bottom: $spacing * 0.5  !important;
 	}
-	.mb_md_2 {
+	.mb_sm_2 {
 		margin-bottom: $spacing  !important;
 	}
-	.mb_md_3 {
+	.mb_sm_3 {
 		margin-bottom: $spacing * 1.5 !important;
 	}
-	.mb_md_4 {
+	.mb_sm_4 {
 		margin-bottom: $spacing * 2 !important;
 	}
-	.mb_md_5 {
+	.mb_sm_5 {
 		margin-bottom: $spacing * 2.5 !important;
 	}
-	.mb_md_6 {
+	.mb_sm_6 {
 		margin-bottom: $spacing * 3 !important;
 	}
 
-	.mt_md_0 {
+	.mt_sm_0 {
 		margin-top: 0 !important;
 	}
-	.mt_md_1 {
+	.mt_sm_1 {
 		margin-top: $spacing / 2 !important;
 	}
-	.mt_md_2 {
+	.mt_sm_2 {
 		margin-top: $spacing !important;
 	}
-	.mt_md_3 {
+	.mt_sm_3 {
 		margin-top: $spacing * 1.5 !important;
 	}
-	.mt_md_4 {
+	.mt_sm_4 {
 		margin-top: $spacing * 2 !important;
 	}
 
-	.p_md_0 {
+	.p_sm_0 {
 		padding: 0 !important;
 	}
-	.p_md_1 {
+	.p_sm_1 {
 		padding: $spacing / 2 !important;
 	}
-	.p_md_2 {
+	.p_sm_2 {
 		padding: $spacing  !important;
 	}
-	.p_md_3 {
+	.p_sm_3 {
 		padding: $spacing * 1.5 !important;
 	}
-	.p_md_4 {
+	.p_sm_4 {
 		padding: $spacing * 2 !important;
 	}
+	.p_sm_5 {
+		padding: $spacing * 2.5 !important;
+	}
+	.p_sm_6 {
+		padding: $spacing * 3 !important;
+	}
 
 
 
@@ -900,41 +910,41 @@ $screen-lg-min: 1025px;
 
 
 
-	.pb_md_0 {
+	.pb_sm_0 {
 		padding-bottom: 0 !important;
 	}
-	.pb_md_1 {
+	.pb_sm_1 {
 		padding-bottom: $spacing * 0.5  !important;
 	}
-	.pb_md_2 {
+	.pb_sm_2 {
 		padding-bottom: $spacing  !important;
 	}
-	.pb_md_3 {
+	.pb_sm_3 {
 		padding-bottom: $spacing * 1.5 !important;
 	}
-	.pb_md_4 {
+	.pb_sm_4 {
 		padding-bottom: $spacing * 2 !important;
 	}
-	.pb_md_5 {
+	.pb_sm_5 {
 		padding-bottom: $spacing * 2.5 !important;
 	}
-	.pb_md_6 {
+	.pb_sm_6 {
 		padding-bottom: $spacing * 3 !important;
 	}
 
-	.pt_md_0 {
+	.pt_sm_0 {
 		padding-top: 0 !important;
 	}
-	.pt_md_1 {
+	.pt_sm_1 {
 		padding-top: $spacing / 2 !important;
 	}
-	.pt_md_2 {
+	.pt_sm_2 {
 		padding-top: $spacing !important;
 	}
-	.pt_md_3 {
+	.pt_sm_3 {
 		padding-top: $spacing * 1.5 !important;
 	}
-	.pt_md_4 {
+	.pt_sm_4 {
 		padding-top: $spacing * 2 !important;
 	}
 
@@ -1173,6 +1183,12 @@ $screen-lg-min: 1025px;
 	}
 	.p_md_4 {
 		padding: $spacing * 2 !important;
+	}
+	.p_md_5 {
+		padding: $spacing * 2.5 !important;
+	}
+	.p_md_6 {
+		padding: $spacing * 3 !important;
 	}
 
 
