@@ -708,3 +708,10 @@ iframe {
    max-width: 100% !important;
    width: 100% !important;
 }
+
+
+@media screen and (max-width: 640px) {
+   iframe {
+      max-width: 80vw !important;
+   }
+}
