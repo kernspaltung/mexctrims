@@ -99,7 +99,7 @@ endif;
 </section>
 
 
-<div class="columns small-12 h_10 text-right p2 pr1 m0 mt2">
+<div class="columns small-12 h_10 text-right p2 pr1 m0 mt2 mb2">
 
    <a href="<?php echo get_the_permalink( get_page_by_title("Noticias")->ID ); ?>">
       <div class="button p3 primario_acento_bd fontS tarjeta primario_acento_bg_hover complementario_hover">
