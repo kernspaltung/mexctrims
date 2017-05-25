@@ -16,9 +16,9 @@ $bienvenida = get_page_by_title('Bienvenida');
 </div>
 
 <div class="h_100 rel z1k">
-   <div class="row p4 h_75">
+   <div class="row p4 h_70 h_sm_0">
 
-      <div class="small-12 medium-6 columns fontL h_40vh h_sm_55">
+      <div class="small-12 medium-6 columns fontL h_40vh h_sm_50vh">
          <div class="vcenter">
 
             <div class="mt_sm_2 imgLiquid imgLiquidNoFill h_25vh icono">
@@ -34,8 +34,8 @@ $bienvenida = get_page_by_title('Bienvenida');
          </div>
       </div>
 
-      <div class="small-12 medium-6 columns h_40vh h_sm_20vh">
-         <div class="h_a vcenter">
+      <div class="small-12 medium-6 columns h_40vh h_sm_50vh">
+         <div class="columns h_a mt2">
 
             <?php echo apply_filters('the_content', $portada -> post_content ); ?>
 
