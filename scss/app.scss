@@ -712,6 +712,7 @@ iframe {
 
 @media screen and (max-width: 640px) {
    iframe {
+      display: none;
       max-width: 80vw !important;
       width: 80vw !important;
    }
