@@ -13,9 +13,9 @@
 
       <?php
 
-      $destacada_inicio = get_term_by( 'name', 'Noticia Destacada', 'category' );
+      $destacada_inicio = get_term_by( 'name', 'Noticia Principal', 'category' );
 
-      $q = new WP_Query( array( 'post_type'=>'noticia', 'posts_per_page'=>1, 'cat' => $destacada_inicio->term_id ) );
+      $q = new WP_Query( array( 'post_type'=>'noticia', 'posts_per_page'=>2, 'cat' => $destacada_inicio->term_id ) );
 
       if( $q -> have_posts() ) :
          while( $q -> have_posts() ) :

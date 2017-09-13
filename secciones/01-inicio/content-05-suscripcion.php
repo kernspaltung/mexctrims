@@ -1,5 +1,5 @@
 <?php
- 
+
 $contacto = get_page_by_title( 'Contáctanos' );
 $lista_correo = get_page_by_title( 'Lista de correo' );
 
@@ -17,7 +17,7 @@ $lista_correo = get_page_by_title( 'Lista de correo' );
          <div class="icono text-center columns font2">
             <a href="#">
                <span class="secundario2 font2">
-                  mexctrims@mexctrims.com
+                  comunicacion@mexctrims.com
                </span>
             </a>
          </div>

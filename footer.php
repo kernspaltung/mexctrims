@@ -16,19 +16,19 @@
       <footer id="footer" class="columns h_10vh h_sm_12vh fixed bottom white_bg z1k p0 text-right">
          <div class="small-12 medium-6 columns p0 h_100 h_sm_50 rel">
             <div class="small-4 columns text-center vcenter p0 secundario1_hover icono  p1" style="color:#3b5998">
-               <a href="http://facebook.com/mexctrims" target="_blank">
+               <a href="https://www.facebook.com/people/Mexctrims-AC/100007633008775" target="_blank">
                   <i class="fa fa-facebook columns font_sm_L font_md_L font_lg_XL" style="color:#3b5998"></i>
                   <span class="columns font_sm_XS font_md_S font_lg_M p2 pb0 hide-for-small-only">Facebook</span>
                </a>
             </div>
             <div class="small-4 columns text-center vcenter p0 secundario1_hover icono p1" style="color:#1A8BF0">
-               <a href="#" target="_blank" class="primario_hover">
+               <a href="https://twitter.com/mexctrims?lang=es" target="_blank" class="primario_hover">
                   <i class="fa fa-twitter columns font_sm_L font_md_L font_lg_XL" style="color:#1A8BF0"></i>
                   <span class="columns font_sm_XS font_md_S font_lg_M p1 pb0 hide-for-small-only">Twitter</span>
                </a>
             </div>
             <div class="boton-contacto small-4 columns text-center vcenter p0 secundario1_hover icono p1" style="color:#b9cf46">
-               <a href="#" target="_blank" class="primario_hover">
+               <a href="mailto:comunicacion@mexctrims.com" target="_blank" class="primario_hover">
                   <i class="fa fa-envelope columns font_sm_L font_md_L font_lg_XL" style="color:#b9cf46"></i>
                   <span class="columns font_sm_XS font_md_S font_lg_M p1 pb0 hide-for-small-only">Contáctanos</span>
                </a>
