@@ -19,6 +19,7 @@
          'post_type'=>'noticia',
          'posts_per_page'=>1,
           // 'cat' => $destacada_inicio->term_id
+      )
       );
 
       if( $q -> have_posts() ) :
