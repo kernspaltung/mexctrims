@@ -66,7 +66,7 @@
       <?php
 
       $q = new WP_Query( array(
-         'post_type'=>'post',
+         'post_type'=>'noticia',
          'posts_per_page'=>2,
          'offset'=>1,
        // 'category__not_in' => $destacada_inicio->term_id
